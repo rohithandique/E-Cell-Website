@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--title & description-->
+    <title>E-Cell | NITK Surathkal</title>
+    <meta name="description" content="" />
+
+    <!--seo tags-->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--stylesheets-->
+    <!--bootstrap for grids, 
+				data-aos for div animations,
+				hover for on-hover animations-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <!--replace this with hover-min.css before deployment-->
+    <link rel="stylesheet" href="/src/css/hover.css" />
+    <link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/" />
+    <link rel="stylesheet" href="/src/css/styles.css" />
+  </head>
+
+  <body>
+    <!--main-->
+    <section class="container-fluid">
+      <div id="main" class="row">
+        <header class="col-12">
+          <!--navigation-->
+          <nav class="text-right">
+            <img
+              id="menu"
+              onclick="openNav()"
+              src="/src/images/menu.svg"
+              alt="menu"
+            />
+            <div id="mySidenav" class="sidenav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+                >&times;</a
+              >
+              <a onclick="closeNav()" id="sidenav-name" class="hvr-grow" href=""
+                >E-CELL NITK</a
+              >
+              <a onclick="closeNav()" class="text-left hvr-grow" href=""
+                >About</a
+              >
+              <a onclick="closeNav()" class="text-left hvr-grow" href=""
+                >E-Summit</a
+              >
+              <a onclick="closeNav()" class="text-left hvr-grow" href=""
+                >SIP-2020</a
+              >
+              <a onclick="closeNav()" class="text-left hvr-grow" href=""
+                >Courses</a
+              >
+              <a onclick="closeNav()" class="text-left hvr-grow" href=""
+                >Startups</a
+              >
+              <a onclick="closeNav()" class="text-left hvr-grow" href=""
+                >Events</a
+              >
+              <a onclick="closeNav()" class="text-left hvr-grow" href=""
+                >Team</a
+              >
+              <a onclick="closeNav()" class="text-left hvr-grow" href=""
+                >Contact Us</a
+              >
+              <a href=""
+                ><img
+                  class="hvr-grow"
+                  src="/src/images/facebook_logo.svg"
+                  alt="facebook"
+              /></a>
+              <a href=""
+                ><img
+                  class="hvr-grow"
+                  src="/src/images/instagram_logo.svg"
+                  alt="instagram"
+              /></a>
+              <a href=""
+                ><img
+                  class="hvr-grow"
+                  src="/src/images/linkedin_logo.svg"
+                  alt="linkedin"
+              /></a>
+              <a href=""
+                ><img
+                  class="hvr-grow"
+                  src="/src/images/email_logo.svg"
+                  alt="gmail"
+              /></a>
+            </div>
+          </nav>
+        </header>
+
+        <!--social media icons-->
+        <div
+          id="social"
+          class="d-none d-sm-block col-sm-1"
+          data-aos="fade-up zoom-in"
+          data-aos-delay="3000"
+          data-aos-easing="ease-in"
+        >
+          <a href=""
+            ><img
+              class="hvr-grow"
+              src="/src/images/facebook_logo.svg"
+              alt="facebook"
+          /></a>
+          <a href=""
+            ><img
+              class="hvr-grow"
+              src="/src/images/instagram_logo.svg"
+              alt="instagram"
+          /></a>
+          <a href=""
+            ><img
+              class="hvr-grow"
+              src="/src/images/linkedin_logo.svg"
+              alt="linkedin"
+          /></a>
+          <a href=""
+            ><img class="hvr-grow" src="/src/images/email_logo.svg" alt="gmail"
+          /></a>
+        </div>
+        <!--main info-->
+        <div class="col-12 col-sm-10 text-center">
+          <div class="row">
+            <!--logo-->
+            <div
+              class="col-12"
+              data-aos="fade-up zoom-in"
+              data-aos-delay="1000"
+              data-aos-easing="ease-in"
+            >
+              <img src="/src/images/ecell_logo.svg" alt="ecell nitk logo" />
+            </div>
+            <!--tagline & name-->
+            <div
+              class="col-12"
+              data-aos="fade-up zoom-in"
+              data-aos-delay="1000"
+              data-aos-easing="ease-in"
+            >
+              <h2>IMAGINE. INNOVATE. ILLUMINATE</h2>
+              <h1
+                data-aos="fade-up zoom-in"
+                data-aos-delay="1500"
+                data-aos-easing="ease-in"
+              >
+                Entrepreneurship Cell
+              </h1>
+              <h1
+                data-aos="fade-up zoom-in"
+                data-aos-delay="2000"
+                data-aos-easing="ease-in"
+              >
+                NITK, Surathkal
+              </h1>
+            </div>
+            <!--recruitments-->
+            <div
+              id="recruitments"
+              class="col-12"
+              data-aos="fade-up zoom-in"
+              data-aos-delay="2500"
+              data-aos-easing="ease-in"
+            >
+              <h2>We're Recruiting!</h2>
+              <button class="button-main hvr-grow" type="button">
+                APPLY NOW
+              </button>
+            </div>
+            <!--scroll gif-->
+            <div class="d-none d-sm-block col-sm-12">
+              <img
+                id="mouse"
+                src="/src/images/scroll.gif"
+                alt="animated mouse gif"
+              />
+            </div>
+            <div
+              class="d-block d-sm-none col-12"
+              data-aos="fade-up zoom-in"
+              data-aos-delay="3000"
+              data-aos-easing="ease-in"
+            >
+              <img src="/src/images/arrow.svg" alt="arrow" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section></section>
+
+    <!--scripts-->
+    <script src="src/js/index.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

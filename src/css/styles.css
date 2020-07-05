@@ -1,0 +1,206 @@
+/*importing google fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Open+Sans:wght@300;400;600");
+
+/*reset*/
+/*mostly done by normalize.css*/
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  cursor: default;
+}
+
+/*default fonts*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+  font-family: "Archivo", sans-serif;
+  color: white;
+}
+
+p,
+a {
+  font-family: "Open Sans", sans-serif;
+  color: white;
+}
+
+/*custom*/
+/*mostly elements that are used again and again*/
+.button-main {
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 2em;
+  font-size: 1.25vw;
+  font-weight: 600;
+  padding: 7px 10px;
+}
+
+h1 {
+  font-size: 6vw;
+  font-weight: 600;
+  line-height: 1;
+}
+
+/*main stylesheet*/
+
+#main {
+  background-image: url("../images/background_main.jpg");
+  background-repeat: no-repeat;
+  background-position: center 45%;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+#mouse {
+  width: 50px;
+  height: auto;
+  color: black;
+}
+
+#recruitments {
+  margin: 3% 0 1% 0;
+}
+
+nav > img {
+  margin: 2% 2% 0 0;
+  width: 3vw;
+  height: auto;
+}
+
+#social img {
+  width: 40%;
+  height: auto;
+  position: relative;
+  top: 60vh;
+  margin: 5% 0 0 0;
+  display: block;
+}
+
+.sidenav {
+  display: none;
+  height: 100%; /* 100% Full-height */
+  width: 250px; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  right: 0;
+  background-color: #012044; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 2em; /* Place content 4em from the top */
+  transition: 0.3s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  font-size: 1.5vw;
+  color: lightblue;
+  display: block;
+  transition: 0.3s;
+  font-weight: 400;
+  margin-left: 10%;
+  text-decoration: none;
+  line-height: 2;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #ffffff;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: -0.01em;
+  right: 0.2em;
+  font-size: 3.5em;
+}
+
+#sidenav-name {
+  font-family: "Archivo", sans-serif;
+  font-weight: 600;
+  font-size: 1.5em;
+  position: relative;
+  left: -30%;
+}
+
+.sidenav img {
+  width: 15%;
+  height: auto;
+  position: relative;
+  margin: 5% 0 0 0;
+  display: block;
+}
+
+@media only screen and (max-width: 575px) {
+  .button-main {
+    border: 2px solid white;
+    border-radius: 3em;
+    font-size: 3vw;
+    font-weight: 600;
+    padding: 7px 10px;
+  }
+
+  #main {
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #main > .col-sm-10 {
+    position: relative;
+    top: -15%;
+  }
+
+  #main > .col-sm-10 > div > div {
+    margin: 2% auto;
+  }
+
+  #menu {
+    width: 10vw;
+    height: auto;
+    margin: 5% 2% 0 0;
+  }
+
+  #mouse {
+    display: none;
+  }
+
+  #social img {
+    width: 80%;
+    padding: 0%;
+    top: 50vh;
+  }
+
+  .col-1 {
+    padding: 0%;
+  }
+
+  h1 {
+    font-size: 9vw;
+    line-height: 0.9;
+  }
+
+  h2 {
+    font-size: 5vw;
+  }
+
+  .sidenav {
+    padding-top: 1em;
+  }
+
+  .sidenav a {
+    font-size: 5vw;
+  }
+
+  .sidenav .closebtn {
+    top: -0.2em;
+    font-size: 3em;
+  }
+
+  .sidenav img {
+    width: 15%;
+  }
+}
