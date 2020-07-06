@@ -165,6 +165,50 @@ p {
   width: 50%;
 }
 
+#sip{
+	background-image: url("https://cdn.pixabay.com/photo/2016/11/21/14/24/dark-1845685__340.jpg");
+	background-repeat: no-repeat;
+	background-position: center 45%;
+    background-size: cover;
+    background-attachment: scroll;
+    height: 100vh;
+}
+#sip h1,p {
+  margin: 4% auto;
+}
+
+#sip .text-center h1,p {
+  width: 50%;
+}
+#sip h1{
+	
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 65px;
+}
+#sip p{
+	
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;	
+}
+#sip button{
+	position: absolute;
+	width: 220px;
+	height: 60px;
+	left: 44%;
+	top: 600px;
+}
+#sip img{
+	position: absolute;
+width: 73px;
+height: 89px;
+left: 51px;
+top: 10px;
+}
+
 @media only screen and (max-width: 575px) {
   .button-main {
     border: 2px solid white;
