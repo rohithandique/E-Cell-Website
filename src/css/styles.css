@@ -51,7 +51,7 @@ h1 {
   background-repeat: no-repeat;
   background-position: center 45%;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: scroll;
   height: 100vh;
 }
 
@@ -78,6 +78,18 @@ nav > img {
   top: 60vh;
   margin: 5% 0 0 0;
   display: block;
+}
+
+.sticky {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+}
+
+#menu {
+  margin-right: 4%;
+  cursor: pointer;
 }
 
 .sidenav {
@@ -135,6 +147,24 @@ nav > img {
   display: block;
 }
 
+#about {
+  background-image: url("../images/background_about.jpeg");
+  background-repeat: no-repeat;
+  background-position: center 45%;
+  background-size: cover;
+  background-attachment: scroll;
+  height: 100vh;
+}
+
+#about h1,
+p {
+  margin: 4% auto;
+}
+
+#about .text-center p {
+  width: 50%;
+}
+
 @media only screen and (max-width: 575px) {
   .button-main {
     border: 2px solid white;
@@ -161,7 +191,7 @@ nav > img {
   #menu {
     width: 10vw;
     height: auto;
-    margin: 5% 2% 0 0;
+    margin: 1% 6% 0 0;
   }
 
   #mouse {
@@ -202,5 +232,21 @@ nav > img {
 
   .sidenav img {
     width: 15%;
+  }
+  #about .text-center h1 {
+    margin: 10% 0 0 0;
+    font-size: 8vw;
+  }
+  #about .text-center p {
+    width: 90%;
+    font-size: 4vw;
+    margin: 8% auto;
+  }
+  #about .carousel-item p {
+    font-size: 3.5vw;
+    width: 80%;
+  }
+  .carousel-indicators {
+    display: none;
   }
 }
