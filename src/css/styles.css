@@ -72,10 +72,9 @@ h1 {
   height: 100vh;
 }
 
-#mouse {
-  width: 50px;
-  height: auto;
-  color: black;
+#main .text-center {
+  position: relative;
+  bottom: 15%;
 }
 
 #recruitments {
@@ -92,7 +91,7 @@ nav > img {
   width: 40%;
   height: auto;
   position: relative;
-  top: 60vh;
+  top: 55vh;
   margin: 5% 0 0 0;
   display: block;
 }
@@ -166,11 +165,12 @@ nav > img {
   height: 100vh;
 }
 
-#about h1,
-p {
+#about h1 {
   margin: 4% auto;
 }
-
+#about p {
+  margin: 2% auto;
+}
 #about .text-center p {
   width: 50%;
 }
@@ -261,6 +261,9 @@ p {
   grid-template-areas: "footer-item1-1 footer-item1-2 footer-item1-3";
   padding: 7% 0 0 5%;
 }
+#footer-item1 h3 {
+  font-weight: 700;
+}
 #footer-item1-1 {
   grid-area: footer-item1-1;
 }
@@ -327,43 +330,12 @@ p {
     font-weight: 600;
     padding: 7px 10px;
   }
-
-  #main {
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  #main > .col-sm-10 {
-    position: relative;
-    top: -15%;
-  }
-
-  #main > .col-sm-10 > div > div {
-    margin: 2% auto;
-  }
-
-  #menu {
-    width: 10vw;
-    height: auto;
-    margin: 1% 6% 0 0;
-  }
-
-  #mouse {
-    display: none;
-  }
-
-  #social img {
-    width: 80%;
-    padding: 0%;
-    top: 50vh;
-  }
-
   .col-1 {
     padding: 0%;
   }
-
   h1 {
-    font-size: 8vw;
+    font-size: 8.5vw;
+    font-weight: 700;
     line-height: 0.9;
   }
 
@@ -377,16 +349,36 @@ p {
     font-size: 3vw;
   }
   p {
-    font-size: 3vw;
+    font-size: 4vw;
   }
+  #main {
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #main > .col-sm-10 {
+    position: relative;
+    top: -15%;
+  }
+  #main > .col-sm-10 > div > div {
+    margin: 3% auto;
+  }
+  #menu {
+    width: 10vw;
+    height: auto;
+    margin: 1% 6% 0 0;
+  }
+  #social img {
+    width: 80%;
+    padding: 0%;
+    top: 50vh;
+  }
+
   .sidenav {
     padding-top: 1em;
   }
-
   .sidenav a {
     font-size: 5vw;
   }
-
   .sidenav .closebtn {
     top: -0.2em;
     font-size: 3em;
@@ -400,7 +392,7 @@ p {
     font-size: 8vw;
   }
   #about .text-center p {
-    width: 90%;
+    width: 80%;
     font-size: 4vw;
     margin: 8% auto;
   }
@@ -422,20 +414,23 @@ p {
   }
 
   #sip .text-center p {
-    width: 90%;
+    width: 80%;
   }
   #sip,
   #courses {
     padding: 30% 0 0 0;
   }
   #courses .text-center p {
-    width: 90%;
+    width: 80%;
   }
   #events-mob img {
     height: 100vh;
   }
   .carousel-caption {
     margin-bottom: 65%;
+  }
+  #team {
+    height: auto;
   }
   #footer {
     background-color: #111111;
