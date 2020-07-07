@@ -9,6 +9,16 @@
   overflow: visible;
 }
 
+.col-4,
+.col-12 {
+  padding: 0%;
+}
+.onepage-pagination li a:before {
+  background: white;
+}
+.onepage-pagination li a.active:before {
+  border: 1px solid white;
+}
 input:focus,
 textarea:focus,
 select:focus {
@@ -84,13 +94,6 @@ nav > img {
   top: 60vh;
   margin: 5% 0 0 0;
   display: block;
-}
-
-.sticky {
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  width: 100%;
 }
 
 #menu {
@@ -189,13 +192,13 @@ p {
 }
 
 /*CSS for courses*/
-#courses{
-	background-image: url("https://images.unsplash.com/photo-1539956071741-0c1918d19bde?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
-	background-repeat: no-repeat;
-	background-position: center 45%;
-    background-size: cover;
-    background-attachment: scroll;
-    height: 100vh;
+#courses {
+  background-image: url("../images/background_courses.jpeg");
+  background-repeat: no-repeat;
+  background-position: center 45%;
+  background-size: cover;
+  background-attachment: scroll;
+  height: 100vh;
 }
 #courses h1,
 p {
@@ -205,10 +208,37 @@ p {
 #courses .text-center p {
   width: 50%;
 }
-
+.events_1 {
+  background-image: url("../images/background_events_1.jpeg");
+  background-repeat: no-repeat;
+  background-position: center 45%;
+  background-size: cover;
+  background-attachment: scroll;
+  height: 100vh;
+}
+.events_2 {
+  background-image: url("../images/background_events_2.jpeg");
+  background-repeat: no-repeat;
+  background-position: center 45%;
+  background-size: cover;
+  background-attachment: scroll;
+  height: 100vh;
+}
+.events_3 {
+  background-image: url("../images/background_events_3.jpeg");
+  background-repeat: no-repeat;
+  background-position: center 45%;
+  background-size: cover;
+  background-attachment: scroll;
+  height: 100vh;
+}
+#events .carousel-caption {
+  margin-bottom: 20%;
+}
 /*CSS for footer*/
 #footer {
   background-color: #111111;
+  height: 50vh;
   display: grid;
   grid-template-areas:
     "footer-item1 footer-item3 footer-item4"
@@ -329,14 +359,14 @@ p {
   }
 
   h2 {
-    font-size: 5vw;
+    font-size: 6.5vw;
   }
   h3 {
     font-size: 5vw;
   }
-	p {
-		font-size: 3vw;
-	}
+  p {
+    font-size: 3vw;
+  }
   .sidenav {
     padding-top: 1em;
   }
@@ -369,6 +399,11 @@ p {
   .carousel-indicators {
     display: none;
   }
+  .carousel-control-next-icon,
+  .carousel-control-prev-icon {
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
   #sip h1,
   p {
     margin: 10% auto;
@@ -377,9 +412,20 @@ p {
   #sip .text-center p {
     width: 90%;
   }
-	#courses .text-center p {
-  width: 90%;
-}
+  #sip,
+  #courses {
+    padding: 30% 0 0 0;
+  }
+  #courses .text-center p {
+    width: 90%;
+  }
+  #events-mob img {
+    height: 100vh;
+  }
+  .carousel-caption {
+    margin-bottom: 65%;
+  }
+
   #footer {
     background-color: #111111;
     height: 100vh;

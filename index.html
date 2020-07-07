@@ -20,252 +20,408 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <!--replace this with hover-min.css before deployment-->
     <link rel="stylesheet" href="./src/css/hover.css" />
     <link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/" />
+    <link rel="stylesheet" href="./src/css/onepage-scroll.css" />
     <link rel="stylesheet" href="./src/css/styles.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./src/js/jquery.onepage-scroll.min.js"></script>
   </head>
 
   <body>
-    <!--main-->
-    <section class="container-fluid">
-      <div id="main" class="row">
-        <header class="col-12">
-          <!--navigation-->
-          <nav id="header" class="text-right">
-            <!--hamburger menu icon-->
-            <img
-              id="menu"
-              onclick="openNav()"
-              src="./src/images/icon_menu.svg"
-              alt="menu"
-            />
-            <!--sidenav-->
-            <div id="sidenav" class="sidenav">
-              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-                >&times;</a
-              >
-              <a onclick="closeNav()" id="sidenav-name" class="hvr-grow" href=""
-                >E-CELL NITK</a
-              >
-              <a onclick="closeNav()" class="text-left hvr-grow" href=""
-                >About</a
-              >
-              <a onclick="closeNav()" class="text-left hvr-grow" href=""
-                >E-Summit</a
-              >
-              <a onclick="closeNav()" class="text-left hvr-grow" href=""
-                >SIP-2020</a
-              >
-              <a onclick="closeNav()" class="text-left hvr-grow" href=""
-                >Courses</a
-              >
-              <a onclick="closeNav()" class="text-left hvr-grow" href=""
-                >Startups</a
-              >
-              <a onclick="closeNav()" class="text-left hvr-grow" href=""
-                >Events</a
-              >
-              <a onclick="closeNav()" class="text-left hvr-grow" href=""
-                >Team</a
-              >
-              <a onclick="closeNav()" class="text-left hvr-grow" href=""
-                >Contact Us</a
-              >
-              <a href=""
-                ><img
-                  class="hvr-grow"
-                  src="./src/images/logo_facebook.svg"
-                  alt="facebook"
-              /></a>
-              <a href=""
-                ><img
-                  class="hvr-grow"
-                  src="./src/images/logo_instagram.svg"
-                  alt="instagram"
-              /></a>
-              <a href=""
-                ><img
-                  class="hvr-grow"
-                  src="./src/images/logo_linkedin.svg"
-                  alt="linkedin"
-              /></a>
-              <a href=""
-                ><img
-                  class="hvr-grow"
-                  src="./src/images/logo_email.svg"
-                  alt="gmail"
-              /></a>
-            </div>
-          </nav>
-        </header>
-
-        <!--social media icons-->
-        <div
-          id="social"
-          class="d-none d-sm-block col-sm-1"
-          data-aos="fade-up zoom-in"
-          data-aos-delay="3000"
-          data-aos-easing="ease-in"
-        >
-          <a href=""
-            ><img
-              class="hvr-grow"
-              src="./src/images/logo_facebook.svg"
-              alt="facebook"
-          /></a>
-          <a href=""
-            ><img
-              class="hvr-grow"
-              src="./src/images/logo_instagram.svg"
-              alt="instagram"
-          /></a>
-          <a href=""
-            ><img
-              class="hvr-grow"
-              src="./src/images/logo_linkedin.svg"
-              alt="linkedin"
-          /></a>
-          <a href=""
-            ><img class="hvr-grow" src="./src/images/logo_email.svg" alt="gmail"
-          /></a>
-        </div>
-        <!--main info-->
-        <div class="col-12 col-sm-10 text-center">
-          <div class="row">
-            <!--logo-->
-            <div
-              class="col-12"
-              data-aos="fade-up zoom-in"
-              data-aos-delay="1000"
-              data-aos-easing="ease-in"
-            >
-              <img src="./src/images/logo_ecell.svg" alt="ecell nitk logo" />
-            </div>
-            <!--tagline & name-->
-            <div
-              class="col-12"
-              data-aos="fade-up zoom-in"
-              data-aos-delay="1000"
-              data-aos-easing="ease-in"
-            >
-              <h2>IMAGINE. INNOVATE. ILLUMINATE</h2>
-              <h1
-                data-aos="fade-up zoom-in"
-                data-aos-delay="1500"
-                data-aos-easing="ease-in"
-              >
-                Entrepreneurship Cell
-              </h1>
-              <h1
-                data-aos="fade-up zoom-in"
-                data-aos-delay="2000"
-                data-aos-easing="ease-in"
-              >
-                NITK, Surathkal
-              </h1>
-            </div>
-            <!--recruitments-->
-            <div
-              id="recruitments"
-              class="col-12"
-              data-aos="fade-up zoom-in"
-              data-aos-delay="2500"
-              data-aos-easing="ease-in"
-            >
-              <h2>We're Recruiting!</h2>
-              <button class="button-main hvr-grow" type="button">
-                APPLY NOW
-              </button>
-            </div>
-            <!--scroll gif-->
-            <div class="d-none d-sm-block col-sm-12">
+    <div class="main">
+      <!--main-->
+      <section class="container-fluid">
+        <div id="main" class="row">
+          <header class="col-12">
+            <!--navigation-->
+            <nav id="header" class="text-right">
+              <!--hamburger menu icon-->
               <img
-                id="mouse"
-                src="./src/images/icon_scroll.gif"
-                alt="animated mouse gif"
+                id="menu"
+                onclick="openNav()"
+                src="./src/images/icon_menu.svg"
+                alt="menu"
               />
-            </div>
-            <div
-              class="d-block d-sm-none col-12"
-              data-aos="fade-up zoom-in"
-              data-aos-delay="3000"
-              data-aos-easing="ease-in"
-            >
-              <img src="./src/images/icon_arrow.svg" alt="arrow" />
+              <!--sidenav-->
+              <div id="sidenav" class="sidenav">
+                <a
+                  href="javascript:void(0)"
+                  class="closebtn"
+                  onclick="closeNav()"
+                  >&times;</a
+                >
+                <a
+                  onclick="closeNav()"
+                  id="sidenav-name"
+                  class="hvr-grow"
+                  href=""
+                  >E-CELL NITK</a
+                >
+                <a onclick="closeNav()" class="text-left hvr-grow" href=""
+                  >About</a
+                >
+                <a onclick="closeNav()" class="text-left hvr-grow" href=""
+                  >E-Summit</a
+                >
+                <a onclick="closeNav()" class="text-left hvr-grow" href=""
+                  >SIP-2020</a
+                >
+                <a onclick="closeNav()" class="text-left hvr-grow" href=""
+                  >Courses</a
+                >
+                <a onclick="closeNav()" class="text-left hvr-grow" href=""
+                  >Startups</a
+                >
+                <a onclick="closeNav()" class="text-left hvr-grow" href=""
+                  >Events</a
+                >
+                <a onclick="closeNav()" class="text-left hvr-grow" href=""
+                  >Team</a
+                >
+                <a onclick="closeNav()" class="text-left hvr-grow" href=""
+                  >Contact Us</a
+                >
+                <a href=""
+                  ><img
+                    class="hvr-grow"
+                    src="./src/images/logo_facebook.svg"
+                    alt="facebook"
+                /></a>
+                <a href=""
+                  ><img
+                    class="hvr-grow"
+                    src="./src/images/logo_instagram.svg"
+                    alt="instagram"
+                /></a>
+                <a href=""
+                  ><img
+                    class="hvr-grow"
+                    src="./src/images/logo_linkedin.svg"
+                    alt="linkedin"
+                /></a>
+                <a href=""
+                  ><img
+                    class="hvr-grow"
+                    src="./src/images/logo_email.svg"
+                    alt="gmail"
+                /></a>
+              </div>
+            </nav>
+          </header>
+
+          <!--social media icons-->
+          <div id="social" class="d-none d-sm-block col-sm-1">
+            <a href=""
+              ><img
+                class="hvr-grow"
+                src="./src/images/logo_facebook.svg"
+                alt="facebook"
+            /></a>
+            <a href=""
+              ><img
+                class="hvr-grow"
+                src="./src/images/logo_instagram.svg"
+                alt="instagram"
+            /></a>
+            <a href=""
+              ><img
+                class="hvr-grow"
+                src="./src/images/logo_linkedin.svg"
+                alt="linkedin"
+            /></a>
+            <a href=""
+              ><img
+                class="hvr-grow"
+                src="./src/images/logo_email.svg"
+                alt="gmail"
+            /></a>
+          </div>
+          <!--main info-->
+          <div class="col-12 col-sm-10 text-center">
+            <div class="row">
+              <!--logo-->
+              <div class="col-12">
+                <img src="./src/images/logo_ecell.svg" alt="ecell nitk logo" />
+              </div>
+              <!--tagline & name-->
+              <div class="col-12">
+                <h3>IMAGINE. INNOVATE. ILLUMINATE</h3>
+                <h1>
+                  Entrepreneurship Cell
+                </h1>
+                <h1>
+                  NITK, Surathkal
+                </h1>
+              </div>
+              <!--recruitments-->
+              <div id="recruitments" class="col-12">
+                <h2>We're Recruiting!</h2>
+                <button class="button-main hvr-grow" type="button">
+                  APPLY NOW
+                </button>
+              </div>
+              <!--scroll gif-->
+              <div class="d-none d-sm-block col-sm-12">
+                <img
+                  id="mouse"
+                  src="./src/images/icon_scroll.gif"
+                  alt="animated mouse gif"
+                />
+              </div>
+              <div class="d-block d-sm-none col-12">
+                <img src="./src/images/icon_arrow.svg" alt="arrow" />
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!--about us-->
-    <section id="about" class="container-fluid">
-      <div class="row">
-        <div class="col-12 text-center">
-          <h1 data-aos="fade-up" data-aos-delay="500" data-aos-easing="ease-in">
-            ABOUT US
-          </h1>
-          <p data-aos="fade-up" data-aos-delay="500" data-aos-easing="ease-in">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
-            facilis voluptate at fugit id odit quos doloribus, minus qui totam
-            debitis fugiat modi eligendi. Itaque laboriosam, quia possimus
-            commodi minima neque voluptate fugiat vero ipsa facilis nam nobis
-            illum, molestias aspernatur necessitatibus sapiente explicabo,
-            dolore numquam reiciendis cupiditate aliquid at. Rerum accusamus
-            officia natus laboriosam eligendi placeat quasi molestias, sequi
-            labore ipsum, possimus ad commodi neque facere minima asperiores eum
-            veniam corrupti at numquam iste maxime excepturi aperiam! Iure error
-            laudantium unde numquam corrupti quidem? Voluptatum hic tempore
-            maiores eos eaque nulla totam sequi repellat nihil? Molestias
-            accusantium quidem suscipit?
-          </p>
+      <!--about us-->
+      <section id="about" class="container-fluid">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h1>
+              ABOUT US
+            </h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
+              facilis voluptate at fugit id odit quos doloribus, minus qui totam
+              debitis fugiat modi eligendi. Itaque laboriosam, quia possimus
+              commodi minima neque voluptate fugiat vero ipsa facilis nam nobis
+              illum, molestias aspernatur necessitatibus sapiente explicabo,
+              dolore numquam reiciendis cupiditate aliquid at. Rerum accusamus
+              officia natus laboriosam eligendi placeat quasi molestias, sequi
+              labore ipsum, possimus ad commodi neque facere minima asperiores
+              eum veniam corrupti at numquam iste maxime excepturi aperiam! Iure
+              error laudantium unde numquam corrupti quidem? Voluptatum hic
+              tempore maiores eos eaque nulla totam sequi repellat nihil?
+              Molestias accusantium quidem suscipit?
+            </p>
+          </div>
+          <!--bootstrap carousel-->
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide col-12"
+            data-ride="carousel"
+          >
+            <ol class="carousel-indicators">
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="1"
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="2"
+              ></li>
+            </ol>
+            <div class="carousel-inner text-center">
+              <div class="carousel-item active">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Labore, accusantium.
+                </p>
+              </div>
+              <div class="carousel-item">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Earum facilis, minus exercitationem nulla dicta asperiores
+                  doloribus ea quos cupiditate quidem?
+                </p>
+              </div>
+              <div class="carousel-item">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptatem beatae, reiciendis distinctio eligendi porro, non
+                  laudantium nisi aspernatur recusandae dicta fugiat quas
+                  commodi explicabo facere? Laborum ut aperiam adipisci quod!
+                </p>
+              </div>
+            </div>
+            <a
+              class="carousel-control-prev"
+              href="#carouselExampleIndicators"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#carouselExampleIndicators"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
         </div>
-        <!--bootstrap carousel-->
+      </section>
+
+      <!--SIP-->
+      <section id="sip" class="container-fluid">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h1>STARTUP INTERNSHIP<br />PROGRAMME</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Praesentium enim magni accusantium id nesciunt in omnis culpa?
+              Atque numquam quibusdam aperiam porro deserunt eaque corporis
+              dolorum reprehenderit iusto possimus, dicta consectetur id, nulla
+              vel ipsam autem repudiandae labore ea! In, aliquid veritatis
+              beatae dolorem necessitatibus ullam nihil sapiente tempore
+              repellat, sunt delectus odio fuga expedita minus provident maxime
+              est eaque. Doloribus laudantium dolore p.
+            </p>
+            <button class="button-main hvr-grow" type="button">
+              APPLY NOW
+            </button>
+          </div>
+        </div>
+      </section>
+      <!--Courses-->
+      <section id="courses" class="container-fluid">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h1>
+              COURSES
+            </h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatem beatae, reiciendis distinctio eligendi porro, non
+              laudantium nisi aspernatur recusandae dicta fugiat quas commodi
+              explicabo facere? Laborum ut aperiam adipisci quod!
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatem beatae, reiciendis distinctio eligendi porro, non
+              laudantium nisi aspernatur recusandae dicta fugiat quas commodi
+              explicabo facere? Laborum ut aperiam adipisci quod!
+            </p>
+            <button class="button-main hvr-grow" type="button">
+              Enroll Now
+            </button>
+          </div>
+        </div>
+      </section>
+      <!--2 sections for events. 1 for mobile, 1 for rest-->
+      <!--events desktop-->
+      <section id="events" class="col-12 d-none d-sm-block">
+        <div class="row">
+          <div class="col-4 events_1">
+            <div class="carousel-caption">
+              <h2>Enterprise</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel
+                quam est aliquam, impedit quibusdam aspernatur in dolor
+                consectetur iste ullam soluta maxime dolorem veritatis, corporis
+                vitae eligendi debitis harum. Ipsam consequatur cupiditate
+                laudantium ratione ipsa sapiente magni nesciunt voluptas
+                corrupti?
+              </p>
+            </div>
+          </div>
+          <div class="col-4 events_2">
+            <h1 class="text-center mt-5">EVENTS</h1>
+            <div class="carousel-caption">
+              <h2>IPL Auction</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel
+                quam est aliquam, impedit quibusdam aspernatur in dolor
+                consectetur iste ullam soluta maxime dolorem veritatis, corporis
+                vitae eligendi debitis harum. Ipsam consequatur cupiditate
+                laudantium ratione ipsa sapiente magni nesciunt voluptas
+                corrupti?
+              </p>
+            </div>
+          </div>
+          <div class="col-4 events_3">
+            <div class="carousel-caption">
+              <h2>Disrupt</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel
+                quam est aliquam, impedit quibusdam aspernatur in dolor
+                consectetur iste ullam soluta maxime dolorem veritatis, corporis
+                vitae eligendi debitis harum. Ipsam consequatur cupiditate
+                laudantium ratione ipsa sapiente magni nesciunt voluptas
+                corrupti?
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--events-mobile-->
+      <div id="events-mob" class="d-sm-none col-12">
         <div
-          id="carouselExampleIndicators"
-          class="carousel slide col-12"
+          id="carouselExampleControls"
+          class="carousel slide"
           data-ride="carousel"
-          data-aos="fade-up"
-          data-aos-delay="500"
-          data-aos-easing="ease-in"
         >
-          <ol class="carousel-indicators">
-            <li
-              data-target="#carouselExampleIndicators"
-              data-slide-to="0"
-              class="active"
-            ></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner text-center">
-            <div class="carousel-item active">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
-                accusantium.
-              </p>
+          <div class="carousel-inner">
+            <div class="carousel-item active events_1">
+              <h1 class="text-center mt-5">EVENTS</h1>
+              <div class="carousel-caption">
+                <h1>Enterprise</h1>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel
+                  quam est aliquam, impedit quibusdam aspernatur in dolor
+                  consectetur iste ullam soluta maxime dolorem veritatis,
+                  corporis vitae eligendi debitis harum. Ipsam consequatur
+                  cupiditate laudantium ratione ipsa sapiente magni nesciunt
+                  voluptas corrupti?
+                </p>
+              </div>
             </div>
-            <div class="carousel-item">
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum
-                facilis, minus exercitationem nulla dicta asperiores doloribus
-                ea quos cupiditate quidem?
-              </p>
+            <div class="carousel-item events_2">
+              <h1 class="text-center mt-5">EVENTS</h1>
+              <div class="carousel-caption">
+                <h1>IPL Auction</h1>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel
+                  quam est aliquam, impedit quibusdam aspernatur in dolor
+                  consectetur iste ullam soluta maxime dolorem veritatis,
+                  corporis vitae eligendi debitis harum. Ipsam consequatur
+                  cupiditate laudantium ratione ipsa sapiente magni nesciunt
+                  voluptas corrupti?
+                </p>
+              </div>
             </div>
-            <div class="carousel-item">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptatem beatae, reiciendis distinctio eligendi porro, non
-                laudantium nisi aspernatur recusandae dicta fugiat quas commodi
-                explicabo facere? Laborum ut aperiam adipisci quod!
-              </p>
+            <div class="carousel-item events_3">
+              <h1 class="text-center mt-5">EVENTS</h1>
+              <div class="carousel-caption">
+                <h1>Disrupt</h1>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel
+                  quam est aliquam, impedit quibusdam aspernatur in dolor
+                  consectetur iste ullam soluta maxime dolorem veritatis,
+                  corporis vitae eligendi debitis harum. Ipsam consequatur
+                  cupiditate laudantium ratione ipsa sapiente magni nesciunt
+                  voluptas corrupti?
+                </p>
+              </div>
             </div>
           </div>
           <a
             class="carousel-control-prev"
-            href="#carouselExampleIndicators"
+            href="#carouselExampleControls"
             role="button"
             data-slide="prev"
           >
@@ -274,7 +430,7 @@
           </a>
           <a
             class="carousel-control-next"
-            href="#carouselExampleIndicators"
+            href="#carouselExampleControls"
             role="button"
             data-slide="next"
           >
@@ -283,156 +439,103 @@
           </a>
         </div>
       </div>
-    </section>
-	  
-	<!--Sip-->
-    <section id="sip" class="container-fluid">
-      <div class="row">
-        <div class="col-12 text-center">
-          <h1
-            data-aos="fade-up"
-            data-aos-delay="1000"
-            data-aos-easing="ease-in"
-          >
-            STARTUP INTERNSHIP<br>PROGRAMME
-          </h1>
-          <p data-aos="fade-up" data-aos-delay="1000" data-aos-easing="ease-in">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
-            enim magni accusantium id nesciunt in omnis culpa? Atque numquam
-            quibusdam aperiam porro deserunt eaque corporis dolorum
-            reprehenderit iusto possimus, dicta consectetur id, nulla vel ipsam
-            autem repudiandae labore ea! In, aliquid veritatis beatae dolorem
-            necessitatibus ullam nihil sapiente tempore repellat, sunt delectus
-            odio fuga expedita minus provident maxime est eaque. Doloribus
-            laudantium dolore p.
-          </p>
-          <button class="button-main hvr-grow" data-aos="fade-up"
-          data-aos-delay="1000"
-          data-aos-easing="ease-in" type="button">
-            APPLY NOW
-          </button>
-        </div>
-      </div>
-    </section>
-	  <section id="courses" class="container-fluid">
-		  <div class="row">
-			  <div class="col-12 text-center">
-				  <h1 data-aos="fade-up" data-aos-delay="1000" data-aos-easing="ease-in">
-					  COURSES
-				  </h1>
-				  <p data-aos="fade-up" data-aos-delay="1000" data-aos-easing="ease-in">
-					  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                	  Voluptatem beatae, reiciendis distinctio eligendi porro, non
-                	  laudantium nisi aspernatur recusandae dicta fugiat quas commodi
-                	  explicabo facere? Laborum ut aperiam adipisci quod!
-				  </p>
-				  <p data-aos="fade-up" data-aos-delay="1000" data-aos-easing="ease-in">
-					  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                	  Voluptatem beatae, reiciendis distinctio eligendi porro, non
-                	  laudantium nisi aspernatur recusandae dicta fugiat quas commodi
-                	  explicabo facere? Laborum ut aperiam adipisci quod!
-				  </p>
-				  <button class="button-main hvr-grow" data-aos="fade-up" data-aos-delay="1000" data-aos-easing="ease-in" type="button">
-					  Enroll Now
-				  </button>
-			  </div>
-		  </div>
-	  </section>
-	<!--footer-->
-    <section id="footer">
-      <div id="footer-item1">
-        <div id="footer-item1-1">
-          <h3>EXPLORE</h3>
-          <a href="">
-            <p>Home</p>
-          </a>
-          <a href="">
-            <p>About Us</p>
-          </a>
-          <a href="">
-            <p>E-Summit</p>
-          </a>
-        </div>
-        <div id="footer-item1-2">
-          <h3>EXPLORE</h3>
-          <a href="">
-            <p>Startups</p>
-          </a>
-          <a href="">
-            <p>Events</p>
-          </a>
-          <a href="">
-            <p>Team</p>
-          </a>
-        </div>
-        <div id="footer-item1-3">
-          <h3>INITIATIVES</h3>
-          <a href="">
-            <p>SIP</p>
-          </a>
-          <a href="">
-            <p>Recruitments</p>
-          </a>
-          <a href="">
-            <p>Courses</p>
-          </a>
-        </div>
-      </div>
-      <div id="footer-item2" class="text-center-mobile">
-        <h5>CONTACT US</h5>
-        <a href=""
-          ><img
-            class="hvr-grow"
-            src="./src/images/logo_facebook.svg"
-            alt="facebook"
-        /></a>
-        <a href=""
-          ><img
-            class="hvr-grow"
-            src="./src/images/logo_instagram.svg"
-            alt="instagram"
-        /></a>
-        <a href=""
-          ><img
-            class="hvr-grow"
-            src="./src/images/logo_linkedin.svg"
-            alt="linkedin"
-        /></a>
-        <a href=""
-          ><img class="hvr-grow" src="./src/images/logo_email.svg" alt="gmail"
-        /></a>
-      </div>
-      <div id="footer-item3" class="text-center-mobile">
-        <h3>GET NOTIFIED</h3>
-        <h6>Be the first to know about our activities!</h6>
-        <form action="">
-          <label for="email"></label>
-          <input type="text" id="email" name="email" />
-          <input
-            id="submit"
-            type="image"
-            src="./src/images/icon_submit.svg"
-            alt="Submit"
-            height="26.5px"
-            width="auto"
-          />
-        </form>
-      </div>
-      <div id="footer-item4" class="text-center mt-5">
-        <a href=""><img src="./src/images/logo_ecell.svg" alt="" /></a>
-        <h3>E-CELL NITK</h3>
-      </div>
-      <div id="footer-item5" class="text-center">
-        <h6>&copy; 2020 E-Cell NITK, All Rights Reserved</h6>
-      </div>
-    </section>
+      <section class="col-12">
+        <div></div>
+        <!--footer-->
+        <footer id="footer">
+          <div id="footer-item1">
+            <div id="footer-item1-1">
+              <h3>EXPLORE</h3>
+              <a href="">
+                <p>Home</p>
+              </a>
+              <a href="">
+                <p>About Us</p>
+              </a>
+              <a href="">
+                <p>E-Summit</p>
+              </a>
+            </div>
+            <div id="footer-item1-2">
+              <h3>EXPLORE</h3>
+              <a href="">
+                <p>Startups</p>
+              </a>
+              <a href="">
+                <p>Events</p>
+              </a>
+              <a href="">
+                <p>Team</p>
+              </a>
+            </div>
+            <div id="footer-item1-3">
+              <h3>INITIATIVES</h3>
+              <a href="">
+                <p>SIP</p>
+              </a>
+              <a href="">
+                <p>Recruitments</p>
+              </a>
+              <a href="">
+                <p>Courses</p>
+              </a>
+            </div>
+          </div>
+          <div id="footer-item2" class="text-center-mobile">
+            <h5>CONTACT US</h5>
+            <a href=""
+              ><img
+                class="hvr-grow"
+                src="./src/images/logo_facebook.svg"
+                alt="facebook"
+            /></a>
+            <a href=""
+              ><img
+                class="hvr-grow"
+                src="./src/images/logo_instagram.svg"
+                alt="instagram"
+            /></a>
+            <a href=""
+              ><img
+                class="hvr-grow"
+                src="./src/images/logo_linkedin.svg"
+                alt="linkedin"
+            /></a>
+            <a href=""
+              ><img
+                class="hvr-grow"
+                src="./src/images/logo_email.svg"
+                alt="gmail"
+            /></a>
+          </div>
+          <div id="footer-item3" class="text-center-mobile">
+            <h3>GET NOTIFIED</h3>
+            <h6>Be the first to know about our activities!</h6>
+            <form action="">
+              <label for="email"></label>
+              <input type="text" id="email" name="email" />
+              <input
+                id="submit"
+                type="image"
+                src="./src/images/icon_submit.svg"
+                alt="Submit"
+                height="26.5px"
+                width="auto"
+              />
+            </form>
+          </div>
+          <div id="footer-item4" class="text-center mt-5">
+            <a href=""><img src="./src/images/logo_ecell.svg" alt="" /></a>
+            <h3>E-CELL NITK</h3>
+          </div>
+          <div id="footer-item5" class="text-center">
+            <h6>&copy; 2020 E-Cell NITK, All Rights Reserved</h6>
+          </div>
+        </footer>
+      </section>
+    </div>
     <!--scripts-->
-    <script src="src/js/index.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
+
     <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
       integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
@@ -443,9 +546,12 @@
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"
     ></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-      AOS.init();
+      $(".main").onepage_scroll({
+        loop: false,
+        responsiveFallback: 575,
+      });
     </script>
+    <script src="src/js/index.js"></script>
   </body>
 </html>
