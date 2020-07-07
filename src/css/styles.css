@@ -10,7 +10,8 @@
 }
 
 .col-4,
-.col-12 {
+.col-12,
+.col-6 {
   padding: 0%;
 }
 .onepage-pagination li a:before {
@@ -235,6 +236,14 @@ p {
 #events .carousel-caption {
   margin-bottom: 20%;
 }
+#team {
+  background-image: url("../images/background_team.jpeg");
+  background-repeat: no-repeat;
+  background-position: center 45%;
+  background-size: cover;
+  background-attachment: scroll;
+  height: 100vh;
+}
 /*CSS for footer*/
 #footer {
   background-color: #111111;
@@ -364,6 +373,9 @@ p {
   h3 {
     font-size: 5vw;
   }
+  h4 {
+    font-size: 3vw;
+  }
   p {
     font-size: 3vw;
   }
@@ -425,7 +437,6 @@ p {
   .carousel-caption {
     margin-bottom: 65%;
   }
-
   #footer {
     background-color: #111111;
     height: 100vh;
