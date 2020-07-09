@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--title & description-->
+    <title>Template</title>
+    <meta name="description" content="" />
+    <link
+      rel="icon"
+      href="./src/images/favicon.ico"
+      type="image/gif"
+      sizes="16x16"
+    />
+    <link rel="apple-touch-icon" href="./src/images/apple-touch-icon.png" />
+
+    <!--seo tags-->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--stylesheets-->
+    <!--bootstrap for grids, 
+				data-aos for div animations,
+				hover for on-hover animations-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <!--replace this with hover-min.css before deployment-->
+    <link rel="stylesheet" href="./src/css/hover.css" />
+    <link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/" />
+    <link rel="stylesheet" href="./src/css/styles.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!--main-->
+    <section class="container-fluid">
+      <div class="row">
+        <header class="col-12">
+          <!--navigation-->
+          <nav id="header" class="text-right">
+            <!--hamburger menu icon-->
+            <img
+              id="menu"
+              onclick="openNav()"
+              src="./src/images/icon_menu.svg"
+              alt="menu"
+            />
+            <!--sidenav-->
+            <div id="sidenav" class="sidenav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+                >&times;</a
+              >
+              <a
+                onclick="closeNav()"
+                id="sidenav-name"
+                class="hvr-grow"
+                href="#"
+                >E-CELL NITK</a
+              >
+              <a onclick="closeNav()" class="text-left hvr-grow" href="#about"
+                >About</a
+              >
+              <a onclick="closeNav()" class="text-left hvr-grow" href="#sip"
+                >SIP-2020</a
+              >
+              <a onclick="closeNav()" class="text-left hvr-grow" href="#courses"
+                >Courses</a
+              >
+              <a onclick="closeNav()" class="text-left hvr-grow" href=""
+                >Blogs</a
+              >
+              <a onclick="closeNav()" class="text-left hvr-grow" href=""
+                >Blogs Part 2</a
+              >
+              <a onclick="closeNav()" class="text-left hvr-grow" href=""
+                >Startups</a
+              >
+              <a
+                onclick="closeNav()"
+                class="text-left hvr-grow d-none d-sm-block"
+                href="#events"
+                >Events</a
+              >
+              <a
+                onclick="closeNav()"
+                class="text-left hvr-grow d-sm-none"
+                href="#events-mob"
+                >Events</a
+              >
+              <a onclick="closeNav()" class="text-left hvr-grow" href="#team"
+                >Team</a
+              >
+              <a onclick="closeNav()" class="text-left hvr-grow" href=""
+                >Contact Us</a
+              >
+              <a
+                href="https://www.facebook.com/NitkEcell/"
+                class="text-left"
+                target="_blank"
+                ><img
+                  class="hvr-grow"
+                  src="./src/images/logo_facebook.svg"
+                  alt="facebook"
+              /></a>
+              <a
+                href="https://www.instagram.com/ecellnitksurathkal/?hl=en"
+                class="text-left"
+                target="_blank"
+                ><img
+                  class="hvr-grow"
+                  src="./src/images/logo_instagram.svg"
+                  alt="instagram"
+              /></a>
+              <a
+                href="https://www.linkedin.com/company/ecellnitksurathkal/about/"
+                class="text-left"
+                target="_blank"
+                ><img
+                  class="hvr-grow"
+                  src="./src/images/logo_linkedin.svg"
+                  alt="linkedin"
+              /></a>
+              <a href="mailto:ecell@nitk.edu.in" class="text-left"
+                ><img
+                  class="hvr-grow"
+                  src="./src/images/logo_email.svg"
+                  alt="gmail"
+              /></a>
+            </div>
+          </nav>
+        </header>
+        <!--first section-->
+        <div id=""></div>
+      </div>
+    </section>
+    <!--scripts-->
+    <!--next sections-->
+    <section></section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="src/js/index.js"></script>
+  </body>
+</html>

@@ -6,7 +6,8 @@
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  overflow: visible;
+  overflow-x: hidden;
+  overflow-y: visible;
 }
 
 .col-4,
@@ -44,6 +45,10 @@ a {
   color: white;
 }
 
+form {
+  overflow-y: hidden;
+}
+
 /*custom*/
 /*mostly elements that are used again and again*/
 .button-main {
@@ -58,7 +63,7 @@ a {
 h1 {
   font-size: 6vw;
   font-weight: 600;
-  line-height: 1;
+  line-height: 1.2;
 }
 
 /*main stylesheet*/
@@ -75,6 +80,11 @@ h1 {
 #main .text-center {
   position: relative;
   bottom: 15%;
+}
+
+#logo_ecell {
+  width: 15%;
+  height: auto;
 }
 
 #recruitments {
@@ -150,10 +160,8 @@ nav > img {
 
 .sidenav img {
   width: 15%;
-  height: auto;
+  height: 100%;
   position: relative;
-  margin: 5% 0 0 0;
-  display: block;
 }
 /*CSS for about*/
 #about {
@@ -209,6 +217,9 @@ p {
 #courses .text-center p {
   width: 50%;
 }
+#events {
+  overflow-x: hidden;
+}
 .events_1 {
   background-image: url("../images/background_events_1.jpeg");
   background-repeat: no-repeat;
@@ -226,7 +237,7 @@ p {
   height: 100vh;
 }
 .events_3 {
-  background-image: url("../images/background_events_3.jpeg");
+  background-image: url("../images/background_events_3.jpg");
   background-repeat: no-repeat;
   background-position: center 45%;
   background-size: cover;
@@ -303,12 +314,14 @@ p {
   grid-area: footer-item4;
 }
 #footer-item4 img {
+  width: 50%;
+  height: auto;
   position: relative;
-  left: -40%;
+  left: -25%;
 }
 #footer-item4 > h3 {
   position: relative;
-  left: -40%;
+  left: -25%;
 }
 #footer-item5 {
   grid-area: footer-item5;
@@ -361,6 +374,10 @@ p {
   }
   #main > .col-sm-10 > div > div {
     margin: 3% auto;
+  }
+  #logo_ecell {
+    width: 40%;
+    height: auto;
   }
   #menu {
     width: 10vw;
