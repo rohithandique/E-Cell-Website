@@ -212,6 +212,7 @@ p {
 #courses .text-center p {
   width: 50%;
 }
+/*Css for events*/
 #events {
   overflow-x: hidden;
 }
@@ -248,7 +249,40 @@ p {
   background-position: center 45%;
   background-size: cover;
   background-attachment: scroll;
-  height: 100vh;
+  height: 120vh;
+}
+/*Css for Blogs*/
+#blog{
+	background-image: url("https://cdn.pixabay.com/photo/2016/10/22/01/54/wood-1759566__340.jpg");
+	background-repeat: no-repeat;
+  	background-position: center 45%;
+  	background-size: cover;
+  	background-attachment: scroll;
+  	height: 120vh;	
+}
+#blog h1{
+  margin: 4% auto;
+}
+#blog .card{
+	width: 1043px;
+	height:259px;
+	margin: 0 auto;
+}
+#blog #blogBody{
+	display: inline-block;
+	width: 278px;
+	height:280px;
+	margin-top: 40px;
+}
+#blog #bodyImage{
+	width: 155px;
+	height:155px;
+}
+#blog .firstBlog{
+	margin-left:0px;
+}
+#blog .lasttBlog{
+	margin-right:0px;
 }
 /*CSS for footer*/
 #footer {
@@ -460,7 +494,7 @@ p {
   }
   #team {
     height: auto;
-  }
+  }	
   #footer {
     background-color: #111111;
     height: 100vh;
