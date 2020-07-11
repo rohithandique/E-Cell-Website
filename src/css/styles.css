@@ -59,6 +59,9 @@ form {
   font-weight: 600;
   padding: 7px 10px;
 }
+.dark_button {
+  border: 2px solid black;
+}
 
 h1 {
   font-size: 6vw;
@@ -364,9 +367,8 @@ p {
   background-attachment: scroll;
   height: 100vh;
 }
-
-#blogBody {
-  background-color: blue;
+#blog_description {
+  height: 100%;
 }
 @media only screen and (max-width: 575px) {
   * {
@@ -550,9 +552,12 @@ p {
   }
   /*other pages*/
   #recruitments_description img {
-    width: 20vw;
+    width: 40vw;
   }
-  .recruitments_button {
+  .dark_button {
     border: 2px solid black;
+  }
+  #recruitments_description p {
+    width: 80%;
   }
 }
