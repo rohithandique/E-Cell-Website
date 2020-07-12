@@ -363,15 +363,35 @@ p {
 }
 /*Css for Blogs*/
 #blog {
-  background-image: url("https://cdn.pixabay.com/photo/2016/10/22/01/54/wood-1759566__340.jpg");
+  background-image: url("../images/background_team.jpeg");
   background-repeat: no-repeat;
   background-position: center 45%;
   background-size: cover;
   background-attachment: scroll;
-  height: 100vh;
+  height: 100%;
 }
 #blog_description {
   height: 100%;
+}
+#blog_description .card {
+  margin: 0 5% 10% 5%;
+}
+.card-title {
+  margin-top: 5%;
+}
+.card-text {
+  width: 70%;
+}
+#podcast_main {
+  background-image: url("../images/background_team.jpeg");
+  background-repeat: no-repeat;
+  background-position: center 45%;
+  background-size: cover;
+  background-attachment: scroll;
+  height: 100%;
+}
+#podcast_main p {
+  width: 70%;
 }
 @media only screen and (max-width: 575px) {
   * {
