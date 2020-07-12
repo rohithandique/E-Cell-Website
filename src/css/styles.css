@@ -350,13 +350,16 @@ p {
   background-attachment: scroll;
   height: 100%;
 }
-#sip_main {
+.sip_main {
   background-image: url("../images/background_courses.jpeg");
   background-repeat: no-repeat;
   background-position: center 45%;
   background-size: cover;
   background-attachment: scroll;
   height: 100vh;
+}
+.sip_main .text-center p {
+  width: 80%;
 }
 /*Css for Blogs*/
 #blog {
