@@ -139,7 +139,7 @@ nav > img {
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
   color: #ffffff;
-  z-index:1;
+  z-index: 1;
 }
 
 /* Position and style the close button (top right corner) */
