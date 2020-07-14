@@ -26,10 +26,6 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css"
-    />
     <!--replace this with hover-min.css before deployment-->
     <link rel="stylesheet" href="./src/css/hover.css" />
     <link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/" />
@@ -43,434 +39,240 @@
 
   <body>
     <!--main-->
-    <div id="fullpage">
-      <section class="container-fluid">
-        <div id="main" class="row">
-          <header class="col-12">
-            <!--navigation-->
-            <nav id="header" class="text-right">
-              <!--hamburger menu icon-->
-              <img
-                id="menu"
-                onclick="openNav()"
-                src="./src/images/icon_menu.svg"
-                alt="menu"
-              />
-              <!--sidenav-->
-              <div id="sidenav" class="sidenav">
-                <a
-                  href="javascript:void(0)"
-                  class="closebtn"
-                  onclick="closeNav()"
-                  >&times;</a
-                >
-                <a
-                  onclick="closeNav()"
-                  id="sidenav-name"
+    <section class="container-fluid">
+      <div id="main" class="row">
+        <header class="col-12">
+          <!--navigation-->
+          <nav id="header" class="text-right">
+            <!--hamburger menu icon-->
+            <img
+              id="menu"
+              onclick="openNav()"
+              src="./src/images/icon_menu.svg"
+              alt="menu"
+            />
+            <!--sidenav-->
+            <div id="sidenav" class="sidenav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+                >&times;</a
+              >
+              <a
+                onclick="closeNav()"
+                id="sidenav-name"
+                class="hvr-grow"
+                href="./index.html"
+                >E-CELL NITK</a
+              >
+              <a onclick="closeNav()" class="text-left hvr-grow" href="#about"
+                >About</a
+              >
+              <a onclick="closeNav()" class="text-left hvr-grow" href="#sip"
+                >SIP-2020</a
+              >
+              <a onclick="closeNav()" class="text-left hvr-grow" href="#courses"
+                >Courses</a
+              >
+              <a
+                onclick="closeNav()"
+                class="text-left hvr-grow"
+                href="./blog.html"
+                >Blogs</a
+              >
+              <a
+                onclick="closeNav()"
+                class="text-left hvr-grow"
+                href="./podcasts.html"
+                >Podcasts</a
+              >
+              <a
+                onclick="closeNav()"
+                class="text-left hvr-grow d-none d-sm-block"
+                href="#events"
+                >Events</a
+              >
+              <a
+                onclick="closeNav()"
+                class="text-left hvr-grow d-sm-none"
+                href="#events-mob"
+                >Events</a
+              >
+              <a
+                onclick="closeNav()"
+                class="text-left hvr-grow"
+                href="./team.html"
+                >Team</a
+              >
+              <a
+                href="https://www.facebook.com/NitkEcell/"
+                class="text-left"
+                target="_blank"
+                ><img
                   class="hvr-grow"
-                  href="./index.html"
-                  >E-CELL NITK</a
-                >
-                <a onclick="closeNav()" class="text-left hvr-grow" href="#about"
-                  >About</a
-                >
-                <a onclick="closeNav()" class="text-left hvr-grow" href="#sip"
-                  >SIP-2020</a
-                >
-                <a
-                  onclick="closeNav()"
-                  class="text-left hvr-grow"
-                  href="#courses"
-                  >Courses</a
-                >
-                <a
-                  onclick="closeNav()"
-                  class="text-left hvr-grow"
-                  href="./blog.html"
-                  >Blogs</a
-                >
-                <a
-                  onclick="closeNav()"
-                  class="text-left hvr-grow"
-                  href="./podcasts.html"
-                  >Podcasts</a
-                >
-                <a
-                  onclick="closeNav()"
-                  class="text-left hvr-grow d-none d-sm-block"
-                  href="#events"
-                  >Events</a
-                >
-                <a
-                  onclick="closeNav()"
-                  class="text-left hvr-grow d-sm-none"
-                  href="#events-mob"
-                  >Events</a
-                >
-                <a
-                  onclick="closeNav()"
-                  class="text-left hvr-grow"
-                  href="./team.html"
-                  >Team</a
-                >
-                <a
-                  href="https://www.facebook.com/NitkEcell/"
-                  class="text-left"
-                  target="_blank"
-                  ><img
-                    class="hvr-grow"
-                    src="./src/images/logo_facebook.svg"
-                    alt="facebook"
-                /></a>
-                <a
-                  href="https://www.instagram.com/ecellnitksurathkal/?hl=en"
-                  class="text-left"
-                  target="_blank"
-                  ><img
-                    class="hvr-grow"
-                    src="./src/images/logo_instagram.svg"
-                    alt="instagram"
-                /></a>
-                <a
-                  href="https://www.linkedin.com/company/ecellnitksurathkal/about/"
-                  class="text-left"
-                  target="_blank"
-                  ><img
-                    class="hvr-grow"
-                    src="./src/images/logo_linkedin.svg"
-                    alt="linkedin"
-                /></a>
-                <a href="mailto:ecell@nitk.edu.in" class="text-left"
-                  ><img
-                    class="hvr-grow"
-                    src="./src/images/logo_email.svg"
-                    alt="gmail"
-                /></a>
-              </div>
-            </nav>
-          </header>
+                  src="./src/images/logo_facebook.svg"
+                  alt="facebook"
+              /></a>
+              <a
+                href="https://www.instagram.com/ecellnitksurathkal/?hl=en"
+                class="text-left"
+                target="_blank"
+                ><img
+                  class="hvr-grow"
+                  src="./src/images/logo_instagram.svg"
+                  alt="instagram"
+              /></a>
+              <a
+                href="https://www.linkedin.com/company/ecellnitksurathkal/about/"
+                class="text-left"
+                target="_blank"
+                ><img
+                  class="hvr-grow"
+                  src="./src/images/logo_linkedin.svg"
+                  alt="linkedin"
+              /></a>
+              <a href="mailto:ecell@nitk.edu.in" class="text-left"
+                ><img
+                  class="hvr-grow"
+                  src="./src/images/logo_email.svg"
+                  alt="gmail"
+              /></a>
+            </div>
+          </nav>
+        </header>
 
-          <!--social media icons-->
-          <div id="social" class="d-none d-sm-block col-sm-1">
-            <a href="https://www.facebook.com/NitkEcell/" target="_blank"
-              ><img
-                class="hvr-grow"
-                src="./src/images/logo_facebook.svg"
-                alt="facebook"
-            /></a>
-            <a
-              href="https://www.instagram.com/ecellnitksurathkal/?hl=en"
-              target="_blank"
-              ><img
-                class="hvr-grow"
-                src="./src/images/logo_instagram.svg"
-                alt="instagram"
-            /></a>
-            <a
-              href="https://www.linkedin.com/company/ecellnitksurathkal/about/"
-              target="_blank"
-              ><img
-                class="hvr-grow"
-                src="./src/images/logo_linkedin.svg"
-                alt="linkedin"
-            /></a>
-            <a href="mailto:ecell@nitk.edu.in"
-              ><img
-                class="hvr-grow"
-                src="./src/images/logo_email.svg"
-                alt="gmail"
-            /></a>
-          </div>
-          <!--main info-->
-          <div class="col-12 col-sm-10 text-center">
-            <div class="row">
-              <!--logo-->
-              <div class="col-12">
-                <img
-                  id="logo_ecell"
-                  src="./src/images/logo_ecell.svg"
-                  alt="ecell nitk logo"
-                />
-              </div>
-              <!--tagline & name-->
-              <div class="col-12">
-                <h3>IMAGINE. INNOVATE. ILLUMINATE</h3>
-                <h1>
-                  Entrepreneurship Cell
-                </h1>
-                <h1>
-                  NITK, Surathkal
-                </h1>
-              </div>
-              <!--recruitments-->
-              <div id="recruitments" class="col-12 mt-5 mt-sm-0">
-                <h2>Our very own podcast!</h2>
-                <a href="./podcasts.html" target="_blank">
-                  <button class="button-main my-sm-3 hvr-grow" type="button">
-                    LISTEN NOW
-                  </button>
-                </a>
-              </div>
-              <!--scroll gif-->
-              <div class="col-12">
-                <a href="#about"
-                  ><img src="./src/images/icon_arrow.svg" alt="arrow"
-                /></a>
-              </div>
+        <!--social media icons-->
+        <div id="social" class="d-none d-sm-block col-sm-1">
+          <a href="https://www.facebook.com/NitkEcell/" target="_blank"
+            ><img
+              class="hvr-grow"
+              src="./src/images/logo_facebook.svg"
+              alt="facebook"
+          /></a>
+          <a
+            href="https://www.instagram.com/ecellnitksurathkal/?hl=en"
+            target="_blank"
+            ><img
+              class="hvr-grow"
+              src="./src/images/logo_instagram.svg"
+              alt="instagram"
+          /></a>
+          <a
+            href="https://www.linkedin.com/company/ecellnitksurathkal/about/"
+            target="_blank"
+            ><img
+              class="hvr-grow"
+              src="./src/images/logo_linkedin.svg"
+              alt="linkedin"
+          /></a>
+          <a href="mailto:ecell@nitk.edu.in"
+            ><img
+              class="hvr-grow"
+              src="./src/images/logo_email.svg"
+              alt="gmail"
+          /></a>
+        </div>
+        <!--main info-->
+        <div class="col-12 col-sm-10 text-center">
+          <div class="row">
+            <!--logo-->
+            <div class="col-12">
+              <img
+                id="logo_ecell"
+                src="./src/images/logo_ecell.svg"
+                alt="ecell nitk logo"
+              />
+            </div>
+            <!--tagline & name-->
+            <div class="col-12">
+              <h3>IMAGINE. INNOVATE. ILLUMINATE</h3>
+              <h1>
+                Entrepreneurship Cell
+              </h1>
+              <h1>
+                NITK, Surathkal
+              </h1>
+            </div>
+            <!--recruitments-->
+            <div id="recruitments" class="col-12 mt-5 mt-sm-0">
+              <h2>Our very own podcast!</h2>
+              <a href="./podcasts.html" target="_blank">
+                <button class="button-main my-sm-3 hvr-grow" type="button">
+                  LISTEN NOW
+                </button>
+              </a>
+            </div>
+            <!--scroll gif-->
+            <div class="col-12">
+              <a href="#about"
+                ><img src="./src/images/icon_arrow.svg" alt="arrow"
+              /></a>
             </div>
           </div>
         </div>
-      </section>
-      <!--about us-->
-      <section id="about" class="container-fluid">
-        <div class="row">
-          <div class="col-12 text-center">
-            <h1>
-              ABOUT US
-            </h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
-              facilis voluptate at fugit id odit quos doloribus, minus qui totam
-              debitis fugiat modi eligendi. Itaque laboriosam, quia possimus
-              commodi minima neque voluptate fugiat vero ipsa facilis nam nobis
-              illum, molestias aspernatur necessitatibus sapiente explicabo,
-              dolore numquam reiciendis cupiditate aliquid at. Rerum accusamus
-              officia natus laboriosam eligendi placeat quasi molestias, sequi
-              labore ipsum, possimus ad commodi neque facere minima asperiores
-              eum veniam corrupti at numquam iste maxime excepturi aperiam! Iure
-              error laudantium unde numquam corrupti quidem? Voluptatum hic
-              tempore maiores eos eaque nulla totam sequi repellat nihil?
-              Molestias accusantium quidem suscipit?
-            </p>
-          </div>
-          <!--bootstrap carousel-->
-          <div
-            id="carouselExampleIndicators"
-            class="carousel slide col-12"
-            data-ride="carousel"
-          >
-            <ol class="carousel-indicators">
-              <li
-                data-target="#carouselExampleIndicators"
-                data-slide-to="0"
-                class="active"
-              ></li>
-              <li
-                data-target="#carouselExampleIndicators"
-                data-slide-to="1"
-              ></li>
-              <li
-                data-target="#carouselExampleIndicators"
-                data-slide-to="2"
-              ></li>
-            </ol>
-            <div class="carousel-inner text-center">
-              <div class="carousel-item active">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Labore, accusantium.
-                </p>
-              </div>
-              <div class="carousel-item">
-                <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Earum facilis, minus exercitationem nulla dicta asperiores
-                  doloribus ea quos cupiditate quidem?
-                </p>
-              </div>
-              <div class="carousel-item">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptatem beatae, reiciendis distinctio eligendi porro, non
-                  laudantium nisi aspernatur recusandae dicta fugiat quas
-                  commodi explicabo facere? Laborum ut aperiam adipisci quod!
-                </p>
-              </div>
-            </div>
-            <a
-              class="carousel-control-prev"
-              href="#carouselExampleIndicators"
-              role="button"
-              data-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a
-              class="carousel-control-next"
-              href="#carouselExampleIndicators"
-              role="button"
-              data-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
+      </div>
+    </section>
+    <!--about us-->
+    <section id="about" class="container-fluid">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h1>
+            ABOUT US
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
+            facilis voluptate at fugit id odit quos doloribus, minus qui totam
+            debitis fugiat modi eligendi. Itaque laboriosam, quia possimus
+            commodi minima neque voluptate fugiat vero ipsa facilis nam nobis
+            illum, molestias aspernatur necessitatibus sapiente explicabo,
+            dolore numquam reiciendis cupiditate aliquid at. Rerum accusamus
+            officia natus laboriosam eligendi placeat quasi molestias, sequi
+            labore ipsum, possimus ad commodi neque facere minima asperiores eum
+            veniam corrupti at numquam iste maxime excepturi aperiam! Iure error
+            laudantium unde numquam corrupti quidem? Voluptatum hic tempore
+            maiores eos eaque nulla totam sequi repellat nihil? Molestias
+            accusantium quidem suscipit?
+          </p>
         </div>
-      </section>
-
-      <!--SIP-->
-      <section id="sip" class="container-fluid">
-        <div class="row">
-          <div class="col-12 text-center">
-            <h1>STARTUP INTERNSHIP<br />PROGRAMME</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Praesentium enim magni accusantium id nesciunt in omnis culpa?
-              Atque numquam quibusdam aperiam porro deserunt eaque corporis
-              dolorum reprehenderit iusto possimus, dicta consectetur id, nulla
-              vel ipsam autem repudiandae labore ea! In, aliquid veritatis
-              beatae dolorem necessitatibus ullam nihil sapiente tempore
-              repellat, sunt delectus odio fuga expedita minus provident maxime
-              est eaque. Doloribus laudantium dolore p.
-            </p>
-            <a href="./startup-internship-drive.html" target="_blank"
-              ><button class="button-main my-sm-3 mr-2 hvr-grow" type="button">
-                FOR STUDENTS
-              </button></a
-            >
-            <a href="./startup-internship-application.html" target="_blank"
-              ><button class="button-main my-sm-3 ml-2 hvr-grow" type="button">
-                FOR STARTUPS
-              </button></a
-            >
-          </div>
-        </div>
-      </section>
-      <!--Courses-->
-      <section id="courses" class="container-fluid">
-        <div class="row">
-          <div class="col-12 text-center">
-            <h1>
-              COURSES
-            </h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatem beatae, reiciendis distinctio eligendi porro, non
-              laudantium nisi aspernatur recusandae dicta fugiat quas commodi
-              explicabo facere? Laborum ut aperiam adipisci quod!
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatem beatae, reiciendis distinctio eligendi porro, non
-              laudantium nisi aspernatur recusandae dicta fugiat quas commodi
-              explicabo facere? Laborum ut aperiam adipisci quod!
-            </p>
-            <button
-              class="button-main my-sm-3 hvr-grow mt-3 mt-sm-0"
-              type="button"
-            >
-              ENROLL NOW
-            </button>
-          </div>
-        </div>
-      </section>
-      <!--2 sections for events. 1 for mobile, 1 for rest-->
-      <!--events desktop-->
-      <section id="events" class="col-12 d-none d-sm-block">
-        <div class="row">
-          <div class="col-4 events_1">
-            <div class="carousel-caption">
-              <h2>Enterprise</h2>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel
-                quam est aliquam, impedit quibusdam aspernatur in dolor
-                consectetur iste ullam soluta maxime dolorem veritatis, corporis
-                vitae eligendi debitis harum. Ipsam consequatur cupiditate
-                laudantium ratione ipsa sapiente magni nesciunt voluptas
-                corrupti?
-              </p>
-            </div>
-          </div>
-          <div class="col-4 events_2">
-            <h1 class="text-center mt-5">EVENTS</h1>
-            <div class="carousel-caption">
-              <h2>E-Summit</h2>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel
-                quam est aliquam, impedit quibusdam aspernatur in dolor
-                consectetur iste ullam soluta maxime dolorem veritatis, corporis
-                vitae eligendi debitis harum. Ipsam consequatur cupiditate
-                laudantium ratione ipsa sapiente magni nesciunt voluptas
-                corrupti?
-              </p>
-            </div>
-          </div>
-          <div class="col-4 events_3">
-            <div class="carousel-caption">
-              <h2>IPL Auction</h2>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel
-                quam est aliquam, impedit quibusdam aspernatur in dolor
-                consectetur iste ullam soluta maxime dolorem veritatis, corporis
-                vitae eligendi debitis harum. Ipsam consequatur cupiditate
-                laudantium ratione ipsa sapiente magni nesciunt voluptas
-                corrupti?
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--events-mobile-->
-      <div id="events-mob" class="d-sm-none col-12">
+        <!--bootstrap carousel-->
         <div
-          id="carouselExampleControls"
-          class="carousel slide"
+          id="carouselExampleIndicators"
+          class="carousel slide col-12"
           data-ride="carousel"
         >
-          <div class="carousel-inner">
-            <div class="carousel-item active events_1">
-              <h1 class="text-center mt-5">EVENTS</h1>
-              <div class="carousel-caption">
-                <h1>Enterprise</h1>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel
-                  quam est aliquam, impedit quibusdam aspernatur in dolor
-                  consectetur iste ullam soluta maxime dolorem veritatis,
-                  corporis vitae eligendi debitis harum. Ipsam consequatur
-                  cupiditate laudantium ratione ipsa sapiente magni nesciunt
-                  voluptas corrupti?
-                </p>
-              </div>
+          <ol class="carousel-indicators">
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner text-center">
+            <div class="carousel-item active">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
+                accusantium.
+              </p>
             </div>
-            <div class="carousel-item events_2">
-              <h1 class="text-center mt-5">EVENTS</h1>
-              <div class="carousel-caption">
-                <h1>E-Summit</h1>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel
-                  quam est aliquam, impedit quibusdam aspernatur in dolor
-                  consectetur iste ullam soluta maxime dolorem veritatis,
-                  corporis vitae eligendi debitis harum. Ipsam consequatur
-                  cupiditate laudantium ratione ipsa sapiente magni nesciunt
-                  voluptas corrupti?
-                </p>
-              </div>
+            <div class="carousel-item">
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum
+                facilis, minus exercitationem nulla dicta asperiores doloribus
+                ea quos cupiditate quidem?
+              </p>
             </div>
-            <div class="carousel-item events_3">
-              <h1 class="text-center mt-5">EVENTS</h1>
-              <div class="carousel-caption">
-                <h1>IPL Auction</h1>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel
-                  quam est aliquam, impedit quibusdam aspernatur in dolor
-                  consectetur iste ullam soluta maxime dolorem veritatis,
-                  corporis vitae eligendi debitis harum. Ipsam consequatur
-                  cupiditate laudantium ratione ipsa sapiente magni nesciunt
-                  voluptas corrupti?
-                </p>
-              </div>
+            <div class="carousel-item">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatem beatae, reiciendis distinctio eligendi porro, non
+                laudantium nisi aspernatur recusandae dicta fugiat quas commodi
+                explicabo facere? Laborum ut aperiam adipisci quod!
+              </p>
             </div>
           </div>
           <a
             class="carousel-control-prev"
-            href="#carouselExampleControls"
+            href="#carouselExampleIndicators"
             role="button"
             data-slide="prev"
           >
@@ -479,7 +281,7 @@
           </a>
           <a
             class="carousel-control-next"
-            href="#carouselExampleControls"
+            href="#carouselExampleIndicators"
             role="button"
             data-slide="next"
           >
@@ -488,211 +290,380 @@
           </a>
         </div>
       </div>
-      <section id="team" class="container-fluid">
-        <div class="row">
-          <h1 class="col-12 text-center mt-4 mb-2 my-sm-5">
-            THE TEAM
-          </h1>
-          <div class="col-12 col-sm-6 mt-sm-3">
-            <div class="row">
-              <div class="col-6 text-center">
-                <img
-                  id="first-image"
-                  src="./src/images/icon_avatar.png"
-                  class="rounded-circle"
-                />
-                <h3>Name</h3>
-                <h4 id="pos">Position</h4>
-              </div>
-              <div class="col-6 text-center">
-                <img
-                  id="first-image"
-                  src="./src/images/icon_avatar.png"
-                  class="rounded-circle"
-                />
-                <h3>Name</h3>
-                <h4 id="pos">Position</h4>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 mt-sm-3">
-            <div class="row">
-              <div class="col-6 text-center">
-                <img
-                  id="first-image"
-                  src="./src/images/icon_avatar.png"
-                  class="rounded-circle"
-                />
-                <h3>Name</h3>
-                <h4 id="pos">Position</h4>
-              </div>
-              <div class="col-6 text-center">
-                <img
-                  id="first-image"
-                  src="./src/images/icon_avatar.png"
-                  class="rounded-circle"
-                />
-                <h3>Name</h3>
-                <h4 id="pos">Position</h4>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 mt-sm-3">
-            <div class="row">
-              <div class="col-6 text-center">
-                <img
-                  id="first-image"
-                  src="./src/images/icon_avatar.png"
-                  class="rounded-circle"
-                />
-                <h3>Name</h3>
-                <h4 id="pos">Position</h4>
-              </div>
-              <div class="col-6 text-center">
-                <img
-                  id="first-image"
-                  src="./src/images/icon_avatar.png"
-                  class="rounded-circle"
-                />
-                <h3>Name</h3>
-                <h4 id="pos">Position</h4>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 mt-sm-3">
-            <div class="row">
-              <div class="col-6 text-center">
-                <img
-                  id="first-image"
-                  src="./src/images/icon_avatar.png"
-                  class="rounded-circle"
-                />
-                <h3>Name</h3>
-                <h4 id="pos">Position</h4>
-              </div>
-              <div class="col-6 text-center">
-                <img
-                  id="first-image"
-                  src="./src/images/icon_avatar.png"
-                  class="rounded-circle"
-                />
-                <h3>Name</h3>
-                <h4 id="pos">Position</h4>
-              </div>
-            </div>
-          </div>
+    </section>
 
-          <div class="col-12 text-center mb-4 mb-sm-0">
-            <a href="./team.html" target="_blank">
-              <button class="button-main my-sm-3 hvr-grow">
-                MEET US
-              </button></a
-            >
+    <!--SIP-->
+    <section id="sip" class="container-fluid">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h1>STARTUP INTERNSHIP<br />PROGRAMME</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+            enim magni accusantium id nesciunt in omnis culpa? Atque numquam
+            quibusdam aperiam porro deserunt eaque corporis dolorum
+            reprehenderit iusto possimus, dicta consectetur id, nulla vel ipsam
+            autem repudiandae labore ea! In, aliquid veritatis beatae dolorem
+            necessitatibus ullam nihil sapiente tempore repellat, sunt delectus
+            odio fuga expedita minus provident maxime est eaque. Doloribus
+            laudantium dolore p.
+          </p>
+          <a href="./startup-internship-drive.html" target="_blank"
+            ><button class="button-main my-sm-3 mr-2 hvr-grow" type="button">
+              FOR STUDENTS
+            </button></a
+          >
+          <a href="./startup-internship-application.html" target="_blank"
+            ><button class="button-main my-sm-3 ml-2 hvr-grow" type="button">
+              FOR STARTUPS
+            </button></a
+          >
+        </div>
+      </div>
+    </section>
+    <!--Courses-->
+    <section id="courses" class="container-fluid">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h1>
+            COURSES
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+            beatae, reiciendis distinctio eligendi porro, non laudantium nisi
+            aspernatur recusandae dicta fugiat quas commodi explicabo facere?
+            Laborum ut aperiam adipisci quod!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+            beatae, reiciendis distinctio eligendi porro, non laudantium nisi
+            aspernatur recusandae dicta fugiat quas commodi explicabo facere?
+            Laborum ut aperiam adipisci quod!
+          </p>
+          <button
+            class="button-main my-sm-3 hvr-grow mt-3 mt-sm-0"
+            type="button"
+          >
+            ENROLL NOW
+          </button>
+        </div>
+      </div>
+    </section>
+    <!--2 sections for events. 1 for mobile, 1 for rest-->
+    <!--events desktop-->
+    <section id="events" class="col-12 d-none d-sm-block">
+      <div class="row">
+        <div class="col-4 events_1">
+          <div class="carousel-caption">
+            <h2>Enterprise</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel quam
+              est aliquam, impedit quibusdam aspernatur in dolor consectetur
+              iste ullam soluta maxime dolorem veritatis, corporis vitae
+              eligendi debitis harum. Ipsam consequatur cupiditate laudantium
+              ratione ipsa sapiente magni nesciunt voluptas corrupti?
+            </p>
           </div>
         </div>
-      </section>
-      <section class="col-12">
-        <div></div>
-        <!--footer-->
-        <footer id="footer">
-          <div id="footer-item1">
-            <div id="footer-item1-1">
-              <h3>EXPLORE</h3>
-              <a href="#">
-                <p>Home</p>
-              </a>
-              <a href="#about">
-                <p>About Us</p>
-              </a>
-              <a href="./blog.html">
-                <p>Blog</p>
-              </a>
+        <div class="col-4 events_2">
+          <h1 class="text-center mt-5">EVENTS</h1>
+          <div class="carousel-caption">
+            <h2>E-Summit</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel quam
+              est aliquam, impedit quibusdam aspernatur in dolor consectetur
+              iste ullam soluta maxime dolorem veritatis, corporis vitae
+              eligendi debitis harum. Ipsam consequatur cupiditate laudantium
+              ratione ipsa sapiente magni nesciunt voluptas corrupti?
+            </p>
+          </div>
+        </div>
+        <div class="col-4 events_3">
+          <div class="carousel-caption">
+            <h2>IPL Auction</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel quam
+              est aliquam, impedit quibusdam aspernatur in dolor consectetur
+              iste ullam soluta maxime dolorem veritatis, corporis vitae
+              eligendi debitis harum. Ipsam consequatur cupiditate laudantium
+              ratione ipsa sapiente magni nesciunt voluptas corrupti?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--events-mobile-->
+    <div id="events-mob" class="d-sm-none col-12">
+      <div
+        id="carouselExampleControls"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active events_1">
+            <h1 class="text-center mt-5">EVENTS</h1>
+            <div class="carousel-caption">
+              <h1>Enterprise</h1>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel
+                quam est aliquam, impedit quibusdam aspernatur in dolor
+                consectetur iste ullam soluta maxime dolorem veritatis, corporis
+                vitae eligendi debitis harum. Ipsam consequatur cupiditate
+                laudantium ratione ipsa sapiente magni nesciunt voluptas
+                corrupti?
+              </p>
             </div>
-            <div id="footer-item1-2">
-              <h3>DISCOVER</h3>
-              <a href="./podcasts.html">
-                <p>Podcasts</p>
-              </a>
-              <a class="d-none d-sm-block" href="#events">
-                <p>Events</p>
-              </a>
-              <a class="d-sm-none" href="#events-mob">
-                <p>Events</p>
-              </a>
-              <a href="./team.html">
-                <p>Team</p>
-              </a>
-            </div>
-            <div id="footer-item1-3">
-              <h3>INITIATIVES</h3>
-              <a href="./startup-internship-application.html">
-                <p>SIP</p>
-              </a>
-              <a href="#courses">
-                <p>Courses</p>
-              </a>
+          </div>
+          <div class="carousel-item events_2">
+            <h1 class="text-center mt-5">EVENTS</h1>
+            <div class="carousel-caption">
+              <h1>E-Summit</h1>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel
+                quam est aliquam, impedit quibusdam aspernatur in dolor
+                consectetur iste ullam soluta maxime dolorem veritatis, corporis
+                vitae eligendi debitis harum. Ipsam consequatur cupiditate
+                laudantium ratione ipsa sapiente magni nesciunt voluptas
+                corrupti?
+              </p>
             </div>
           </div>
-          <div id="footer-item2" class="text-center-mobile">
-            <h5>CONTACT US</h5>
-            <a href="https://www.facebook.com/NitkEcell/" target="_blank"
-              ><img
-                class="hvr-grow"
-                src="./src/images/logo_facebook.svg"
-                alt="facebook"
-            /></a>
-            <a
-              href="https://www.instagram.com/ecellnitksurathkal/?hl=en"
-              target="_blank"
-              ><img
-                class="hvr-grow"
-                src="./src/images/logo_instagram.svg"
-                alt="instagram"
-            /></a>
-            <a
-              href="https://www.linkedin.com/company/ecellnitksurathkal/about/"
-              target="_blank"
-              ><img
-                class="hvr-grow"
-                src="./src/images/logo_linkedin.svg"
-                alt="linkedin"
-            /></a>
-            <a href="mailto:ecell@nitk.edu.in"
-              ><img
-                class="hvr-grow"
-                src="./src/images/logo_email.svg"
-                alt="gmail"
-            /></a>
+          <div class="carousel-item events_3">
+            <h1 class="text-center mt-5">EVENTS</h1>
+            <div class="carousel-caption">
+              <h1>IPL Auction</h1>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel
+                quam est aliquam, impedit quibusdam aspernatur in dolor
+                consectetur iste ullam soluta maxime dolorem veritatis, corporis
+                vitae eligendi debitis harum. Ipsam consequatur cupiditate
+                laudantium ratione ipsa sapiente magni nesciunt voluptas
+                corrupti?
+              </p>
+            </div>
           </div>
-          <div id="footer-item3" class="text-center-mobile">
-            <h3>GET NOTIFIED</h3>
-            <h6>Be the first to know about our activities!</h6>
-            <form action="">
-              <label for="email"></label>
-              <input type="text" id="email" name="email" />
-              <input
-                id="submit"
-                type="image"
-                src="./src/images/icon_submit.svg"
-                alt="Submit"
-                height="26.5px"
-                width="auto"
-              />
-            </form>
-          </div>
-          <div id="footer-item4" class="text-center mt-5">
-            <a href="#"><img src="./src/images/logo_ecell.svg" alt="" /></a>
-            <h3>E-CELL NITK</h3>
-          </div>
-          <div id="footer-item5" class="text-center">
-            <h6>&copy; 2020 E-Cell NITK, All Rights Reserved</h6>
-          </div>
-        </footer>
-      </section>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleControls"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleControls"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
     </div>
+    <section id="team" class="container-fluid">
+      <div class="row">
+        <h1 class="col-12 text-center mt-4 mb-2 my-sm-5">
+          THE TEAM
+        </h1>
+        <div class="col-12 col-sm-6 mt-sm-3">
+          <div class="row">
+            <div class="col-6 text-center">
+              <img
+                id="first-image"
+                src="./src/images/icon_avatar.png"
+                class="rounded-circle"
+              />
+              <h3>Name</h3>
+              <h4 id="pos">Position</h4>
+            </div>
+            <div class="col-6 text-center">
+              <img
+                id="first-image"
+                src="./src/images/icon_avatar.png"
+                class="rounded-circle"
+              />
+              <h3>Name</h3>
+              <h4 id="pos">Position</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 mt-sm-3">
+          <div class="row">
+            <div class="col-6 text-center">
+              <img
+                id="first-image"
+                src="./src/images/icon_avatar.png"
+                class="rounded-circle"
+              />
+              <h3>Name</h3>
+              <h4 id="pos">Position</h4>
+            </div>
+            <div class="col-6 text-center">
+              <img
+                id="first-image"
+                src="./src/images/icon_avatar.png"
+                class="rounded-circle"
+              />
+              <h3>Name</h3>
+              <h4 id="pos">Position</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 mt-sm-3">
+          <div class="row">
+            <div class="col-6 text-center">
+              <img
+                id="first-image"
+                src="./src/images/icon_avatar.png"
+                class="rounded-circle"
+              />
+              <h3>Name</h3>
+              <h4 id="pos">Position</h4>
+            </div>
+            <div class="col-6 text-center">
+              <img
+                id="first-image"
+                src="./src/images/icon_avatar.png"
+                class="rounded-circle"
+              />
+              <h3>Name</h3>
+              <h4 id="pos">Position</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 mt-sm-3">
+          <div class="row">
+            <div class="col-6 text-center">
+              <img
+                id="first-image"
+                src="./src/images/icon_avatar.png"
+                class="rounded-circle"
+              />
+              <h3>Name</h3>
+              <h4 id="pos">Position</h4>
+            </div>
+            <div class="col-6 text-center">
+              <img
+                id="first-image"
+                src="./src/images/icon_avatar.png"
+                class="rounded-circle"
+              />
+              <h3>Name</h3>
+              <h4 id="pos">Position</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 text-center mb-4 mb-sm-0">
+          <a href="./team.html" target="_blank">
+            <button class="button-main my-sm-3 hvr-grow">
+              MEET US
+            </button></a
+          >
+        </div>
+      </div>
+    </section>
+    <section class="col-12">
+      <div></div>
+      <!--footer-->
+      <footer id="footer">
+        <div id="footer-item1">
+          <div id="footer-item1-1">
+            <h3>EXPLORE</h3>
+            <a href="#">
+              <p>Home</p>
+            </a>
+            <a href="#about">
+              <p>About Us</p>
+            </a>
+            <a href="./blog.html">
+              <p>Blog</p>
+            </a>
+          </div>
+          <div id="footer-item1-2">
+            <h3>DISCOVER</h3>
+            <a href="./podcasts.html">
+              <p>Podcasts</p>
+            </a>
+            <a class="d-none d-sm-block" href="#events">
+              <p>Events</p>
+            </a>
+            <a class="d-sm-none" href="#events-mob">
+              <p>Events</p>
+            </a>
+            <a href="./team.html">
+              <p>Team</p>
+            </a>
+          </div>
+          <div id="footer-item1-3">
+            <h3>INITIATIVES</h3>
+            <a href="./startup-internship-application.html">
+              <p>SIP</p>
+            </a>
+            <a href="#courses">
+              <p>Courses</p>
+            </a>
+          </div>
+        </div>
+        <div id="footer-item2" class="text-center-mobile">
+          <h5>CONTACT US</h5>
+          <a href="https://www.facebook.com/NitkEcell/" target="_blank"
+            ><img
+              class="hvr-grow"
+              src="./src/images/logo_facebook.svg"
+              alt="facebook"
+          /></a>
+          <a
+            href="https://www.instagram.com/ecellnitksurathkal/?hl=en"
+            target="_blank"
+            ><img
+              class="hvr-grow"
+              src="./src/images/logo_instagram.svg"
+              alt="instagram"
+          /></a>
+          <a
+            href="https://www.linkedin.com/company/ecellnitksurathkal/about/"
+            target="_blank"
+            ><img
+              class="hvr-grow"
+              src="./src/images/logo_linkedin.svg"
+              alt="linkedin"
+          /></a>
+          <a href="mailto:ecell@nitk.edu.in"
+            ><img
+              class="hvr-grow"
+              src="./src/images/logo_email.svg"
+              alt="gmail"
+          /></a>
+        </div>
+        <div id="footer-item3" class="text-center-mobile">
+          <h3>GET NOTIFIED</h3>
+          <h6>Be the first to know about our activities!</h6>
+          <form action="">
+            <label for="email"></label>
+            <input type="text" id="email" name="email" />
+            <input
+              id="submit"
+              type="image"
+              src="./src/images/icon_submit.svg"
+              alt="Submit"
+              height="26.5px"
+              width="auto"
+            />
+          </form>
+        </div>
+        <div id="footer-item4" class="text-center mt-5">
+          <a href="#"><img src="./src/images/logo_ecell.svg" alt="" /></a>
+          <h3>E-CELL NITK</h3>
+        </div>
+        <div id="footer-item5" class="text-center">
+          <h6>&copy; 2020 E-Cell NITK, All Rights Reserved</h6>
+        </div>
+      </footer>
+    </section>
     <!--scripts-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/vendors/scrolloverflow.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js"></script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
