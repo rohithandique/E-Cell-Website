@@ -111,7 +111,7 @@ nav > img {
   margin-right: 4%;
   cursor: pointer;
 }
-#header {
+#header_main {
   position: fixed;
   z-index: 99;
   width: 100vw;
@@ -148,13 +148,13 @@ nav > img {
   margin-left: 10%;
   text-decoration: none;
   line-height: 2;
-  z-index: 1;
+  z-index: 100;
 }
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
   color: #ffffff;
-  z-index: 1;
+  z-index: 100;
 }
 
 /* Position and style the close button (top right corner) */
@@ -225,7 +225,7 @@ p {
   height: 100vh;
 }
 #courses h1,
-p {
+#courses p {
   margin: 4% auto;
 }
 
@@ -364,12 +364,15 @@ p {
   width: 10vw;
 }
 #team_main {
-  background-image: url("../images/background_team.jpeg");
+  background-image: url("https://pulsenitk.in/wp-content/uploads/2020/04/aa-1.png");
   background-repeat: no-repeat;
-  background-position: center 45%;
+  background-position: center 60%;
   background-size: cover;
   background-attachment: scroll;
   height: 100%;
+}
+#team_name {
+  margin: 12.5% 0 2.5% 0;
 }
 .sip_main {
   background-image: url("../images/background_courses.jpeg");
@@ -380,8 +383,11 @@ p {
   height: 100vh;
   overflow-y: hidden;
 }
+.sip_main #header {
+  margin-left: 1%;
+}
 .sip_main .text-center p {
-  width: 80%;
+  width: 70%;
 }
 /*Css for Blogs*/
 #blog {
@@ -390,7 +396,10 @@ p {
   background-position: center 45%;
   background-size: cover;
   background-attachment: scroll;
-  height: 100%;
+  height: 100vh;
+}
+#blog p {
+  width: 70%;
 }
 #blog_description {
   height: 100%;
@@ -410,7 +419,7 @@ p {
   background-position: center 45%;
   background-size: cover;
   background-attachment: scroll;
-  height: 100%;
+  height: 100vh;
 }
 #podcast_main p {
   width: 70%;
@@ -518,22 +527,16 @@ p {
     background-color: rgba(255, 255, 255, 0.5);
   }
   #sip h1,
-  p {
+  #sip p {
     margin: 10% auto;
   }
 
   #sip .text-center p {
     width: 80%;
   }
-  #sip,
-  #courses {
-    padding: 30% 0 0 0;
-  }
+
   #courses .text-center p {
     width: 80%;
-  }
-  #events-mob img {
-    height: 100vh;
   }
   .carousel-caption {
     margin-bottom: 65%;
@@ -608,6 +611,25 @@ p {
     border: 2px solid black;
   }
   #recruitments_description p {
+    width: 80%;
+  }
+  #blog,
+  #podcast_main,
+  .sip_main,
+  #sip,
+  #courses,
+  #team,
+  #events-mob {
+    height: 100%;
+  }
+  #events-mob h1,
+  #events-mob p {
+    margin: 5% auto;
+  }
+  .sip_main #header {
+    margin-left: 3.5%;
+  }
+  .sip_main .text-center h1 {
     width: 80%;
   }
 }
