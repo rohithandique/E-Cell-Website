@@ -281,6 +281,10 @@ p {
 #footer-item1-2 {
   grid-area: footer-item1-2;
 }
+#footer-item1-2 .d-none p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
 #footer-item1-3 {
   grid-area: footer-item1-3;
 }
