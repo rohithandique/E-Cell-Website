@@ -49,6 +49,9 @@ form {
   overflow-y: hidden;
 }
 
+.carousel-caption {
+  z-index: 1;
+}
 /*custom*/
 /*mostly elements that are used again and again*/
 .button-main {
@@ -90,7 +93,7 @@ h1 {
 }
 
 nav > img {
-  margin: 2% 2% 0 0;
+  margin: 1% 2% 0 0;
   width: 3vw;
   height: auto;
 }
@@ -108,13 +111,25 @@ nav > img {
   margin-right: 4%;
   cursor: pointer;
 }
+#header {
+  position: fixed;
+  z-index: 99;
+  width: 100vw;
+}
+#header img {
+  display: inline;
+}
+#nav-logo {
+  width: 55%;
+  height: auto;
+}
 
 .sidenav {
   display: none;
   height: 100%; /* 100% Full-height */
   width: 250px; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
-  z-index: 2; /* Stay on top */
+  z-index: 100; /* Stay on top */
   top: 0; /* Stay at the top */
   right: 0;
   background-color: #012044; /* Black*/
@@ -363,6 +378,7 @@ p {
   background-size: cover;
   background-attachment: scroll;
   height: 100vh;
+  overflow-y: hidden;
 }
 .sip_main .text-center p {
   width: 80%;
@@ -399,6 +415,7 @@ p {
 #podcast_main p {
   width: 70%;
 }
+
 @media only screen and (max-width: 575px) {
   * {
     overflow-x: hidden;

@@ -43,8 +43,12 @@
       <div id="main" class="row">
         <header class="col-12">
           <!--navigation-->
-          <nav id="header" class="text-right">
+          <nav id="header" class="text-right navbar">
             <!--hamburger menu icon-->
+            <a href="/" class="text-left"
+              ><img id="nav-logo" src="./src/images/logo_ecell.svg" alt=""
+            /></a>
+
             <img
               id="menu"
               onclick="openNav()"
@@ -60,7 +64,7 @@
                 onclick="closeNav()"
                 id="sidenav-name"
                 class="hvr-grow"
-                href="./index.html"
+                href="/"
                 >E-CELL NITK</a
               >
               <a onclick="closeNav()" class="text-left hvr-grow" href="#about"
@@ -75,12 +79,14 @@
               <a
                 onclick="closeNav()"
                 class="text-left hvr-grow"
+                target="_blank"
                 href="./blog.html"
                 >Blogs</a
               >
               <a
                 onclick="closeNav()"
                 class="text-left hvr-grow"
+                target="_blank"
                 href="./podcasts.html"
                 >Podcasts</a
               >
@@ -99,6 +105,7 @@
               <a
                 onclick="closeNav()"
                 class="text-left hvr-grow"
+                target="_blank"
                 href="./team.html"
                 >Team</a
               >
