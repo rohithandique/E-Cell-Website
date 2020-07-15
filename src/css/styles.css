@@ -224,6 +224,7 @@ p {
   background-attachment: scroll;
   height: 100vh;
 }
+
 #courses h1,
 #courses p {
   margin: 4% auto;
@@ -386,7 +387,12 @@ p {
 .sip_main #header {
   margin-left: 1%;
 }
-.sip_main .text-center p {
+.sip_main .text-center p,
+#blog p,
+.card-text,
+#podcast_main p,
+#courses_main .text-center p,
+#course_1_main .text-center p {
   width: 70%;
 }
 /*Css for Blogs*/
@@ -396,10 +402,7 @@ p {
   background-position: center 45%;
   background-size: cover;
   background-attachment: scroll;
-  height: 100vh;
-}
-#blog p {
-  width: 70%;
+  height: 100%;
 }
 #blog_description {
   height: 100%;
@@ -410,9 +413,6 @@ p {
 .card-title {
   margin-top: 5%;
 }
-.card-text {
-  width: 70%;
-}
 #podcast_main {
   background-image: url("../images/background_team.jpeg");
   background-repeat: no-repeat;
@@ -421,10 +421,58 @@ p {
   background-attachment: scroll;
   height: 100vh;
 }
-#podcast_main p {
-  width: 70%;
+#course_1_main {
+  background-image: url("../images/background_team.jpeg");
+  background-repeat: no-repeat;
+  background-position: center 45%;
+  background-size: cover;
+  background-attachment: scroll;
+  height: 100%;
 }
-
+#courses_main {
+  background-image: url("../images/background_courses.jpeg");
+  background-repeat: no-repeat;
+  background-position: center 45%;
+  background-size: cover;
+  background-attachment: scroll;
+  height: 100%;
+}
+#courses_main .col-12,
+#blog .col-12 {
+  padding: 15px;
+}
+.card-title,
+.card-text {
+  color: black;
+}
+#course_1_description {
+  background-color: #eeeeee;
+}
+#course_container {
+  display: grid;
+  grid-template-areas:
+    "c1 c2"
+    "c4 c3"
+    "c5 c6";
+}
+#c1 {
+  grid-area: c1;
+}
+#c2 {
+  grid-area: c2;
+}
+#c3 {
+  grid-area: c3;
+}
+#c4 {
+  grid-area: c4;
+}
+#c5 {
+  grid-area: c5;
+}
+#c6 {
+  grid-area: c6;
+}
 @media only screen and (max-width: 575px) {
   * {
     overflow-x: hidden;
@@ -631,5 +679,33 @@ p {
   }
   .sip_main .text-center h1 {
     width: 80%;
+  }
+  #course_container {
+    display: grid;
+    grid-template-areas:
+      "c1"
+      "c2"
+      "c3"
+      "c4"
+      "c5"
+      "c6";
+  }
+  #c1 {
+    grid-area: c1;
+  }
+  #c2 {
+    grid-area: c2;
+  }
+  #c3 {
+    grid-area: c3;
+  }
+  #c4 {
+    grid-area: c4;
+  }
+  #c5 {
+    grid-area: c5;
+  }
+  #c6 {
+    grid-area: c6;
   }
 }
