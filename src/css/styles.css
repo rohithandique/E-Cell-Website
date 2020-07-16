@@ -71,11 +71,10 @@ h1 {
   font-weight: 600;
   line-height: 1.2;
 }
-
 /*main stylesheet*/
 
 #main {
-  background-image: url("../images/background_main.jpg");
+  background-image: url("../images/background_main.jpeg");
   background-repeat: no-repeat;
   background-position: center 45%;
   background-size: cover;
@@ -102,12 +101,13 @@ nav > img {
   width: 40%;
   height: auto;
   position: relative;
-  top: 55vh;
+  top: 65vh;
   margin: 5% 0 0 0;
   display: block;
 }
 
 #menu {
+  background-color: black;
   margin-right: 4%;
   cursor: pointer;
 }
@@ -180,7 +180,7 @@ nav > img {
 }
 /*CSS for about*/
 #about {
-  background-image: url("../images/background_about.jpeg");
+  background-image: url("../images/background_about.jpg");
   background-repeat: no-repeat;
   background-position: center 45%;
   background-size: cover;
@@ -199,7 +199,7 @@ nav > img {
 }
 /*CSS for SIP*/
 #sip {
-  background-image: url("https://cdn.pixabay.com/photo/2016/11/21/14/24/dark-1845685__340.jpg");
+  background-image: url("../images/background_sip.jpg");
   background-repeat: no-repeat;
   background-position: center 45%;
   background-size: cover;
@@ -217,7 +217,7 @@ p {
 
 /*CSS for courses*/
 #courses {
-  background-image: url("../images/background_courses.jpeg");
+  background-image: url("../images/background_courses.jpg");
   background-repeat: no-repeat;
   background-position: center 45%;
   background-size: cover;
@@ -244,16 +244,9 @@ p {
   background-attachment: scroll;
   height: 100vh;
 }
-.events_2 {
-  background-image: url("../images/background_events_2.jpeg");
-  background-repeat: no-repeat;
-  background-position: center 45%;
-  background-size: cover;
-  background-attachment: scroll;
-  height: 100vh;
-}
+
 .events_3 {
-  background-image: url("../images/background_events_3.jpg");
+  background-image: url("../images/background_events_3.jpeg");
   background-repeat: no-repeat;
   background-position: center 45%;
   background-size: cover;
@@ -266,10 +259,10 @@ p {
 #team {
   background-image: url("../images/background_team.jpeg");
   background-repeat: no-repeat;
-  background-position: center 45%;
+  background-position: center 35%;
   background-size: cover;
   background-attachment: scroll;
-  height: 100vh;
+  height: 100%;
 }
 /*CSS for footer*/
 #footer {
@@ -365,7 +358,7 @@ p {
   width: 10vw;
 }
 #team_main {
-  background-image: url("https://pulsenitk.in/wp-content/uploads/2020/04/aa-1.png");
+  background-image: url("../images/background_team_main.JPG");
   background-repeat: no-repeat;
   background-position: center 60%;
   background-size: cover;
@@ -373,10 +366,10 @@ p {
   height: 100%;
 }
 #team_name {
-  margin: 12.5% 0 2.5% 0;
+  margin: 7.5% 0 2.5% 0;
 }
 .sip_main {
-  background-image: url("../images/background_courses.jpeg");
+  background-image: url("../images/background_sip_main.jpg");
   background-repeat: no-repeat;
   background-position: center 45%;
   background-size: cover;
@@ -397,7 +390,7 @@ p {
 }
 /*Css for Blogs*/
 #blog {
-  background-image: url("../images/background_team.jpeg");
+  background-image: url("../images/background_blogs.jpeg");
   background-repeat: no-repeat;
   background-position: center 45%;
   background-size: cover;
@@ -405,6 +398,7 @@ p {
   height: 100%;
 }
 #blog_description {
+  background-color: #eeeeee;
   height: 100%;
 }
 #blog_description .card {
@@ -414,15 +408,15 @@ p {
   margin-top: 5%;
 }
 #podcast_main {
-  background-image: url("../images/background_team.jpeg");
+  background-image: url("../images/background_podcast.jpg");
   background-repeat: no-repeat;
   background-position: center 45%;
   background-size: cover;
   background-attachment: scroll;
-  height: 100vh;
+  height: 100%;
 }
 #course_1_main {
-  background-image: url("../images/background_team.jpeg");
+  background-image: url("../images/background_courses.jpg");
   background-repeat: no-repeat;
   background-position: center 45%;
   background-size: cover;
@@ -430,7 +424,7 @@ p {
   height: 100%;
 }
 #courses_main {
-  background-image: url("../images/background_courses.jpeg");
+  background-image: url("../images/background_courses.jpg");
   background-repeat: no-repeat;
   background-position: center 45%;
   background-size: cover;
@@ -480,7 +474,14 @@ p {
   .text-center-mobile {
     text-align: center;
   }
-
+  #main {
+    background-image: url("../images/background_main_mob.jpeg");
+    background-repeat: no-repeat;
+    background-position: center 45%;
+    background-size: cover;
+    background-attachment: scroll;
+    height: 100vh;
+  }
   .button-main {
     border: 2px solid white;
     border-radius: 3em;
@@ -525,6 +526,7 @@ p {
     height: auto;
   }
   #menu {
+    background-color: black;
     width: 10vw;
     height: auto;
     margin: 1% 0% 0 0;
