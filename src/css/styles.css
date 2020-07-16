@@ -43,6 +43,8 @@ p,
 a {
   font-family: "Open Sans", sans-serif;
   color: white;
+  font-size: 1.25vw;
+  font-weight: 600;
 }
 
 form {
@@ -245,6 +247,15 @@ p {
   height: 100vh;
 }
 
+.events_2 {
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center 45%;
+  background-size: cover;
+  background-attachment: scroll;
+  height: 100vh;
+}
+
 .events_3 {
   background-image: url("../images/background_events_3.jpeg");
   background-repeat: no-repeat;
@@ -262,7 +273,7 @@ p {
   background-position: center 35%;
   background-size: cover;
   background-attachment: scroll;
-  height: 100%;
+  height: 100vh;
 }
 /*CSS for footer*/
 #footer {
@@ -366,7 +377,7 @@ p {
   height: 100%;
 }
 #team_name {
-  margin: 7.5% 0 2.5% 0;
+  margin: 0% 0 15% 0;
 }
 .sip_main {
   background-image: url("../images/background_sip_main.jpg");
@@ -380,6 +391,9 @@ p {
 .sip_main #header {
   margin-left: 1%;
 }
+.sip_main p {
+  margin: 2% auto;
+}
 .sip_main .text-center p,
 #blog p,
 .card-text,
@@ -390,7 +404,7 @@ p {
 }
 /*Css for Blogs*/
 #blog {
-  background-image: url("../images/background_blogs.jpeg");
+  background-image: url("../images/background_blogs.jpg");
   background-repeat: no-repeat;
   background-position: center 45%;
   background-size: cover;
@@ -403,6 +417,10 @@ p {
 }
 #blog_description .card {
   margin: 0 5% 10% 5%;
+}
+#blog_description .card p {
+  font-weight: 400;
+  font-size: 1vw;
 }
 .card-title {
   margin-top: 5%;
@@ -508,6 +526,7 @@ p {
     font-size: 3vw;
   }
   p {
+    font-weight: 400;
     font-size: 4vw;
   }
   #main {
@@ -709,5 +728,57 @@ p {
   }
   #c6 {
     grid-area: c6;
+  }
+}
+
+@media only screen and (max-height: 575px) {
+  #main {
+    background-image: url("../images/background_main.jpeg");
+    background-repeat: no-repeat;
+    background-position: center 45%;
+    background-size: cover;
+    background-attachment: scroll;
+    height: 100%;
+  }
+  #about {
+    background-image: url("../images/background_about.jpg");
+    background-repeat: no-repeat;
+    background-position: center 45%;
+    background-size: cover;
+    background-attachment: scroll;
+    height: 100%;
+  }
+  .events_1 {
+    background-image: url("../images/background_events_1.jpeg");
+    background-repeat: no-repeat;
+    background-position: center 45%;
+    background-size: cover;
+    background-attachment: scroll;
+    height: 150vh;
+  }
+  .events_2 {
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-position: center 45%;
+    background-size: cover;
+    background-attachment: scroll;
+    height: 150vh;
+  }
+
+  .events_3 {
+    background-image: url("../images/background_events_3.jpeg");
+    background-repeat: no-repeat;
+    background-position: center 45%;
+    background-size: cover;
+    background-attachment: scroll;
+    height: 150vh;
+  }
+  #team {
+    background-image: url("../images/background_team.jpeg");
+    background-repeat: no-repeat;
+    background-position: center 35%;
+    background-size: cover;
+    background-attachment: scroll;
+    height: 100%;
   }
 }
