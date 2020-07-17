@@ -273,7 +273,7 @@ p {
   background-position: center 35%;
   background-size: cover;
   background-attachment: scroll;
-  height: 100vh;
+  height: 100%;
 }
 /*CSS for footer*/
 #footer {
@@ -385,7 +385,7 @@ p {
   background-position: center 45%;
   background-size: cover;
   background-attachment: scroll;
-  height: 100vh;
+  height: 100%;
   overflow-y: hidden;
 }
 .sip_main #header {
@@ -418,7 +418,8 @@ p {
 #blog_description .card {
   margin: 0 5% 10% 5%;
 }
-#blog_description .card p {
+#blog_description .card p,
+#courses_description .card p {
   font-weight: 400;
   font-size: 1vw;
 }
@@ -754,7 +755,7 @@ p {
     background-position: center 45%;
     background-size: cover;
     background-attachment: scroll;
-    height: 150vh;
+    height: 120vh;
   }
   .events_2 {
     background-color: #ffffff;
@@ -762,7 +763,7 @@ p {
     background-position: center 45%;
     background-size: cover;
     background-attachment: scroll;
-    height: 150vh;
+    height: 120vh;
   }
 
   .events_3 {
@@ -771,7 +772,7 @@ p {
     background-position: center 45%;
     background-size: cover;
     background-attachment: scroll;
-    height: 150vh;
+    height: 120vh;
   }
   #team {
     background-image: url("../images/background_team.jpeg");
