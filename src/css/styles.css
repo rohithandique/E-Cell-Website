@@ -371,7 +371,7 @@ p {
   width: 10vw;
 }
 #team_main {
-  background-image: url("../images/background_team_main.JPG");
+  background-image: url("../images/background_team_main.jpeg");
   background-repeat: no-repeat;
   background-position: center 60%;
   background-size: cover;
@@ -385,6 +385,10 @@ p {
   background-size: cover;
   background-attachment: scroll;
   height: 100%;
+}
+#team a img,
+#team_description a img {
+  width: 2vw;
 }
 #team_name {
   margin: 0% 0 15% 0;
