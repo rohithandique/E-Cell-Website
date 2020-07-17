@@ -67,7 +67,9 @@ form {
 .dark_button {
   border: 2px solid black;
 }
-
+.carousel-indicators {
+  display: none;
+}
 h1 {
   font-size: 6vw;
   font-weight: 600;
@@ -273,7 +275,7 @@ p {
   background-position: center 35%;
   background-size: cover;
   background-attachment: scroll;
-  height: 100vh;
+  height: 100%;
 }
 /*CSS for footer*/
 #footer {
@@ -345,7 +347,7 @@ p {
 }
 #footer-item4 > h3 {
   position: relative;
-  left: -25%;
+  left: -20%;
 }
 #footer-item5 {
   grid-area: footer-item5;
@@ -369,12 +371,24 @@ p {
   width: 10vw;
 }
 #team_main {
-  background-image: url("../images/background_team_main.JPG");
+  background-image: url("../images/background_team_main.jpeg");
   background-repeat: no-repeat;
   background-position: center 60%;
   background-size: cover;
   background-attachment: scroll;
   height: 100%;
+}
+#team_description {
+  background-image: url("../images/background_team.jpeg");
+  background-repeat: no-repeat;
+  background-position: center 60%;
+  background-size: cover;
+  background-attachment: scroll;
+  height: 100%;
+}
+#team a img,
+#team_description a img {
+  width: 2vw;
 }
 #team_name {
   margin: 0% 0 15% 0;
@@ -385,7 +399,7 @@ p {
   background-position: center 45%;
   background-size: cover;
   background-attachment: scroll;
-  height: 100vh;
+  height: 100%;
   overflow-y: hidden;
 }
 .sip_main #header {
@@ -418,7 +432,8 @@ p {
 #blog_description .card {
   margin: 0 5% 10% 5%;
 }
-#blog_description .card p {
+#blog_description .card p,
+#courses_description .card p {
   font-weight: 400;
   font-size: 1vw;
 }
@@ -536,6 +551,10 @@ p {
     font-weight: 400;
     font-size: 4vw;
   }
+  a {
+    font-size: 4vw;
+  }
+
   #main {
     background-repeat: no-repeat;
     background-size: cover;
@@ -594,9 +613,7 @@ p {
     font-size: 3.5vw;
     width: 80%;
   }
-  .carousel-indicators {
-    display: none;
-  }
+
   .carousel-control-next-icon,
   .carousel-control-prev-icon {
     border-radius: 50%;
@@ -619,6 +636,10 @@ p {
   }
   #team {
     height: auto;
+  }
+  #team a img,
+  #team_description a img {
+    width: 7vw;
   }
   #footer {
     background-color: #111111;
@@ -698,6 +719,7 @@ p {
   #events-mob {
     height: 100%;
   }
+
   #events-mob h1,
   #events-mob p {
     margin: 5% auto;
@@ -761,7 +783,7 @@ p {
     background-position: center 45%;
     background-size: cover;
     background-attachment: scroll;
-    height: 150vh;
+    height: 120vh;
   }
   .events_2 {
     background-color: #ffffff;
@@ -769,7 +791,7 @@ p {
     background-position: center 45%;
     background-size: cover;
     background-attachment: scroll;
-    height: 150vh;
+    height: 120vh;
   }
 
   .events_3 {
@@ -778,7 +800,7 @@ p {
     background-position: center 45%;
     background-size: cover;
     background-attachment: scroll;
-    height: 150vh;
+    height: 120vh;
   }
   #team {
     background-image: url("../images/background_team.jpeg");
