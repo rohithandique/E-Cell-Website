@@ -465,7 +465,8 @@ p {
   grid-template-areas:
     "c1 c2"
     "c4 c3"
-    "c5 c6";
+    "c5 c6"
+	"c8 c7";
 }
 #c1 {
   grid-area: c1;
@@ -484,6 +485,12 @@ p {
 }
 #c6 {
   grid-area: c6;
+}
+#c7{
+	grid-area: c7;
+}
+#c8{
+	grid-area: c8;
 }
 @media only screen and (max-width: 575px) {
   * {
