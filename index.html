@@ -2,18 +2,36 @@
 <html lang="en">
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-172966898-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172966898-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-  gtag('config', 'UA-172966898-1');
-</script>
+      gtag('config', 'UA-172966898-1');
+    </script>
 
     <!--title & description-->
     <title>E-Cell | NITK Surathkal</title>
-    <meta name="description" content="" />
+    <meta name="description" content="The Entrepreneurship Cell of NITK Surathkal aims to create, foster
+    and promote the spirit of entrepreneurship by helping young and
+    talented minds pursue the path of innovation and set up their own
+    entrepreneurial ventures. We strongly believe in nurturing critical
+    thinking and business acumen by conducting workshops, speaker
+    sessions, innovative games and competitions as well as providing
+    student entrepreneurs with access to resources such as seed funding,
+    mentoring, consultancy and networking." />
+    <meta property="og:title" content="E-Cell | NITK Surathkal" />
+    <meta property="og:url" content="http://www.ecell.nitk.ac.in" />
+    <meta property="og:description" content="The Entrepreneurship Cell of NITK Surathkal aims to create, foster
+    and promote the spirit of entrepreneurship by helping young and
+    talented minds pursue the path of innovation and set up their own
+    entrepreneurial ventures. We strongly believe in nurturing critical
+    thinking and business acumen by conducting workshops, speaker
+    sessions, innovative games and competitions as well as providing
+    student entrepreneurs with access to resources such as seed funding,
+    mentoring, consultancy and networking." />
+    <meta property="og:site_name" content="E-Cell | NITK Surathkal" />
     <link
       rel="icon"
       href="./src/images/favicon.ico"
@@ -36,8 +54,8 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
-    <!--replace this with hover-min.css before deployment-->
-    <link rel="stylesheet" href="./src/css/hover.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" />
     <link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/" />
     <link rel="stylesheet" href="./src/css/styles.css" />
     <script
@@ -165,7 +183,7 @@
         </header>
 
         <!--social media icons-->
-        <div id="social" class="d-none d-sm-block col-sm-1">
+        <div id="social" class="d-none d-sm-block col-sm-1" data-aos="zoom-in fade-up" data-aos-delay="1000" data-aos-duration="1000">
           <a href="https://www.facebook.com/NitkEcell/" target="_blank"
             ><img
               class="hvr-grow"
@@ -200,7 +218,7 @@
           <div class="row">
             <!--logo-->
             <div class="col-12">
-              <img
+              <img data-aos="zoom-in fade-up" data-aos-delay="1000" data-aos-duration="1000"
                 id="logo_ecell"
                 src="./src/images/logo_ecell.svg"
                 alt="ecell nitk logo"
@@ -208,16 +226,18 @@
             </div>
             <!--tagline & name-->
             <div class="col-12">
-              <h3>IMAGINE. INNOVATE. ILLUMINATE</h3>
-              <h1>
+              <span data-aos="zoom-in fade-up" data-aos-delay="1500" data-aos-duration="1000">IMAGINE.&nbsp;</span>
+              <span data-aos="zoom-in fade-up" data-aos-delay="2000" data-aos-duration="1000"> INNOVATE. &nbsp;</span>
+              <span data-aos="zoom-in fade-up" data-aos-delay="2500" data-aos-duration="1000">ILLUMINATE.&nbsp;</span>
+              <h1 data-aos="zoom-in fade-up" data-aos-delay="1000" data-aos-duration="1000">
                 Entrepreneurship Cell
               </h1>
-              <h1>
+              <h1 data-aos="zoom-in fade-up" data-aos-delay="1000" data-aos-duration="1000">
                 NITK, Surathkal
               </h1>
             </div>
             <!--recruitments-->
-            <div id="recruitments" class="col-12 mt-5 mt-sm-5">
+            <div id="recruitments" class="col-12 mt-5 mt-sm-5" data-aos="zoom-in fade-up" data-aos-delay="3000" data-aos-duration="1000">
               <h2>Get an internship at a startup!</h2>
               <a href="./startup-internship-drive.html" target="_blank">
                 <button class="button-main my-sm-3 hvr-grow" type="button">
@@ -226,9 +246,9 @@
               </a>
             </div>
             <!--scroll gif-->
-            <div class="col-12">
+            <div class="col-12" >
               <a href="#about"
-                ><img src="./src/images/icon_arrow.svg" alt="arrow"
+                ><img  src="./src/images/icon_arrow.svg" alt="arrow"
               /></a>
             </div>
           </div>
@@ -238,7 +258,7 @@
     <!--about us-->
     <section id="about" class="container-fluid">
       <div class="row">
-        <div class="col-12 text-center">
+        <div class="col-12 text-center" data-aos="zoom-in fade-up" data-aos-delay="500" data-aos-duration="500">
           <h1 class="text-dark">
             ABOUT US
           </h1>
@@ -257,7 +277,7 @@
         <div
           id="carouselExampleIndicators"
           class="carousel slide col-12"
-          data-ride="carousel"
+          data-ride="carousel" data-aos="zoom-in fade-up" data-aos-delay="500" data-aos-duration="500"
         >
           <ol class="carousel-indicators">
             <li
@@ -317,7 +337,7 @@
     </section>
     <section id="courses" class="container-fluid pt-5 pt-sm-none">
       <div class="row">
-        <div class="col-12 text-center">
+        <div class="col-12 text-center" data-aos="zoom-in fade-up" data-aos-delay="500" data-aos-duration="500">
           <h1>
             COURSES
           </h1>
@@ -344,7 +364,7 @@
     <!--SIP-->
     <section id="sip" class="container-fluid">
       <div class="row">
-        <div class="col-12 text-center mt-5">
+        <div class="col-12 text-center mt-5" data-aos="zoom-in fade-up" data-aos-delay="500" data-aos-duration="500">
           <h1 class="text-dark">STARTUP INTERNSHIP<br />PROGRAM</h1>
           <p class="text-dark">
             Startup Internship Program is a nascent initiative of E-Cell NITK.
@@ -382,7 +402,7 @@
     <section id="events" class="col-12 d-none d-sm-block">
       <div class="row">
         <div class="col-4 events_1">
-          <div class="carousel-caption">
+          <div class="carousel-caption" data-aos="zoom-in fade-up" data-aos-delay="500" data-aos-duration="500">
             <h2>Enterprise</h2>
             <p>
               Enterprise is one of our primary events and is designed to provide
@@ -394,7 +414,7 @@
             </p>
           </div>
         </div>
-        <div class="col-4 events_2">
+        <div class="col-4 events_2" data-aos="zoom-in fade-up" data-aos-delay="500" data-aos-duration="500">
           <h1 class="text-center text-dark mt-5">EVENTS</h1>
           <div class="carousel-caption">
             <h2 class="text-dark">E-Summit</h2>
@@ -409,7 +429,7 @@
           </div>
         </div>
         <div class="col-4 events_3">
-          <div class="carousel-caption">
+          <div class="carousel-caption" data-aos="zoom-in fade-up" data-aos-delay="500" data-aos-duration="500">
             <h2>Hult Prize</h2>
             <p>
               The Hult prize has been named The “Nobel Prize for students” from media sources worldwide. With a $1million global startup prize as it’s anchor activity, the Hult Prize has brought impact focused programs, events and trainings to over a million students globally, creating a pathway for youths everywhere to take action to build a better world.          </div>
@@ -486,11 +506,11 @@
 
     
     <section id="team" class="container-fluid">
-      <div class="row">
-        <h1 class="col-12 text-center text-dark mt-4 mb-2 my-sm-5">
+      <div class="row" >
+        <h1 class="col-12 text-center text-dark mt-4 mb-2 my-sm-5" data-aos="zoom-in fade-up" data-aos-delay="500" data-aos-duration="500">
           THE TEAM
         </h1>
-        <div class="col-12 col-sm-6 mt-sm-3">
+        <div class="col-12 col-sm-6 mt-sm-3" data-aos="zoom-in fade-up" data-aos-delay="1000" data-aos-duration="500">
           <div class="row">
             <div class="col-6 text-center">
               <img
@@ -524,7 +544,7 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-sm-6 mt-sm-3">
+        <div class="col-12 col-sm-6 mt-sm-3" data-aos="zoom-in fade-up" data-aos-delay="1000" data-aos-duration="500">
           <div class="row">
             <div class="col-6 text-center">
               <img
@@ -558,7 +578,7 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-sm-6 mt-sm-3">
+        <div class="col-12 col-sm-6 mt-sm-3" data-aos="zoom-in fade-up" data-aos-delay="1000" data-aos-duration="500">
           <div class="row">
             <div class="col-6 text-center">
               <img
@@ -592,7 +612,7 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-sm-6 mt-sm-3">
+        <div class="col-12 col-sm-6 mt-sm-3" data-aos="zoom-in fade-up" data-aos-delay="1000" data-aos-duration="500">
           <div class="row">
             <div class="col-6 text-center">
               <img
@@ -626,10 +646,7 @@
             </div>
           </div>
         </div>
-          </div>
-        </div>
-
-        <div class="col-12 text-center mb-4 mb-sm-0">
+        <div class="col-12 text-center mb-4 mb-sm-0" data-aos="zoom-in fade-up" data-aos-delay="1000" data-aos-duration="500">
           <a href="./team.html" target="_blank">
             <button
               class="button-main text-dark my-sm-3 hvr-grow"
@@ -640,6 +657,8 @@
           >
         </div>
       </div>
+
+        
     </section>
     <section class="col-12">
       <div></div>
@@ -742,7 +761,10 @@
       </footer>
     </section>
     <!--scripts-->
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
       integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"

@@ -34,7 +34,8 @@ h3,
 h4,
 h5,
 h6,
-button {
+button,
+span {
   font-family: "Archivo", sans-serif;
   color: white;
 }
@@ -74,6 +75,9 @@ h1 {
   font-size: 6vw;
   font-weight: 600;
   line-height: 1.2;
+}
+span {
+  font-size: 2vw;
 }
 /*main stylesheet*/
 
@@ -509,6 +513,9 @@ p {
   }
   .text-center-mobile {
     text-align: center;
+  }
+  span {
+    font-size: 4vw;
   }
   #main {
     background-image: url("../images/background/background_main_mob.jpeg");
