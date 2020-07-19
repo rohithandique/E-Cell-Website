@@ -82,7 +82,7 @@ span {
 /*main stylesheet*/
 
 #main {
-  background-image: url("../images/background/background_main.jpeg");
+  background-image: url("../images/background/background_main.jpg");
   background-repeat: no-repeat;
   background-position: center 45%;
   background-size: cover;
@@ -225,7 +225,7 @@ p {
 
 /*CSS for courses*/
 #courses {
-  background-image: url("../images/background/background_courses.jpeg");
+  background-image: url("../images/background/background_courses.jpg");
   background-repeat: no-repeat;
   background-position: center 45%;
   background-size: cover;
@@ -274,7 +274,7 @@ p {
   margin-bottom: 20%;
 }
 #team {
-  background-image: url("../images/background/background_team.jpeg");
+  background-image: url("../images/background/background_team.jpg");
   background-repeat: no-repeat;
   background-position: center 35%;
   background-size: cover;
@@ -383,7 +383,7 @@ p {
   height: 100%;
 }
 #team_description {
-  background-image: url("../images/background/background_team.jpeg");
+  background-image: url("../images/background/background_team.jpg");
   background-repeat: no-repeat;
   background-position: center 60%;
   background-size: cover;
@@ -518,7 +518,7 @@ p {
     font-size: 4vw;
   }
   #main {
-    background-image: url("../images/background/background_main_mob.jpeg");
+    background-image: url("../images/background/background_main_mob.jpg");
     background-repeat: no-repeat;
     background-position: center 45%;
     background-size: cover;
