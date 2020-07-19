@@ -775,6 +775,11 @@ p {
 }
 /*height fixes for small phones and some iphones*/
 @media only screen and (max-height: 575px) {
+  .sidenav {
+    height: 100vh;
+    position: fixed; /* Stay in place */
+    z-index: 100;
+  }
   #main {
     height: 100%;
   }
@@ -793,11 +798,13 @@ p {
   .events_2 {
     height: 120vh;
   }
-
   .events_3 {
     height: 120vh;
   }
   #team {
+    height: 100%;
+  }
+  #team_main {
     height: 100%;
   }
   .sip_main {
