@@ -1,5 +1,5 @@
 /*importing google fonts*/
-@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Open+Sans:wght@300;400;600");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap");
 
 /*reset*/
 /*mostly done by normalize.css*/
@@ -55,6 +55,7 @@ form {
 .carousel-caption {
   z-index: 1;
 }
+
 /*custom*/
 /*mostly elements that are used again and again*/
 .button-main {
@@ -95,10 +96,6 @@ span {
   height: auto;
 }
 
-#recruitments {
-  margin: 3% 0 1% 0;
-}
-
 nav > img {
   margin: 1% 2% 0 0;
   width: 3vw;
@@ -109,7 +106,7 @@ nav > img {
   width: 40%;
   height: auto;
   position: relative;
-  top: 65vh;
+  top: 50vh;
   margin: 5% 0 0 0;
   display: block;
 }
@@ -514,6 +511,7 @@ p {
   .text-center-mobile {
     text-align: center;
   }
+
   span {
     font-size: 4vw;
   }
@@ -602,6 +600,9 @@ p {
 
   .sidenav img {
     width: 15%;
+  }
+  #main-link p {
+    width: 80%;
   }
   #about .text-center h1 {
     margin: 10% 0 0 0;
