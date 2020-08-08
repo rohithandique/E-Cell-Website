@@ -1,9 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-172966898-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-172966898-1");
+    </script>
+
     <!--title & description-->
     <title>E-Cell | NITK Surathkal</title>
-    <meta name="description" content="" />
+    <meta
+      name="description"
+      content="The Entrepreneurship Cell of NITK Surathkal aims to create, foster
+    and promote the spirit of entrepreneurship by helping young and
+    talented minds pursue the path of innovation and set up their own
+    entrepreneurial ventures. We strongly believe in nurturing critical
+    thinking and business acumen by conducting workshops, speaker
+    sessions, innovative games and competitions as well as providing
+    student entrepreneurs with access to resources such as seed funding,
+    mentoring, consultancy and networking."
+    />
+    <meta property="og:title" content="E-Cell | NITK Surathkal" />
+    <meta property="og:url" content="http://www.ecell.nitk.ac.in" />
+    <meta
+      property="og:description"
+      content="The Entrepreneurship Cell of NITK Surathkal aims to create, foster
+    and promote the spirit of entrepreneurship by helping young and
+    talented minds pursue the path of innovation and set up their own
+    entrepreneurial ventures. We strongly believe in nurturing critical
+    thinking and business acumen by conducting workshops, speaker
+    sessions, innovative games and competitions as well as providing
+    student entrepreneurs with access to resources such as seed funding,
+    mentoring, consultancy and networking."
+    />
+    <meta property="og:site_name" content="E-Cell | NITK Surathkal" />
     <link
       rel="icon"
       href="./src/images/favicon.ico"
@@ -26,8 +65,11 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
-    <!--replace this with hover-min.css before deployment-->
-    <link rel="stylesheet" href="./src/css/hover.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
+    />
     <link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/" />
     <link rel="stylesheet" href="./src/css/styles.css" />
     <script
@@ -36,7 +78,6 @@
       crossorigin="anonymous"
     ></script>
   </head>
-
   <body>
     <!--main-->
     <section class="container-fluid">
@@ -90,14 +131,13 @@
                 href="./blog.html"
                 >Blogs</a
               >
-              <!--
               <a
                 onclick="closeNav()"
                 class="text-left hvr-grow"
                 target="_blank"
                 href="./podcasts.html"
                 >Podcasts</a
-              >-->
+              >
               <a
                 onclick="closeNav()"
                 class="text-left hvr-grow d-none d-sm-block"
@@ -150,18 +190,35 @@
                   src="./src/images/logo_email.svg"
                   alt="gmail"
               /></a>
+              <a href="spotify:show:4RATgTeZxdivKXPgOtVsc4" class="text-left">
+                <img
+                  class="hvr-grow"
+                  src="./src/images/logo_spotify_white.svg"
+                  alt="gmail"
+                />
+              </a>
+              <a
+                href="https://www.youtube.com/channel/UC2q18pRs7UwoLmmJMRTT-dQ"
+                class="text-left"
+              >
+                <img
+                  class="hvr-grow"
+                  src="./src/images/logo_youtube_white.svg"
+                  alt="gmail"
+                />
+              </a>
             </div>
           </nav>
         </header>
 
         <!--social media icons-->
-        <div id="social" class="d-none d-sm-block col-sm-1">
-          <a href="https://www.facebook.com/NitkEcell/" target="_blank"
-            ><img
-              class="hvr-grow"
-              src="./src/images/logo_facebook.svg"
-              alt="facebook"
-          /></a>
+        <div
+          id="social"
+          class="d-none d-sm-block col-sm-1"
+          data-aos="zoom-in fade-up"
+          data-aos-delay="1000"
+          data-aos-duration="1000"
+        >
           <a
             href="https://www.instagram.com/ecellnitksurathkal/?hl=en"
             target="_blank"
@@ -169,6 +226,12 @@
               class="hvr-grow"
               src="./src/images/logo_instagram.svg"
               alt="instagram"
+          /></a>
+          <a href="https://www.facebook.com/NitkEcell/" target="_blank"
+            ><img
+              class="hvr-grow"
+              src="./src/images/logo_facebook.svg"
+              alt="facebook"
           /></a>
           <a
             href="https://www.linkedin.com/company/ecellnitksurathkal/about/"
@@ -184,6 +247,20 @@
               src="./src/images/logo_email.svg"
               alt="gmail"
           /></a>
+          <a href="spotify:show:4RATgTeZxdivKXPgOtVsc4">
+            <img
+              class="hvr-grow"
+              src="./src/images/logo_spotify_white.svg"
+              alt="gmail"
+            />
+          </a>
+          <a href="https://www.youtube.com/channel/UC2q18pRs7UwoLmmJMRTT-dQ">
+            <img
+              class="hvr-grow"
+              src="./src/images/logo_youtube_white.svg"
+              alt="gmail"
+            />
+          </a>
         </div>
         <!--main info-->
         <div class="col-12 col-sm-10 text-center">
@@ -191,6 +268,9 @@
             <!--logo-->
             <div class="col-12">
               <img
+                data-aos="zoom-in fade-up"
+                data-aos-delay="1000"
+                data-aos-duration="1000"
                 id="logo_ecell"
                 src="./src/images/logo_ecell.svg"
                 alt="ecell nitk logo"
@@ -198,20 +278,58 @@
             </div>
             <!--tagline & name-->
             <div class="col-12">
-              <h3>IMAGINE. INNOVATE. ILLUMINATE</h3>
-              <h1>
+              <span
+                data-aos="zoom-in fade-up"
+                data-aos-delay="1500"
+                data-aos-duration="1000"
+                >IMAGINE.&nbsp;</span
+              >
+              <span
+                data-aos="zoom-in fade-up"
+                data-aos-delay="2000"
+                data-aos-duration="1000"
+              >
+                INNOVATE. &nbsp;</span
+              >
+              <span
+                data-aos="zoom-in fade-up"
+                data-aos-delay="2500"
+                data-aos-duration="1000"
+                >ILLUMINATE.&nbsp;</span
+              >
+              <h1
+                data-aos="zoom-in fade-up"
+                data-aos-delay="1000"
+                data-aos-duration="1000"
+              >
                 Entrepreneurship Cell
               </h1>
-              <h1>
+              <h1
+                data-aos="zoom-in fade-up"
+                data-aos-delay="1000"
+                data-aos-duration="1000"
+              >
                 NITK, Surathkal
               </h1>
             </div>
             <!--recruitments-->
-            <div id="recruitments" class="col-12 mt-5 mt-sm-5">
-              <h2>Get an internship at a startup!</h2>
-              <a href="./startup-internship-drive.html" target="_blank">
-                <button class="button-main my-sm-3 hvr-grow" type="button">
-                  APPLY NOW
+            <div
+              id="main-link"
+              class="col-12 mt-3"
+              data-aos="zoom-in fade-up"
+              data-aos-delay="3000"
+              data-aos-duration="1000"
+            >
+              <p class="my-0 mt-sm-3">
+                Check out our new Podcast Series!
+              </p>
+              <a href="./podcasts.html">
+                <button
+                  class="button-main my-sm-3 hvr-grow"
+                  type="button"
+                  style="font-size: 1vw;"
+                >
+                  LISTEN NOW
                 </button>
               </a>
             </div>
@@ -228,7 +346,12 @@
     <!--about us-->
     <section id="about" class="container-fluid">
       <div class="row">
-        <div class="col-12 text-center">
+        <div
+          class="col-12 text-center"
+          data-aos="zoom-in fade-up"
+          data-aos-delay="500"
+          data-aos-duration="500"
+        >
           <h1 class="text-dark">
             ABOUT US
           </h1>
@@ -248,6 +371,9 @@
           id="carouselExampleIndicators"
           class="carousel slide col-12"
           data-ride="carousel"
+          data-aos="zoom-in fade-up"
+          data-aos-delay="500"
+          data-aos-duration="500"
         >
           <ol class="carousel-indicators">
             <li
@@ -260,27 +386,27 @@
           </ol>
           <div class="carousel-inner text-center">
             <div class="carousel-item active">
-              <p  style="color: lightslategray;">
+              <p style="color: lightslategray;">
                 “E-Cell NITK aims to connect the creative minds with the right
                 resources and to provide them with a platform to unlock their
-                true potential.” </br>- Yash, Convenor
+                true potential.” <br />- Yash, Convenor
               </p>
             </div>
             <div class="carousel-item">
-              <p  style="color: lightslategray;">
+              <p style="color: lightslategray;">
                 “At E-Cell NITK, we hope to provide abode to the students with a
                 strong desire for business and entrepreneurship to hone their
-                skills and successfully achieve their dreams.” </br>- Archita,
+                skills and successfully achieve their dreams.” <br />- Archita,
                 President
               </p>
             </div>
             <div class="carousel-item">
-              <p  style="color: lightslategray;">
+              <p style="color: lightslategray;">
                 “A vision is something you see and others don't. Don't worry
                 about being successful but work towards being significant. Do
                 what you love and you will never work a day in your life.
-                Entrepreneurshipis about living your dreams.” </br>- Dr. Ritanjali
-                Majhi, Faculty Advisor
+                Entrepreneurshipis about living your dreams.” <br />- Dr.
+                Ritanjali Majhi, Faculty Advisor
               </p>
             </div>
           </div>
@@ -305,9 +431,14 @@
         </div>
       </div>
     </section>
-    <section id="courses" class="container-fluid">
+    <section id="courses" class="container-fluid pt-5 pt-sm-none">
       <div class="row">
-        <div class="col-12 text-center">
+        <div
+          class="col-12 text-center"
+          data-aos="zoom-in fade-up"
+          data-aos-delay="500"
+          data-aos-duration="500"
+        >
           <h1>
             COURSES
           </h1>
@@ -334,8 +465,13 @@
     <!--SIP-->
     <section id="sip" class="container-fluid">
       <div class="row">
-        <div class="col-12 text-center mt-5">
-          <h1 class="text-dark">STARTUP INTERNSHIP<br />PROGRAMME</h1>
+        <div
+          class="col-12 text-center mt-5"
+          data-aos="zoom-in fade-up"
+          data-aos-delay="500"
+          data-aos-duration="500"
+        >
+          <h1 class="text-dark">STARTUP INTERNSHIP<br />PROGRAM</h1>
           <p class="text-dark">
             Startup Internship Program is a nascent initiative of E-Cell NITK.
             Through SIP, we aim to provide exposure to start-up culture by
@@ -366,14 +502,18 @@
         </div>
       </div>
     </section>
-    <!--Courses-->
 
     <!--2 sections for events. 1 for mobile, 1 for rest-->
     <!--events desktop-->
     <section id="events" class="col-12 d-none d-sm-block">
       <div class="row">
         <div class="col-4 events_1">
-          <div class="carousel-caption">
+          <div
+            class="carousel-caption"
+            data-aos="zoom-in fade-up"
+            data-aos-delay="500"
+            data-aos-duration="500"
+          >
             <h2>Enterprise</h2>
             <p>
               Enterprise is one of our primary events and is designed to provide
@@ -385,7 +525,12 @@
             </p>
           </div>
         </div>
-        <div class="col-4 events_2">
+        <div
+          class="col-4 events_2"
+          data-aos="zoom-in fade-up"
+          data-aos-delay="500"
+          data-aos-duration="500"
+        >
           <h1 class="text-center text-dark mt-5">EVENTS</h1>
           <div class="carousel-caption">
             <h2 class="text-dark">E-Summit</h2>
@@ -400,10 +545,22 @@
           </div>
         </div>
         <div class="col-4 events_3">
-          <div class="carousel-caption">
+          <div
+            class="carousel-caption"
+            data-aos="zoom-in fade-up"
+            data-aos-delay="500"
+            data-aos-duration="500"
+          >
             <h2>Hult Prize</h2>
             <p>
-              The Hult prize has been named The “Nobel Prize for students” from media sources worldwide. With a $1million global startup prize as it’s anchor activity, the Hult Prize has brought impact focused programs, events and trainings to over a million students globally, creating a pathway for youths everywhere to take action to build a better world.          </div>
+              The Hult prize has been named The “Nobel Prize for students” from
+              media sources worldwide. With a $1million global startup prize as
+              it’s anchor activity, the Hult Prize has brought impact focused
+              programs, events and trainings to over a million students
+              globally, creating a pathway for youths everywhere to take action
+              to build a better world.
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -430,17 +587,16 @@
             </div>
           </div>
           <div class="carousel-item events_2">
-            <h1 class="text-center text-dark my-5">EVENTS</h1>
+            <h1 class="text-center my-5">EVENTS</h1>
             <div class="carousel-caption pt-5">
-              <h1 class="text-dark">E-Summit</h1>
-              <p class="text-dark">
+              <h1>E-Summit</h1>
+              <p>
                 The annual Entrepreneurship Summit is the flagship event of
                 E-Cell NITK. Essentially a celebration of the entrepreneurial
                 spirit, it is a multi-faceted event that encompasses talks by
                 eminent entrepreneurs, business workshops, a case study
-                competition and a pitching event where startups
-                are given the chance to interact and connect with investors and
-                mentors.
+                competition and a pitching event where startups are given the
+                chance to interact and connect with investors and mentors.
               </p>
             </div>
           </div>
@@ -449,7 +605,12 @@
             <div class="carousel-caption pt-5">
               <h1>Hult Prize</h1>
               <p>
-                The Hult prize has been named The “Nobel Prize for students” from media sources worldwide. With a $1million global startup prize as it’s anchor activity, the Hult Prize has brought impact focused programs, events and trainings to over a million students globally, creating a pathway for youths everywhere to take action to build a better world.
+                The Hult prize has been named The “Nobel Prize for students”
+                from media sources worldwide. With a $1million global startup
+                prize as it’s anchor activity, the Hult Prize has brought impact
+                focused programs, events and trainings to over a million
+                students globally, creating a pathway for youths everywhere to
+                take action to build a better world.
               </p>
             </div>
           </div>
@@ -475,13 +636,22 @@
       </div>
     </div>
 
-    
     <section id="team" class="container-fluid">
       <div class="row">
-        <h1 class="col-12 text-center text-dark mt-4 mb-2 my-sm-5">
+        <h1
+          class="col-12 text-center text-dark mt-4 mb-2 my-sm-5"
+          data-aos="zoom-in fade-up"
+          data-aos-delay="500"
+          data-aos-duration="500"
+        >
           THE TEAM
         </h1>
-        <div class="col-12 col-sm-6 mt-sm-3">
+        <div
+          class="col-12 col-sm-6 mt-sm-3"
+          data-aos="zoom-in fade-up"
+          data-aos-delay="1000"
+          data-aos-duration="500"
+        >
           <div class="row">
             <div class="col-6 text-center">
               <img
@@ -515,7 +685,12 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-sm-6 mt-sm-3">
+        <div
+          class="col-12 col-sm-6 mt-sm-3"
+          data-aos="zoom-in fade-up"
+          data-aos-delay="1000"
+          data-aos-duration="500"
+        >
           <div class="row">
             <div class="col-6 text-center">
               <img
@@ -549,7 +724,12 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-sm-6 mt-sm-3">
+        <div
+          class="col-12 col-sm-6 mt-sm-3"
+          data-aos="zoom-in fade-up"
+          data-aos-delay="1000"
+          data-aos-duration="500"
+        >
           <div class="row">
             <div class="col-6 text-center">
               <img
@@ -583,7 +763,12 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-sm-6 mt-sm-3">
+        <div
+          class="col-12 col-sm-6 mt-sm-3"
+          data-aos="zoom-in fade-up"
+          data-aos-delay="1000"
+          data-aos-duration="500"
+        >
           <div class="row">
             <div class="col-6 text-center">
               <img
@@ -607,7 +792,7 @@
                 class="rounded-circle"
               />
               <h3 class="text-dark">Priyesh Gandhi</h3>
-              <h4 id="pos" class="text-dark">Competitions Head</h4>
+              <h4 id="pos" class="text-dark">Business Head</h4>
               <a href="http://linkedin.com/in/priyesh-v-gandhi-236612169"
                 ><img src="./src/images/logo_linkedin_dark.svg" alt=""
               /></a>
@@ -617,10 +802,12 @@
             </div>
           </div>
         </div>
-          </div>
-        </div>
-
-        <div class="col-12 text-center mb-4 mb-sm-0">
+        <div
+          class="col-12 text-center mb-4 mb-sm-0"
+          data-aos="zoom-in fade-up"
+          data-aos-delay="1000"
+          data-aos-duration="500"
+        >
           <a href="./team.html" target="_blank">
             <button
               class="button-main text-dark my-sm-3 hvr-grow"
@@ -651,10 +838,9 @@
           </div>
           <div id="footer-item1-2">
             <h3>DISCOVER</h3>
-            <!--
             <a href="./podcasts.html">
               <p>Podcasts</p>
-            </a>-->
+            </a>
             <a class="d-none d-sm-block" href="#events">
               <p>Events</p>
             </a>
@@ -708,13 +894,22 @@
           /></a>
         </div>
         <div id="footer-item3" class="text-center-mobile">
-          <h3>GET NOTIFIED</h3>
-          <h6>Be the first to know about our activities!</h6>
-          <form action="">
+          <h3>FEEDBACK</h3>
+          <h6>
+            Facing bugs or issues?
+          </h6>
+          <form
+            action="https://airform.io/rohit.handique.rh@gmail.com"
+            method="post"
+          >
             <label for="email"></label>
-            <input type="text" id="email" name="email" />
+            <input type="text" id="email" name="email" placeholder="Email" />
+            <br />
+            <label for="text"></label>
+            <input type="text" id="text" name="text" placeholder="Message" />
             <input
               id="submit"
+              name="submit"
               type="image"
               src="./src/images/icon_submit.svg"
               alt="Submit"
@@ -733,7 +928,10 @@
       </footer>
     </section>
     <!--scripts-->
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
       integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"

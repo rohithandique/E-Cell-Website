@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-172966898-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-172966898-1");
+    </script>
+
     <!--title & description-->
     <title>E-Cell NITK | Blogs</title>
     <meta name="description" content="" />
@@ -27,8 +42,10 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
-    <!--replace this with hover-min.css before deployment-->
-    <link rel="stylesheet" href="./src/css/hover.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
+    />
     <link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/" />
     <link rel="stylesheet" href="./src/css/styles.css" />
     <script
@@ -95,13 +112,12 @@
                 href="./blog.html"
                 >Blogs</a
               >
-              <!--
               <a
                 onclick="closeNav()"
                 class="text-left hvr-grow"
                 href="./podcasts.html"
                 >Podcasts</a
-              >-->
+              >
               <a
                 onclick="closeNav()"
                 class="text-left hvr-grow d-none d-sm-block"
@@ -157,154 +173,12 @@
           </nav>
         </header>
         <!--first section-->
-        <div class="col-12 text-center">
+        <div class="col-12 mb-5 text-center">
           <h1>
             BLOGS
           </h1>
         </div>
         <!--Carousel-->
-        <div class="col-1"></div>
-        <div
-          id="carouselExample"
-          class="carousel slide col-10 mb-5"
-          data-ride="carousel"
-        >
-          <div class="carousel-inner text-center">
-            <div class="carousel-item active">
-              <div class="card bg-secondary">
-                <div class="row no-gutters">
-                  <div class="col-md-4">
-                    <img
-                      src="https://pulsenitk.in/wp-content/uploads/2020/04/aa-1.png"
-                      class="card-img"
-                      alt="Blog"
-                    />
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body" style="background-color: white;">
-                      <h5 class="card-title">
-                        An Overview of the Entrepreneurship Cell
-                      </h5>
-                      <p class="card-text">
-                        "Entrepreneurship isn’t just a label, it’s a lifestyle"
-                        – Richard Branson, Founder, Virgin Group
-                      </p>
-                      <a
-                        href="https://pulsenitk.in/2020/04/28/a-glimpse-of-entrepreneurship-cell/"
-                        target="_blank"
-                        ><button
-                          class="button-main text-dark my-sm-3 hvr-grow"
-                          style="border: 2px solid black;"
-                        >
-                          Read More
-                        </button>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--
-            <div class="carousel-item">
-              <div class="card bg-secondary">
-                <div class="row no-gutters">
-                  <div class="col-md-4">
-                    <img
-                      src="./src/images/extra.jpeg"
-                      class="card-img"
-                      alt="Blog"
-                    />
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Blog title</h5>
-                      <p class="card-text">
-                        This is a wider card with supporting text below as a
-                        natural lead-in to additional content. This content is a
-                        little bit longer.
-                      </p>
-                      <button class="button-main my-sm-3 hvr-grow">
-                        Read More
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="card bg-secondary">
-                <div class="row no-gutters">
-                  <div class="col-md-4">
-                    <img
-                      src="./src/images/extra.jpeg"
-                      class="card-img"
-                      alt="Blog"
-                    />
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Blog title</h5>
-                      <p class="card-text">
-                        This is a wider card with supporting text below as a
-                        natural lead-in to additional content. This content is a
-                        little bit longer.
-                      </p>
-                      <button class="button-main my-sm-3 hvr-grow">
-                        Read More
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="card bg-secondary">
-                <div class="row no-gutters">
-                  <div class="col-md-4">
-                    <img
-                      src="./src/images/extra.jpeg"
-                      class="card-img"
-                      alt="Blog"
-                    />
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Blog title</h5>
-                      <p class="card-text">
-                        This is a wider card with supporting text below as a
-                        natural lead-in to additional content. This content is a
-                        little bit longer.
-                      </p>
-                      <button class="button-main my-sm-3 hvr-grow">
-                        Read More
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            -->
-          </div>
-          <a
-            class="carousel-control-prev"
-            href="#carouselExample"
-            role="button"
-            data-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a
-            class="carousel-control-next"
-            href="#carouselExample"
-            role="button"
-            data-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-        <div class="col-1"></div>
       </div>
     </section>
     <!--scripts-->
@@ -317,6 +191,7 @@
               src="https://pulsenitk.in/wp-content/uploads/2020/04/aa-1.png"
               class="card-img-top"
               alt="..."
+              style="height: 250px;"
             />
             <div class="card-body">
               <h5 class="card-title text-dark">
@@ -335,20 +210,31 @@
             </div>
           </div>
         </div>
-        <!--
+
         <div class="col-12 col-sm-6 col-lg-3 text-center">
           <div class="card text-center">
-            <img src="./src/images/extra.jpeg" class="card-img-top" alt="..." />
+            <img
+              src="https://pulsenitk.in/wp-content/uploads/2020/07/ECell-Article-Levelled-up.jpeg"
+              class="card-img-top"
+              alt="..."
+              style="height: 250px;"
+            />
             <div class="card-body">
-              <h5 class="card-title text-dark">Card title</h5>
+              <h5 class="card-title text-dark">E-Cell Levelled Up</h5>
               <p class="card-text text-dark">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                “An entrepreneurial spirit might be within but an
+                entrepreneurial community has to be built.” – Yash Harlalka
+                (ECell Con 2020-21)
               </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <a
+                href="https://pulsenitk.in/2020/07/25/e-cell-levelled-up/"
+                class="btn btn-primary"
+                >Read More</a
+              >
             </div>
           </div>
         </div>
+        <!--
         <div class="col-12 col-sm-6 col-lg-3 text-center">
           <div class="card text-center">
             <img src="./src/images/extra.jpeg" class="card-img-top" alt="..." />
@@ -396,10 +282,9 @@
           </div>
           <div id="footer-item1-2">
             <h3>DISCOVER</h3>
-            <!--
             <a href="./podcasts.html">
               <p>Podcasts</p>
-            </a>-->
+            </a>
             <a class="d-none d-sm-block" href="./index.html#events">
               <p>Events</p>
             </a>
@@ -453,13 +338,20 @@
           /></a>
         </div>
         <div id="footer-item3" class="text-center-mobile">
-          <h3>GET NOTIFIED</h3>
-          <h6>Be the first to know about our activities!</h6>
-          <form action="">
+          <h3>FEEDBACK</h3>
+          <h6>Facing bugs or issues?<br /></h6>
+          <form
+            action="https://airform.io/rohit.handique.rh@gmail.com"
+            method="post"
+          >
             <label for="email"></label>
-            <input type="text" id="email" name="email" />
+            <input type="text" id="email" name="email" placeholder="Email" />
+            <br />
+            <label for="text"></label>
+            <input type="text" id="text" name="text" placeholder="Message" />
             <input
               id="submit"
+              name="submit"
               type="image"
               src="./src/images/icon_submit.svg"
               alt="Submit"

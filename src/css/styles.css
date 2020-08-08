@@ -1,5 +1,5 @@
 /*importing google fonts*/
-@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Open+Sans:wght@300;400;600");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap");
 
 /*reset*/
 /*mostly done by normalize.css*/
@@ -34,7 +34,8 @@ h3,
 h4,
 h5,
 h6,
-button {
+button,
+span {
   font-family: "Archivo", sans-serif;
   color: white;
 }
@@ -54,6 +55,7 @@ form {
 .carousel-caption {
   z-index: 1;
 }
+
 /*custom*/
 /*mostly elements that are used again and again*/
 .button-main {
@@ -75,10 +77,13 @@ h1 {
   font-weight: 600;
   line-height: 1.2;
 }
+span {
+  font-size: 2vw;
+}
 /*main stylesheet*/
 
 #main {
-  background-image: url("../images/background_main.jpeg");
+  background-image: url("../images/background/background_main.jpg");
   background-repeat: no-repeat;
   background-position: center 45%;
   background-size: cover;
@@ -91,10 +96,6 @@ h1 {
   height: auto;
 }
 
-#recruitments {
-  margin: 3% 0 1% 0;
-}
-
 nav > img {
   margin: 1% 2% 0 0;
   width: 3vw;
@@ -105,7 +106,7 @@ nav > img {
   width: 40%;
   height: auto;
   position: relative;
-  top: 65vh;
+  top: 50vh;
   margin: 5% 0 0 0;
   display: block;
 }
@@ -184,7 +185,7 @@ nav > img {
 }
 /*CSS for about*/
 #about {
-  background-image: url("../images/background_about.jpg");
+  background-image: url("../images/background/background_about.jpg");
   background-repeat: no-repeat;
   background-position: center 45%;
   background-size: cover;
@@ -203,7 +204,7 @@ nav > img {
 }
 /*CSS for SIP*/
 #sip {
-  background-image: url("../images/background_sip.jpg");
+  background-image: url("../images/background/background_sip.jpg");
   background-repeat: no-repeat;
   background-position: center 45%;
   background-size: cover;
@@ -221,7 +222,7 @@ p {
 
 /*CSS for courses*/
 #courses {
-  background-image: url("../images/background_courses.jpg");
+  background-image: url("../images/background/background_courses.jpg");
   background-repeat: no-repeat;
   background-position: center 45%;
   background-size: cover;
@@ -241,7 +242,7 @@ p {
   overflow-x: hidden;
 }
 .events_1 {
-  background-image: url("../images/background_events_1.jpeg");
+  background-image: url("../images/background/background_events_1.jpg");
   background-repeat: no-repeat;
   background-position: center 45%;
   background-size: cover;
@@ -259,7 +260,7 @@ p {
 }
 
 .events_3 {
-  background-image: url("../images/background_events_3.jpeg");
+  background-image: url("../images/background/background_events_3.jpg");
   background-repeat: no-repeat;
   background-position: center 45%;
   background-size: cover;
@@ -270,7 +271,7 @@ p {
   margin-bottom: 20%;
 }
 #team {
-  background-image: url("../images/background_team.jpeg");
+  background-image: url("../images/background/background_team.jpg");
   background-repeat: no-repeat;
   background-position: center 35%;
   background-size: cover;
@@ -357,7 +358,7 @@ p {
 /*other pages*/
 /*recruitment page*/
 #recruitments_main {
-  background-image: url("../images/background_recruitments_main.jpg");
+  background-image: url("../images/background/background_recruitments_main.jpg");
   background-repeat: no-repeat;
   background-position: center 45%;
   background-size: cover;
@@ -371,7 +372,7 @@ p {
   width: 10vw;
 }
 #team_main {
-  background-image: url("../images/background_team_main.jpeg");
+  background-image: url("../images/background/background_team_main.jpeg");
   background-repeat: no-repeat;
   background-position: center 60%;
   background-size: cover;
@@ -379,7 +380,7 @@ p {
   height: 100%;
 }
 #team_description {
-  background-image: url("../images/background_team.jpeg");
+  background-image: url("../images/background/background_team.jpg");
   background-repeat: no-repeat;
   background-position: center 60%;
   background-size: cover;
@@ -394,7 +395,7 @@ p {
   margin: 0% 0 15% 0;
 }
 .sip_main {
-  background-image: url("../images/background_sip_main.jpg");
+  background-image: url("../images/background/background_sip_main.jpg");
   background-repeat: no-repeat;
   background-position: center 45%;
   background-size: cover;
@@ -408,6 +409,9 @@ p {
 .sip_main p {
   margin: 2% auto;
 }
+.sip_main .text-center .text-left {
+  font-size: 1vw;
+}
 .sip_main .text-center p,
 #blog p,
 .card-text,
@@ -418,7 +422,7 @@ p {
 }
 /*Css for Blogs*/
 #blog {
-  background-image: url("../images/background_blogs.jpg");
+  background-image: url("../images/background/background_blogs.jpg");
   background-repeat: no-repeat;
   background-position: center 45%;
   background-size: cover;
@@ -441,7 +445,7 @@ p {
   margin-top: 5%;
 }
 #podcast_main {
-  background-image: url("../images/background_podcast.jpg");
+  background-image: url("../images/background/background_podcast.jpg");
   background-repeat: no-repeat;
   background-position: center 45%;
   background-size: cover;
@@ -449,7 +453,7 @@ p {
   height: 100%;
 }
 #course_1_main {
-  background-image: url("../images/background_courses.jpg");
+  background-image: url("../images/background/background_courses.jpg");
   background-repeat: no-repeat;
   background-position: center 45%;
   background-size: cover;
@@ -457,7 +461,7 @@ p {
   height: 100%;
 }
 #courses_main {
-  background-image: url("../images/background_courses.jpg");
+  background-image: url("../images/background/background_courses.jpg");
   background-repeat: no-repeat;
   background-position: center 45%;
   background-size: cover;
@@ -514,8 +518,12 @@ p {
   .text-center-mobile {
     text-align: center;
   }
+
+  span {
+    font-size: 4vw;
+  }
   #main {
-    background-image: url("../images/background_main_mob.jpeg");
+    background-image: url("../images/background/background_main_mob.jpg");
     background-repeat: no-repeat;
     background-position: center 45%;
     background-size: cover;
@@ -600,6 +608,9 @@ p {
   .sidenav img {
     width: 15%;
   }
+  #main-link p {
+    width: 80%;
+  }
   #about .text-center h1 {
     margin: 10% 0 0 0;
     font-size: 8vw;
@@ -627,7 +638,12 @@ p {
   #sip .text-center p {
     width: 80%;
   }
-
+  #sip {
+    height: 100vh;
+  }
+  #courses {
+    height: 100vh;
+  }
   #courses .text-center p {
     width: 80%;
   }
@@ -713,22 +729,28 @@ p {
   #blog,
   #podcast_main,
   .sip_main,
-  #sip,
-  #courses,
   #team,
   #events-mob {
     height: 100%;
   }
-
+  #blog_description .card p {
+    font-size: 4vw;
+  }
   #events-mob h1,
   #events-mob p {
     margin: 5% auto;
+  }
+  .events_2 {
+    background-image: url("../images/background/background_events_2.jpg");
   }
   .sip_main #header {
     margin-left: 3.5%;
   }
   .sip_main .text-center h1 {
     width: 80%;
+  }
+  .sip_main .text-center .text-left {
+    font-size: 3vw;
   }
   #course_container {
     display: grid;
@@ -759,55 +781,41 @@ p {
     grid-area: c6;
   }
 }
-
+/*height fixes for small phones and some iphones*/
 @media only screen and (max-height: 575px) {
+  .sidenav {
+    height: 100vh;
+    position: fixed; /* Stay in place */
+    z-index: 100;
+  }
   #main {
-    background-image: url("../images/background_main.jpeg");
-    background-repeat: no-repeat;
-    background-position: center 45%;
-    background-size: cover;
-    background-attachment: scroll;
     height: 100%;
   }
   #about {
-    background-image: url("../images/background_about.jpg");
-    background-repeat: no-repeat;
-    background-position: center 45%;
-    background-size: cover;
-    background-attachment: scroll;
+    height: 100%;
+  }
+  #sip {
+    height: 100%;
+  }
+  #courses {
     height: 100%;
   }
   .events_1 {
-    background-image: url("../images/background_events_1.jpeg");
-    background-repeat: no-repeat;
-    background-position: center 45%;
-    background-size: cover;
-    background-attachment: scroll;
     height: 120vh;
   }
   .events_2 {
-    background-color: #ffffff;
-    background-repeat: no-repeat;
-    background-position: center 45%;
-    background-size: cover;
-    background-attachment: scroll;
     height: 120vh;
   }
-
   .events_3 {
-    background-image: url("../images/background_events_3.jpeg");
-    background-repeat: no-repeat;
-    background-position: center 45%;
-    background-size: cover;
-    background-attachment: scroll;
     height: 120vh;
   }
   #team {
-    background-image: url("../images/background_team.jpeg");
-    background-repeat: no-repeat;
-    background-position: center 35%;
-    background-size: cover;
-    background-attachment: scroll;
+    height: 100%;
+  }
+  #team_main {
+    height: 100%;
+  }
+  .sip_main {
     height: 100%;
   }
 }
