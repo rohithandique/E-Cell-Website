@@ -485,7 +485,14 @@ p {
     "c1 c2"
     "c4 c3"
     "c5 c6"
-	"c8 c7";
+	"c8 c7"
+	"c9 c10"
+    "c12 c11"
+    "c13 c14"
+	"c16 c15"
+	"c17 c18"
+	"c20 c19"
+	"c21 c22";
 }
 #c1 {
   grid-area: c1;
@@ -510,6 +517,48 @@ p {
 }
 #c8{
 	grid-area: c8;
+}
+#c9 {
+  grid-area: c9;
+}
+#c10 {
+  grid-area: c10;
+}
+#c11 {
+  grid-area: c11;
+}
+#c12 {
+  grid-area: c12;
+}
+#c13 {
+  grid-area: c13;
+}
+#c14{
+  grid-area: c14;
+}
+#c15 {
+  grid-area: c15;
+}
+#c16 {
+  grid-area: c16;
+}
+#c17 {
+  grid-area: c17;
+}
+#c18 {
+  grid-area: c18;
+}
+#c19 {
+  grid-area: c19;
+}
+#c20 {
+  grid-area: c20;
+}
+#c21 {
+  grid-area: c21;
+}
+#c22 {
+  grid-area: c22;
 }
 @media only screen and (max-width: 575px) {
   * {
