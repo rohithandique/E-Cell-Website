@@ -909,6 +909,10 @@ p {
 }
 /*height fixes for small phones and some iphones*/
 @media only screen and (max-height: 575px) {
+  #nav-logo {
+    width: 15%;
+    height: auto;
+  }
   .sidenav {
     height: 100vh;
     position: fixed; /* Stay in place */
