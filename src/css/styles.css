@@ -358,7 +358,7 @@ p {
 /*other pages*/
 /*recruitment page*/
 #recruitments_main {
-  background-image: url("../images/background/background_recruitments_main.jpg");
+  background-image: url("../images/background/background_team_main.jpeg");
   background-repeat: no-repeat;
   background-position: center 45%;
   background-size: cover;
@@ -559,6 +559,35 @@ p {
 }
 #c22 {
   grid-area: c22;
+}
+#h-logo {
+  padding: 0 0 5% 0%;
+}
+#h-logo img {
+  width: 4vw;
+  height: auto;
+}
+#rec-1 {
+  background-image: url("../images/1.png");
+  background-repeat: no-repeat;
+  background-position: center 45%;
+  background-size: contain;
+  background-attachment: scroll;
+  height: 50vh;
+}
+#rec-3 {
+  background-image: url("../images/2.png");
+  background-repeat: no-repeat;
+  background-position: center 45%;
+  background-size: contain;
+  background-attachment: scroll;
+  height: 50vh;
+}
+#rec-2,
+#rec-4 {
+  border: 2px solid white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 50px 1px lightgrey;
 }
 @media only screen and (max-width: 575px) {
   * {
@@ -848,6 +877,34 @@ p {
   #courses_description .card p {
     font-weight: 400;
     font-size: 4vw;
+  }
+  #h-logo {
+    padding: 0 0 20% 0%;
+  }
+  #h-logo img {
+    width: 10vw;
+    height: auto;
+  }
+  #rec-1 {
+    background-image: url("../images/1.png");
+    background-repeat: no-repeat;
+    background-position: center 45%;
+    background-size: 70vw;
+    background-attachment: scroll;
+  }
+  #rec-3 {
+    background-image: url("../images/2.png");
+    background-repeat: no-repeat;
+    background-position: center 45%;
+    background-size: 80vw;
+    background-attachment: scroll;
+  }
+  #rec-2,
+  #rec-4 {
+    border: 2px solid white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 50px 1px lightgrey;
+    margin-right: 50%;
   }
 }
 /*height fixes for small phones and some iphones*/
