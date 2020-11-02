@@ -589,6 +589,278 @@ p {
   border-radius: 5px;
   box-shadow: 0px 0px 50px 1px lightgrey;
 }
+/*CSS for startups page*/
+
+
+
+#startups_header{
+  background-image: url("../images/background/background_sip.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  background-attachment: scroll;
+  height: 100%;
+}
+
+#startup_content
+{
+  background-image: url("../images/background/background_startup_content.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: scroll;
+  height: 100%;
+}
+
+#menu_startup {
+  width: 4%;
+  cursor: pointer;
+}
+
+#startups h1{
+
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: normal;
+  color: black;
+}
+
+#startups p{
+  font: Fira Sans;
+  
+}
+
+#startup_content p 
+{
+  color: black;
+  text-align: center;
+  position: center;
+ 
+}
+
+
+#start_row
+{
+  width: 80%;
+  margin: auto;
+}
+
+.startup_card
+{
+  background-color: white;
+  border-radius: 30px;
+  margin-top: 10%;
+  cursor: pointer;
+
+  padding-left: 10%;
+  padding-right: 10%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.116), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+
+#start_details
+{
+  padding-top: 5%;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+.overlay {
+  position: absolute;
+  border-radius: 30px;
+  top: 24%;
+  bottom: 0;
+  left: 15%;
+  right: 0;
+  height: 75%;
+  width: 70%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #ffffff;
+}
+
+.startup_card:hover .overlay {
+  opacity: 1;
+}
+
+.hover_text {
+  color: rgb(0, 0, 0);
+  font-size: 40px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* to make the card size proper in desktop*/
+@media only screen and (max-height: 760px)
+{
+      .startup_card
+    {
+      background-color: white;
+      border-radius: 30px;
+      margin-top: 10%;
+      cursor: pointer;
+
+      padding-left: 10%;
+      padding-right: 10%;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.116), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    }
+
+    #start_row
+    {
+      width: 80%;
+      margin: auto;
+    }
+
+    #start_details
+    {
+      padding-top: 5%;
+      padding-left: 3%;
+      padding-right: 3%;
+    }
+
+    .overlay {
+      position: absolute;
+      border-radius: 30px;
+      top: 24%;
+      bottom: 0;
+      left: 15%;
+      right: 0;
+      height: 75%;
+      width: 70%;
+      opacity: 0;
+      transition: .5s ease;
+      background-color: #ffffff;
+    }
+    
+    .startup_card:hover .overlay {
+      opacity: 1;
+    }
+    
+    .hover_text {
+      color: rgb(0, 0, 0);
+      font-size: 40px;
+      font-family: 'Open Sans Condensed', sans-serif;
+      font-weight: bold;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+}
+
+
+
+ 
+
+/*------------Model Working-----------*/
+
+.close {
+  color: rgb(255, 255, 255);
+  margin-left: 95%;
+  float: right;
+  padding-left: 0%;
+  padding-right: 0%;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(247, 125, 125);
+  text-decoration: none;
+  cursor: pointer;
+}
+ 
+/* Modal Body */
+.modal-body {padding: 2px 16px;}
+
+/* Modal Footer */
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #000000;
+  margin: auto;
+  padding: 0;
+  border: 1px solid rgb(0, 0, 0);
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+#modal_text
+{
+  margin-top: 0%;
+  color: #ffffff;
+  font-weight: normal;
+  font: Fira Sans;
+}
+
+#modal_image
+{
+  margin-left: 10%;
+}
+
+
+/* Add Animation */
+@keyframes animatetop {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
+}
+
+
+
+/* Shuffle.js stylings for buttons */
+
+
+
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: black;
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #6c757d;
+  border-radius: 100px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: white;
+}
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 575px) {
   * {
     overflow-x: hidden;
