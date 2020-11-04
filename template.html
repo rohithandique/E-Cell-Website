@@ -62,11 +62,14 @@
       <div class="row">
         <header class="col-12">
           <!--navigation-->
-          <nav id="header" class="text-right navbar">
+          <nav id="header_main" class="text-right navbar">
             <!--hamburger menu icon-->
-            <a href="/" class="text-left"
-              ><img id="nav-logo" src="./src/images/logo_ecell.svg" alt=""
-            /></a>
+            <!--using this empty image as a fake navbar-brand to shift hamburger menu to the right-->
+            <img
+              src="
+"
+              alt=""
+            />
             <img
               id="menu"
               onclick="openNav()"
@@ -82,48 +85,65 @@
                 onclick="closeNav()"
                 id="sidenav-name"
                 class="hvr-grow"
-                href="./index.html"
+                href="/"
                 >E-CELL NITK</a
               >
-              <a onclick="closeNav()" class="text-left hvr-grow" href="#about"
+              <a
+                onclick="closeNav()"
+                class="text-left hvr-grow"
+                href="/index.html#about"
                 >About</a
               >
               <a
                 onclick="closeNav()"
                 class="text-left hvr-grow"
-                href="./startup-internship-application.html"
-                >SIP-2020</a
-              >
-              <a onclick="closeNav()" class="text-left hvr-grow" href="#courses"
-                >Courses</a
+                href="/recruitments.html"
+                >Join Us</a
               >
               <a
                 onclick="closeNav()"
                 class="text-left hvr-grow"
+                href="/index.html#sip"
+                >SIP-2020</a
+              >
+
+              <a
+                onclick="closeNav()"
+                class="text-left hvr-grow"
+                target="_blank"
+                href="./courses.html"
+                >Learning Portal</a
+              >
+              <a
+                onclick="closeNav()"
+                class="text-left hvr-grow"
+                target="_blank"
                 href="./blog.html"
                 >Blogs</a
               >
               <a
                 onclick="closeNav()"
                 class="text-left hvr-grow"
+                target="_blank"
                 href="./podcasts.html"
                 >Podcasts</a
               >
               <a
                 onclick="closeNav()"
                 class="text-left hvr-grow d-none d-sm-block"
-                href="./index.html#events"
+                href="/index.html#events"
                 >Events</a
               >
               <a
                 onclick="closeNav()"
                 class="text-left hvr-grow d-sm-none"
-                href="./index.html#events-mob"
+                href="/index.html#events-mob"
                 >Events</a
               >
               <a
                 onclick="closeNav()"
                 class="text-left hvr-grow"
+                target="_blank"
                 href="./team.html"
                 >Team</a
               >
@@ -160,6 +180,23 @@
                   src="./src/images/logo_email.svg"
                   alt="gmail"
               /></a>
+              <a href="spotify:show:4RATgTeZxdivKXPgOtVsc4" class="text-left">
+                <img
+                  class="hvr-grow"
+                  src="./src/images/logo_spotify_white.svg"
+                  alt="gmail"
+                />
+              </a>
+              <a
+                href="https://www.youtube.com/channel/UC2q18pRs7UwoLmmJMRTT-dQ"
+                class="text-left"
+              >
+                <img
+                  class="hvr-grow"
+                  src="./src/images/logo_youtube_white.svg"
+                  alt="gmail"
+                />
+              </a>
             </div>
           </nav>
         </header>
