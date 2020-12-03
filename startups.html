@@ -1,827 +1,992 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=UA-172966898-1"
     ></script>
 
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-          dataLayer.push(arguments);
-        }
-        gtag("js", new Date());
-  
-        gtag("config", "UA-172966898-1");
-      </script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-172966898-1");
+    </script>
 
     <title>E-Cell NITK | Startups</title>
     <meta name="description" content="" />
     <link
-    rel="icon"
-    href="./src/images/favicon.ico"
-    type="image/gif"
-    sizes="16x16"
+      rel="icon"
+      href="./src/images/favicon.ico"
+      type="image/gif"
+      sizes="16x16"
     />
     <link rel="apple-touch-icon" href="./src/images/apple-touch-icon.png" />
 
-
-     <!--stylesheets-->
+    <!--stylesheets-->
     <!--bootstrap for grids, 
 				data-aos for div animations,
 				hover for on-hover animations-->
-                <link
-                rel="stylesheet"
-                href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-                integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-                crossorigin="anonymous"
-              />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
 
-              <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
-              <link
-                rel="stylesheet"
-                href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
-              />
-              <link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/" />
-              <link rel="stylesheet" href="./src/css/styles.css" />
-              <link rel="stylesheet" href="./src/css/startupstyles.css" />
-              <script
-                src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-                crossorigin="anonymous"
-              ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/" />
+    <link rel="stylesheet" href="./src/css/styles.css" />
+    <link rel="stylesheet" href="./src/css/startupstyles.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
 
-          <!----dependencies for modal popup------>
-
-</head>
-<body id="startups">
-
-
-
-  <section id="startups_header" class="container-fluid">
-    <div class="row">
-      <header class="col-12">
-        <!--navigation-->
-        <nav id="header" class="text-right navbar">
-          <!--hamburger menu icon-->
-          <a href="/" class="text-left"><img id="nav-logo" src="./src/images/logo_ecell.svg" alt="" /></a>
-          <img
+    <!----dependencies for modal popup------>
+  </head>
+  <body id="startups">
+    <section id="startups_header" class="container-fluid">
+      <div class="row">
+        <header class="col-12">
+          <!--navigation-->
+          <nav id="header" class="text-right navbar">
+            <!--hamburger menu icon-->
+            <a href="/" class="text-left"
+              ><img id="nav-logo" src="./src/images/logo_ecell.svg" alt=""
+            /></a>
+            <img
               id="menu"
               onclick="openNav()"
               src="./src/images/icon_menu.svg"
               alt="menu"
             />
-          <div id="sidenav" class="sidenav" style="background-color: black;">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a onclick="closeNav()" id="sidenav-name" class="hvr-grow" href="./index.html">E-CELL NITK</a>
-            <a onclick="closeNav()" class="text-left hvr-grow" tartget="_blank" href="./index.html#about">About</a>
-            <a onclick="closeNav()" class="text-left hvr-grow" href="./startup-internship-drive.html">SIP-2020</a>
-            <a onclick="closeNav()" class="text-left hvr-grow" tartget="_blank" target="_blank"
-              href="./courses.html">Learning Portal</a>
-            <a onclick="closeNav()" class="text-left hvr-grow" href="./blog.html">Blogs</a>
-            <a onclick="closeNav()" class="text-left hvr-grow" href="./startups.html">Startups</a>
-            <a onclick="closeNav()" class="text-left hvr-grow" href="./podcasts.html">Podcasts</a>
-            <a onclick="closeNav()" class="text-left hvr-grow d-none d-sm-block" href="./index.html#events">Events</a>
-            <a onclick="closeNav()" class="text-left hvr-grow d-sm-none" href="./index.html#events-mob">Events</a>
-            <a onclick="closeNav()" class="text-left hvr-grow" href="./team.html">Team</a>
-            <a href="https://www.facebook.com/NitkEcell/" class="text-left" target="_blank"><img class="hvr-grow"
-                src="./src/images/logo_facebook.svg" alt="facebook" /></a>
-            <a href="https://www.instagram.com/ecellnitksurathkal/?hl=en" class="text-left" target="_blank"><img
-                class="hvr-grow" src="./src/images/logo_instagram.svg" alt="instagram" /></a>
-            <a href="https://www.linkedin.com/company/ecellnitksurathkal/about/" class="text-left" target="_blank"><img
-                class="hvr-grow" src="./src/images/logo_linkedin.svg" alt="linkedin" /></a>
-            <a href="mailto:ecell@nitk.edu.in" class="text-left"><img class="hvr-grow" src="./src/images/logo_email.svg"
-                alt="gmail" /></a>
-          </div>
-        </nav>
-      </header>
-      <!--Header-->
-      <div class="col-12 mb-5 text-center">
-        <h1>Startups</h1>
-        <p style="text-align: center;
-          color: black;
-          margin-top: 1%;
-          margin-bottom: 0%;
-          padding-left: 10%;
-          padding-right: 10%;
-          padding-bottom: 0;">A navigation bar is a navigation header that is placed at the top of the page: With
-          Bootstrap, a navigation bar can extend or collapse.</p>
+            <div id="sidenav" class="sidenav" style="background-color: black">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+                >&times;</a
+              >
+              <a
+                onclick="closeNav()"
+                id="sidenav-name"
+                class="hvr-grow"
+                href="./index.html"
+                >E-CELL NITK</a
+              >
+              <a
+                onclick="closeNav()"
+                class="text-left hvr-grow"
+                tartget="_blank"
+                href="./index.html#about"
+                >About</a
+              >
+              <a
+                onclick="closeNav()"
+                class="text-left hvr-grow"
+                href="./startup-internship-drive.html"
+                >SIP-2020</a
+              >
+              <a
+                onclick="closeNav()"
+                class="text-left hvr-grow"
+                tartget="_blank"
+                target="_blank"
+                href="./courses.html"
+                >Learning Portal</a
+              >
+              <a
+                onclick="closeNav()"
+                class="text-left hvr-grow"
+                href="./blog.html"
+                >Blogs</a
+              >
+              <a
+                onclick="closeNav()"
+                class="text-left hvr-grow"
+                href="./startups.html"
+                >Startups</a
+              >
+              <a
+                onclick="closeNav()"
+                class="text-left hvr-grow"
+                href="./podcasts.html"
+                >Podcasts</a
+              >
+              <a
+                onclick="closeNav()"
+                class="text-left hvr-grow d-none d-sm-block"
+                href="./index.html#events"
+                >Events</a
+              >
+              <a
+                onclick="closeNav()"
+                class="text-left hvr-grow d-sm-none"
+                href="./index.html#events-mob"
+                >Events</a
+              >
+              <a
+                onclick="closeNav()"
+                class="text-left hvr-grow"
+                href="./team.html"
+                >Team</a
+              >
+              <a
+                href="https://www.facebook.com/NitkEcell/"
+                class="text-left"
+                target="_blank"
+                ><img
+                  class="hvr-grow"
+                  src="./src/images/logo_facebook.svg"
+                  alt="facebook"
+              /></a>
+              <a
+                href="https://www.instagram.com/ecellnitksurathkal/?hl=en"
+                class="text-left"
+                target="_blank"
+                ><img
+                  class="hvr-grow"
+                  src="./src/images/logo_instagram.svg"
+                  alt="instagram"
+              /></a>
+              <a
+                href="https://www.linkedin.com/company/ecellnitksurathkal/about/"
+                class="text-left"
+                target="_blank"
+                ><img
+                  class="hvr-grow"
+                  src="./src/images/logo_linkedin.svg"
+                  alt="linkedin"
+              /></a>
+              <a href="mailto:ecell@nitk.edu.in" class="text-left"
+                ><img
+                  class="hvr-grow"
+                  src="./src/images/logo_email.svg"
+                  alt="gmail"
+              /></a>
+            </div>
+          </nav>
+        </header>
+        <!--Header-->
+        <div class="col-12 mb-5 text-center">
+          <h1>Startups</h1>
+          <p
+            style="
+              text-align: center;
+              color: black;
+              margin-top: 1%;
+              margin-bottom: 0%;
+              padding-left: 10%;
+              padding-right: 10%;
+              padding-bottom: 0;
+            "
+          >
+            A navigation bar is a navigation header that is placed at the top of
+            the page: With Bootstrap, a navigation bar can extend or collapse.
+          </p>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!----- Content ----->
+    <!----- Content ----->
 
-  <section id="startup_content" class="container-fluid pt-5" style="position: relative;">
-    <!----Filter Buttons------>
-      
+    <section
+      id="startup_content"
+      class="container-fluid pt-5"
+      style="position: relative"
+    >
+      <!----Filter Buttons------>
 
-    <div class="row my-shuffle-container" id="start_row" >
-      
-      <!---Container div Template for startup cards--->
+      <div class="row my-shuffle-container" id="start_row">
+        <!---Container div Template for startup cards--->
 
-      <!--
-              <div class="col-sm-4  picture-item" id="start_details">
-        <div class="startup_card" href="#myModal( n )" class="btn btn-lg btn-primary" data-toggle="modal">
-          <img id="myImg" src="./src/images/startup/startup_logo.png" class="card-img-top" alt="..." style="height: 100%; margin: 10% auto; "/>
-          <div class="overlay">
-            <div class="hover_text">Startup_Name</div>
+        <!--
+              <div class="col-sm-4  picture-item text-center" class="start_details">
+        <div class="startup_card btn btn-lg " href="#myModal( n )"  data-toggle="modal">
+          <img id="myImg" src="./src/images/startup/startup_logo.png" class="card-img-top" alt="..." style="height: 200px; width: 200px; margin: 10% auto; "/>
+          <div >
+            <div >Startup_Name</div>
           </div>
       </div>
       </div>
       
       -->
 
-
-      <div class="col-sm-4  picture-item" id="start_details">
-        <div class="startup_card" href="#myModal1" class="btn btn-lg btn-primary" data-toggle="modal">
-          <img id="myImg" src="./src/images/startup/changepay.png" class="card-img-top" alt="..." style="height: 100%; margin: 10% auto; "/>
-          <div class="overlay">
-            <div class="hover_text">Changepay</div>
+        <div class="col-sm-4 picture-item text-center" class="start_details">
+          <div
+            class="startup_card btn btn-lg"
+            href="#myModal1"
+            data-toggle="modal"
+          >
+            <img
+              id="myImg"
+              src="./src/images/startup/changepay.png"
+              class="card-img-top"
+              alt="..."
+              style="height: 200px; width: 200px; margin: 10% auto"
+            />
           </div>
-      </div>
-      </div>
-
-      <div class="col-sm-4  picture-item" id="start_details">
-        <div class="startup_card" href="#myModal2" class="btn btn-lg btn-primary" data-toggle="modal">
-          <img id="myImg" src="./src/images/startup/prama.png" class="card-img-top" alt="..." style="height: 100%; margin: 10% auto; "/>
-          <div class="overlay">
-            <div class="hover_text">Prama Inc</div>
+          <div>
+            <p style="color: white">Changepay</p>
           </div>
-      </div>
-      </div>
+        </div>
 
-      <div class="col-sm-4  picture-item" id="start_details">
-        <div class="startup_card" href="#myModal3" class="btn btn-lg btn-primary" data-toggle="modal">
-          <img id="myImg" src="./src/images/startup/changepay.png" class="card-img-top" alt="..." style="height: 100%; margin: 10% auto; "/>
-          <div class="overlay">
-            <div class="hover_text">Farmer Agro Services</div>
+        <div class="col-sm-4 picture-item text-center" class="start_details">
+          <div
+            class="startup_card btn btn-lg"
+            href="#myModal2"
+            data-toggle="modal"
+          >
+            <img
+              id="myImg"
+              src="./src/images/startup/prama.png"
+              class="card-img-top"
+              alt="..."
+              style="height: 200px; width: 200px; margin: 10% auto"
+            />
           </div>
-      </div>
-      </div>
-
-      <div class="col-sm-4  picture-item" id="start_details">
-        <div class="startup_card" href="#myModal4" class="btn btn-lg btn-primary" data-toggle="modal">
-          <img id="myImg" src="./src/images/startup/changepay.png" class="card-img-top" alt="..." style="height: 100%; margin: 10% auto; "/>
-          <div class="overlay">
-            <div class="hover_text">Data King</div>
+          <div>
+            <p style="color: white">Prama Inc</p>
           </div>
-      </div>
-      </div>
+        </div>
 
-      <div class="col-sm-4  picture-item" id="start_details">
-        <div class="startup_card" href="#myModal5" class="btn btn-lg btn-primary" data-toggle="modal">
-          <img id="myImg" src="./src/images/startup/changepay.png" class="card-img-top" alt="..." style="height: 100%; margin: 10% auto; "/>`
-          <div class="overlay">
-            <div class="hover_text">Cloud Kitchenz</div>
+        <div class="col-sm-4 picture-item text-center" class="start_details">
+          <div
+            class="startup_card btn btn-lg"
+            href="#myModal3"
+            data-toggle="modal"
+          >
+            <img
+              id="myImg"
+              src="./src/images/startup/edzeeta.jpg"
+              class="card-img-top"
+              alt="..."
+              style="height: 200px; width: 200px; margin: 10% auto"
+            />
           </div>
-      </div>
-      </div>
-
-      <div class="col-sm-4  picture-item" id="start_details">
-        <div class="startup_card" href="#myModal6" class="btn btn-lg btn-primary" data-toggle="modal">
-          <img id="myImg" src="./src/images/startup/changepay.png" class="card-img-top" alt="..." style="height: 100%; margin: 10% auto; "/>
-          <div class="overlay">
-            <div class="hover_text">Trekko Adventures</div>
+          <div>
+            <p style="color: white">Edzeeta</p>
           </div>
-      </div>
-      </div>
+        </div>
 
-      <div class="col-sm-4  picture-item" id="start_details">
-        <div class="startup_card" href="#myModal7" class="btn btn-lg btn-primary" data-toggle="modal">
-          <img id="myImg" src="./src/images/startup/changepay.png" class="card-img-top" alt="..." style="height: 100%; margin: 10% auto; "/>
-          <div class="overlay">
-            <div class="hover_text">DiME India</div>
+        <div class="col-sm-4 picture-item text-center" class="start_details">
+          <div
+            class="startup_card btn btn-lg"
+            href="#myModal4"
+            data-toggle="modal"
+          >
+            <img
+              id="myImg"
+              src="./src/images/startup/oxyheal.png"
+              class="card-img-top"
+              alt="..."
+              style="height: 200px; width: 200px; margin: 10% auto"
+            />
           </div>
-      </div>
-      </div>
-
-      <div class="col-sm-4  picture-item" id="start_details">
-        <div class="startup_card" href="#myModal8" class="btn btn-lg btn-primary" data-toggle="modal">
-          <img id="myImg" src="./src/images/startup/changepay.png" class="card-img-top" alt="..." style="height: 100%; margin: 10% auto; "/>
-          <div class="overlay">
-            <div class="hover_text">Spottedfrog</div>
+          <div>
+            <p style="color: white">Oxyheal</p>
           </div>
-      </div>
-      </div>
+        </div>
 
-      
-      <div class="col-sm-4  picture-item" id="start_details">
-        <div class="startup_card" href="#myModal9" class="btn btn-lg btn-primary" data-toggle="modal">
-          <img id="myImg" src="./src/images/startup/changepay.png" class="card-img-top" alt="..." style="height: 100%; margin: 10% auto; "/>
-          <div class="overlay">
-            <div class="hover_text">Food Brigade</div>
+        <div class="col-sm-4 picture-item text-center" class="start_details">
+          <div
+            class="startup_card btn btn-lg"
+            href="#myModal6"
+            data-toggle="modal"
+          >
+            <img
+              id="myImg"
+              src="./src/images/startup/trekko.jpeg"
+              class="card-img-top"
+              alt="..."
+              style="height: 200px; width: 200px; margin: 10% auto"
+            />
           </div>
-      </div>
-      </div>
-
-      
-      <div class="col-sm-4  picture-item" id="start_details">
-        <div class="startup_card" href="#myModal10" class="btn btn-lg btn-primary" data-toggle="modal">
-          <img id="myImg" src="./src/images/startup/smarkt.png" class="card-img-top" alt="..." style="height: 100%; margin: 10% auto; "/>
-          <div class="overlay">
-            <div class="hover_text">Smarkt</div>
+          <div>
+            <p style="color: white">Trekko Adventures</p>
           </div>
-      </div>
-      </div>
+        </div>
 
-      
-      <div class="col-sm-4  picture-item" id="start_details">
-        <div class="startup_card" href="#myModal11" class="btn btn-lg btn-primary" data-toggle="modal">
-          <img id="myImg" src="./src/images/startup/ari.png" class="card-img-top" alt="..." style="height: 100%; margin: 10% auto; "/>
-          <div class="overlay">
-            <div class="hover_text">Ari Mobility Services</div>
+        <div class="col-sm-4 picture-item text-center" class="start_details">
+          <div
+            class="startup_card btn btn-lg"
+            href="#myModal7"
+            data-toggle="modal"
+          >
+            <img
+              id="myImg"
+              src="./src/images/startup/dime.jpg"
+              class="card-img-top"
+              alt="..."
+              style="height: 200px; width: 200px; margin: 10% auto"
+            />
           </div>
-      </div>
-      </div>
-
-      
-      <div class="col-sm-4  picture-item" id="start_details">
-        <div class="startup_card" href="#myModal12" class="btn btn-lg btn-primary" data-toggle="modal">
-          <img id="myImg" src="./src/images/startup/changepay.png" class="card-img-top" alt="..." style="height: 100%; margin: 10% auto; "/>
-          <div class="overlay">
-            <div class="hover_text">Coastal Produce Delivery</div>
+          <div>
+            <p style="color: white">DiME India</p>
           </div>
-      </div>
-      </div>
+        </div>
 
-      
-      <div class="col-sm-4  picture-item" id="start_details">
-        <div class="startup_card" href="#myModal13" class="btn btn-lg btn-primary" data-toggle="modal">
-          <img id="myImg" src="./src/images/startup/changepay.png" class="card-img-top" alt="..." style="height: 100%; margin: 10% auto; "/>
-          <div class="overlay">
-            <div class="hover_text">Modulus Solutions</div>
+        <div class="col-sm-4 picture-item text-center" class="start_details">
+          <div
+            class="startup_card btn btn-lg"
+            href="#myModal8"
+            data-toggle="modal"
+          >
+            <img
+              id="myImg"
+              src="./src/images/startup/spottedfrog.jpeg"
+              class="card-img-top"
+              alt="..."
+              style="height: 200px; width: 200px; margin: 10% auto"
+            />
           </div>
-      </div>
-      </div>
-
-      
-      
-      <div class="col-sm-4  picture-item" id="start_details">
-        <div class="startup_card" href="#myModal14" class="btn btn-lg btn-primary" data-toggle="modal">
-          <img id="myImg" src="./src/images/startup/changepay.png" class="card-img-top" alt="..." style="height: 100%; margin: 10% auto; "/>
-          <div class="overlay">
-            <div class="hover_text">Peer Support Communities</div>
+          <div>
+            <p style="color: white">Spottedfrog</p>
           </div>
-      </div>
-      </div>
+        </div>
 
-      
-      <div class="col-sm-4  picture-item" id="start_details">
-        <div class="startup_card" href="#myModal15" class="btn btn-lg btn-primary" data-toggle="modal">
-          <img id="myImg" src="./src/images/startup/changepay.png" class="card-img-top" alt="..." style="height: 100%; margin: 10% auto; "/>
-          <div class="overlay">
-            <div class="hover_text">XChangers</div>
+        <div class="col-sm-4 picture-item text-center" class="start_details">
+          <div
+            class="startup_card btn btn-lg"
+            href="#myModal10"
+            data-toggle="modal"
+          >
+            <img
+              id="myImg"
+              src="./src/images/startup/smarkt.png"
+              class="card-img-top"
+              alt="..."
+              style="height: 200px; width: 200px; margin: 10% auto"
+            />
           </div>
+          <div>
+            <p style="color: white">Smarkt</p>
+          </div>
+        </div>
+
+        <div class="col-sm-4 picture-item text-center" class="start_details">
+          <div
+            class="startup_card btn btn-lg"
+            href="#myModal11"
+            data-toggle="modal"
+          >
+            <img
+              id="myImg"
+              src="./src/images/startup/ari.png"
+              class="card-img-top"
+              alt="..."
+              style="height: 200px; width: 200px; margin: 10% auto"
+            />
+          </div>
+          <div>
+            <p style="color: white">Ari Mobility Services</p>
+          </div>
+        </div>
+
+        <div class="col-sm-4 picture-item text-center" class="start_details">
+          <div
+            class="startup_card btn btn-lg"
+            href="#myModal13"
+            data-toggle="modal"
+          >
+            <img
+              id="myImg"
+              src="./src/images/startup/modulus.png"
+              class="card-img-top"
+              alt="..."
+              style="height: 200px; width: 200px; margin: 10% auto"
+            />
+          </div>
+          <div>
+            <p style="color: white">Modulus Solutions</p>
+          </div>
+        </div>
+
+        <div class="col-sm-4 picture-item text-center" class="start_details">
+          <div
+            class="startup_card btn btn-lg"
+            href="#myModal14"
+            data-toggle="modal"
+          >
+            <img
+              id="myImg"
+              src="./src/images/startup/psup.jpeg"
+              class="card-img-top"
+              alt="..."
+              style="height: 200px; width: 200px; margin: 10% auto"
+            />
+          </div>
+          <div>
+            <p style="color: white">Peer Support Communities</p>
+          </div>
+        </div>
       </div>
-      </div>
-    
-    </div>
-    <br>
-    <br>
-  </section>
+      <br />
+      <br />
+    </section>
 
-
-
-  
-
-  
-  
-  <!----Modal Blocks----->
-  <div id="myModal1" class="modal" style="width: 100%; height: 100%;">
-    <div class="modal-dialog modal-xl">
+    <!----Modal Blocks----->
+    <div id="myModal1" class="modal" style="width: 100%; height: 100%">
+      <div class="modal-dialog modal-xl">
         <div class="modal-content">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <div class="modal-body">
-              <div class="container-fluid">
-                <div class="row">
-                  <div class="col-sm-5">
-                    <img id="modal_image" src="./src/images/startup/changepay.png"style="height: 250px;" />
-                  </div>
-                  <div class="col-sm-7">                
-                    <p id="modal_text">
-                    <span id="modal_text_bold">Name </span>      : Changepay
-                      <br>
-                      <span id="modal_text_bold">Sector      </span>: E-commerce and payments
-                      <Br>
-                      <span id="modal_text_bold">Team Size   </span>: 5-10
-                      <br>
-                      <span id="modal_text_bold">Team Pitch</span> : <a href="https://drive.google.com/open?id=1fuokYCxYriQVVCJn9i8jyjKCLakVLCSN
-                      " target="_blank" style="color: blue;">link</a>
-                      <br>
-                      <span id="modal_text_bold">Description</span>: Changepay is a customizable commerce platform that aims to change the way business and communication conducted in large residential campuses & close-knit communities by empowering local  merchants & enterprises to provide delightful service, while ensuring a convenient and seamless experience for the student/consumer.
-                      
-                      We are leveraging our Smartbox technology to solve problems of residential students and help campus to achieve effective social distancing once the students are back in the hostel as per government recommendation.
-                       
-                      We are currently live in NITK- Surathkal and other campuses  with 19 various category merchants. We have processed more than 40,000+ orders in a span of 6 months.
-                      
-                      We also work closely with student clubs on various campuses to help them build Apps and business on top of our platform to solve unique campus-related solutions and give them first-hand experience towards entrepreneurship.
-                      
-                      <br>
-  
-                      <span id="modal_text_bold">Site</span>: <a href="http://changepay.co" target="_blank" style="color: blue;">Changepay.co</a>
-   
-                    </p>
-                  </div>
+          <button type="button" class="close" data-dismiss="modal">
+            &times;
+          </button>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-5">
+                  <img
+                    id="modal_image"
+                    src="./src/images/startup/changepay.png"
+                    style="height: 250px"
+                  />
+                </div>
+                <div class="col-sm-7">
+                  <p id="modal_text">
+                    <span id="modal_text_bold">Name </span> : Changepay
+                    <br />
+                    <span id="modal_text_bold">Sector </span>: E-commerce and
+                    payments
+                    <br />
+                    <span id="modal_text_bold">Team Size </span>: 5-10
+                    <br />
+                    <span id="modal_text_bold">Team Pitch</span> :
+                    <a
+                      href="https://drive.google.com/open?id=1fuokYCxYriQVVCJn9i8jyjKCLakVLCSN
+                      "
+                      target="_blank"
+                      style="color: blue"
+                      >link</a
+                    >
+                    <br />
+                    <span id="modal_text_bold">Description</span>: Changepay is
+                    a customizable commerce platform that aims to change the way
+                    business and communication conducted in large residential
+                    campuses & close-knit communities by empowering local
+                    merchants & enterprises to provide delightful service, while
+                    ensuring a convenient and seamless experience for the
+                    student/consumer. We are leveraging our Smartbox technology
+                    to solve problems of residential students and help campus to
+                    achieve effective social distancing once the students are
+                    back in the hostel as per government recommendation. We are
+                    currently live in NITK- Surathkal and other campuses with 19
+                    various category merchants. We have processed more than
+                    40,000+ orders in a span of 6 months. We also work closely
+                    with student clubs on various campuses to help them build
+                    Apps and business on top of our platform to solve unique
+                    campus-related solutions and give them first-hand experience
+                    towards entrepreneurship.
+
+                    <br />
+
+                    <span id="modal_text_bold">Site</span>:
+                    <a
+                      href="http://changepay.co"
+                      target="_blank"
+                      style="color: blue"
+                      >Changepay.co</a
+                    >
+                  </p>
                 </div>
               </div>
-  
             </div>
-  
+          </div>
         </div>
+      </div>
     </div>
-  </div>
-	
-	<div id="myModal2" class="modal" style="width: 100%; height: 100%;">
-    <div class="modal-dialog modal-xl">
-        <div class="modal-content">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <div class="modal-body">
-              <div class="container-fluid">
-                <div class="row">
-                  <div class="col-sm-5">
-                    <img id="modal_image" src="./src/images/startup/prama.png"style="height: 250px;" />
-                  </div>
-                  <div class="col-sm-7">                
-                    <p id="modal_text">
-                    <span id="modal_text_bold">Name </span>      : Prama Inc
-                      <br>
-                      <span id="modal_text_bold">Sector      </span>: Low code/health care
-                      <Br>
-                      <span id="modal_text_bold">Team Size   </span>: 10-20
-                      <br>
-                      
-                      <span id="modal_text_bold">Description</span>: Low code platform with visual modelers
-                      <br>
-  
-                      <span id="modal_text_bold">Sites</span>: <a href="https://www.goprama.com/" target="_blank" style="color: blue;">goprama.com</a>
-   
-                    </p>
-                  </div>
-                </div>
-              </div>
-  
-            </div>
-  
-        </div>
-    </div>
-  </div>
-	
-	<div id="myModal3" class="modal" style="width: 100%; height: 100%;">
-    <div class="modal-dialog modal-xl">
-        <div class="modal-content">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <div class="modal-body">
-              <div class="container-fluid">
-                <div class="row">
-                  <div class="col-sm-5">
-                    <img id="modal_image" src="./src/images/startup/changepay.png"style="height: 250px;" />
-                  </div>
-                  <div class="col-sm-7">                
-                    <p id="modal_text">
-                    <span id="modal_text_bold">Name </span>      : Farmer Agro Services 
-                      <br>
-                      <span id="modal_text_bold">Sector      </span>: Agri tech
-                      <Br>
-                      <span id="modal_text_bold">Team Size   </span>: 1-5
-                      <br>
-                     
-                      <span id="modal_text_bold">Description</span>: Providing the agricultural machines like tractor with tiller , seed sowing machine , 
-			      tractor harvester, drone to monitor pests and weeds to farmers as a service like city taxi model where when farmer book for the service
-			      he will be charged according to the farm area covered by the machine.
-                      <br>
-     
-                    </p>
-                  </div>
-                </div>
-              </div>
-  
-            </div>
-  
-        </div>
-    </div>
-  </div>
-	
-	<div id="myModal4" class="modal" style="width: 100%; height: 100%;">
-    <div class="modal-dialog modal-xl">
-        <div class="modal-content">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <div class="modal-body">
-              <div class="container-fluid">
-                <div class="row">
-                  <div class="col-sm-5">
-                    <img id="modal_image" src="./src/images/startup/changepay.png"style="height: 250px;" />
-                  </div>
-                  <div class="col-sm-7">                
-                    <p id="modal_text">
-                    <span id="modal_text_bold">Name </span>      : Data King
-                      <br>
-                      <span id="modal_text_bold">Sector      </span>: Service 
-                      <Br>
-                      <span id="modal_text_bold">Team Size   </span>: 1-5
-                      <br>
-                      
-                      <span id="modal_text_bold">Description</span>: Product testing and data aggregation service . We test new products developed by our clients and record consumer feedback.
-			      
-                      <br>
-   
-                    </p>
-                  </div>
-                </div>
-              </div>
-  
-            </div>
-  
-        </div>
-    </div>
-  </div>
-	
-	<div id="myModal5" class="modal" style="width: 100%; height: 100%;">
-    <div class="modal-dialog modal-xl">
-        <div class="modal-content">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <div class="modal-body">
-              <div class="container-fluid">
-                <div class="row">
-                  <div class="col-sm-5">
-                    <img id="modal_image" src="./src/images/startup/changepay.png"style="height: 250px;" />
-                  </div>
-                  <div class="col-sm-7">                
-                    <p id="modal_text">
-                    <span id="modal_text_bold">Name </span>      : Cloud Kitchenz
-                      <br>
-                      <span id="modal_text_bold">Sector      </span>: Food Delivery
-                      <Br>
-                      <span id="modal_text_bold">Team Size   </span>: 1-5
-                      <br>
-                      <span id="modal_text_bold">Team Pitch</span> : <a href="https://docs.google.com/presentation/d/1pqs6ZMDfkWzG_Jw6MrsjjJkbPXGU0u2QhpfaWIu6USo/edit#slide=id.g88e32c3c1d_2_29
-                      " target="_blank" style="color: blue;">Pitch</a>
-                      <br>
-                      <span id="modal_text_bold">Description</span>: We wish to provide good quality home made food to working professionals at affordable prices. 
-                                                                     We will have housewives as our cooks who will cook in their homes.Our intention would be to provide the interested housewives a platform and help them become financially independent.
-			                                             And at the same time solve the problem of not being able to get home made food when youngsters leave their homes for building their careers.
-                      <br>   
-                    </p>
-                  </div>
-                </div>
-              </div>
-  
-            </div>
-  
-        </div>
-    </div>
-  </div>
-	
-	<div id="myModal6" class="modal" style="width: 100%; height: 100%;">
-    <div class="modal-dialog modal-xl">
-        <div class="modal-content">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <div class="modal-body">
-              <div class="container-fluid">
-                <div class="row">
-                  <div class="col-sm-5">
-                    <img id="modal_image" src="./src/images/startup/changepay.png"style="height: 250px;" />
-                  </div>
-                  <div class="col-sm-7">                
-                    <p id="modal_text">
-                    <span id="modal_text_bold">Name </span>      : Trekko Adventures
-                      <br>
-                      <span id="modal_text_bold">Sector      </span>: Travel and hospitality
-                      <Br>
-                      <span id="modal_text_bold">Team Size   </span>: 1-5
-                      <br>
-                     
-                      <span id="modal_text_bold">Description</span>: Trekko Adventures aims at providing facilities for an adventure tour by connecting customers with best and reliable operators. 
-                      <br>   
-                    </p>
-                  </div>
-                </div>
-              </div>
-  
-            </div>
-  
-        </div>
-    </div>
-  </div>
-	
-	<div id="myModal7" class="modal" style="width: 100%; height: 100%;">
-    <div class="modal-dialog modal-xl">
-        <div class="modal-content">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <div class="modal-body">
-              <div class="container-fluid">
-                <div class="row">
-                  <div class="col-sm-5">
-                    <img id="modal_image" src="./src/images/startup/changepay.png"style="height: 250px;" />
-                  </div>
-                  <div class="col-sm-7">                
-                    <p id="modal_text">
-                    <span id="modal_text_bold">Name </span>      : DiME India
-                      <br>
-                      <span id="modal_text_bold">Sector      </span>: Water
-                      <Br>
-                      <span id="modal_text_bold">Team Size   </span>: 1-5
-                      <br>
-                    
-                      <span id="modal_text_bold">Description</span>: We are solving the water crisis with out unique water filteration method which can desaliante,decontaminate and disinfect water in a single process
-                      <br>
-                    </p>
-                  </div>
-                </div>
-              </div>
-  
-            </div>
-  
-        </div>
-    </div>
-  </div>
-	
-	 <div id="myModal8" class="modal" style="width: 100%; height: 100%;">
-    <div class="modal-dialog modal-xl">
-        <div class="modal-content">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <div class="modal-body">
-              <div class="container-fluid">
-                <div class="row">
-                  <div class="col-sm-5">
-                    <img id="modal_image" src="./src/images/startup/changepay.png"style="height: 250px;" />
-                  </div>
-                  <div class="col-sm-7">                
-                    <p id="modal_text">
-                    <span id="modal_text_bold">Name </span>      : Spottedfrog
-                      <br>
-                      <span id="modal_text_bold">Sector      </span>: Sustainable Fashion
-                      <Br>
-                      <span id="modal_text_bold">Team Size   </span>: 1-5
-                      <br>
-                      <span id="modal_text_bold">Description</span>: We make organic cotton t-shirts and fleece cotton hoodies (slowly turning into a sustainable fashion store)
-                      <br>   
-                    </p>
-                  </div>
-                </div>
-              </div>
-  
-            </div>
-  
-        </div>
-    </div>
-  </div>
 
-  <div id="myModal9" class="modal" style="width: 100%; height: 100%;">
-    <div class="modal-dialog modal-xl">
+    <div id="myModal2" class="modal" style="width: 100%; height: 100%">
+      <div class="modal-dialog modal-xl">
         <div class="modal-content">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <div class="modal-body">
-              <div class="container-fluid">
-                <div class="row">
-                  <div class="col-sm-5">
-                    <img id="modal_image" src="./src/images/startup/changepay.png"style="height: 250px;" />
-                  </div>
-                  <div class="col-sm-7">                
-                    <p id="modal_text">
-                    <span id="modal_text_bold">Name </span>      : Food Brigade
-                      <br>
-                      <span id="modal_text_bold">Sector      </span>: Food
-                      <Br>
-                      <span id="modal_text_bold">Team Size   </span>: 1-5
-                      <br>
-                      <span id="modal_text_bold">Description</span>: We at Food Bridage, propose a contemporary solution to tackle the ongoing food crisis by utilizing the waste produced in residential households regularly. This can account for nutritious meals for more than one-third of the population. 
-                      We propose to purchase left-over food from residential complexes or localities at large. The food will be bought based on weight and category. Food collection drives will be planned in areas with the highest sign-up for sale daily. Having a good spread of collection sites will ensure the availability of food everyday. This food will then be sold at marginal yet competitive prices to a targeted group of people.
-                      The service will have stringent quality checks in place. A record of the sellers and buyers will help accommodate any complications. The revenue we generate will come from the difference between the price of purchase and the selling price. 
-                      This can ensure at-least 2 square meals a day for those who can’t afford it at present. Not only will this account for reduction of food wastage, but will also strengthen community spirit and completely diversify the palate.
-                      <br>   
-                    </p>
-                  </div>
+          <button type="button" class="close" data-dismiss="modal">
+            &times;
+          </button>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-5">
+                  <img
+                    id="modal_image"
+                    src="./src/images/startup/prama.png"
+                    style="height: 250px"
+                  />
+                </div>
+                <div class="col-sm-7">
+                  <p id="modal_text">
+                    <span id="modal_text_bold">Name </span> : Prama Inc
+                    <br />
+                    <span id="modal_text_bold">Sector </span>: Low code/health
+                    care
+                    <br />
+                    <span id="modal_text_bold">Team Size </span>: 10-20
+                    <br />
+
+                    <span id="modal_text_bold">Description</span>: Low code
+                    platform with visual modelers
+                    <br />
+
+                    <span id="modal_text_bold">Sites</span>:
+                    <a
+                      href="https://www.goprama.com/"
+                      target="_blank"
+                      style="color: blue"
+                      >goprama.com</a
+                    >
+                  </p>
                 </div>
               </div>
-  
             </div>
-  
+          </div>
         </div>
+      </div>
     </div>
-  </div>
 
-  <div id="myModal10" class="modal" style="width: 100%; height: 100%;">
-    <div class="modal-dialog modal-xl">
+    <div id="myModal3" class="modal" style="width: 100%; height: 100%">
+      <div class="modal-dialog modal-xl">
         <div class="modal-content">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <div class="modal-body">
-              <div class="container-fluid">
-                <div class="row">
-                  <div class="col-sm-5">
-                    <img id="modal_image" src="./src/images/startup/smarkt.png"style="height: 250px;" />
-                  </div>
-                  <div class="col-sm-7">                
-                    <p id="modal_text">
-                    <span id="modal_text_bold">Name </span>      : Smarkt
-                      <br>
-                      <span id="modal_text_bold">Sector      </span>: E-commmerce and Retail
-                      <Br>
-                      <span id="modal_text_bold">Team Size   </span>: 10-20
-                      <br>
-                      <span id="modal_text_bold">Description</span>: Smarkt aims at technologizing the entire retail sector by bringing in enhanced experience for customer instore shopping.
-                      It aims at helping local vendors improve business by making their shops attractive and increase the technology that they use which will help them in analytics and improved recommendations. Also, improving overall appeal and customer experience, customers will spend more time in shops allowing more customer interactivity for the vendor
-                      <br>   
-                      <span id="modal_text_bold">Sites</span>: <a href="https://www.smarkt.in" target="_blank" style="color: blue;">Smarkt</a>
-                    </p>
-                  </div>
+          <button type="button" class="close" data-dismiss="modal">
+            &times;
+          </button>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-5">
+                  <img
+                    id="modal_image"
+                    src="./src/images/startup/changepay.png"
+                    style="height: 250px"
+                  />
+                </div>
+                <div class="col-sm-7">
+                  <p id="modal_text">
+                    <span id="modal_text_bold">Name </span> : Edzeeta
+                    <br />
+                    <span id="modal_text_bold">Sector </span>: Edutech
+                    <br />
+                    <span id="modal_text_bold">Team Size </span>: 5-10
+                    <br />
+                    <span id="modal_text_bold">Description</span>: Edzeeta is an
+                    online teaching platform for schoolkids.we stated out with a
+                    vision to nurture school going kids with skills that are not
+                    focussed in the current school ciriculum.
+                    <br />
+                    <span id="modal_text_bold">Sites</span>:
+                    <a
+                      href="http://edzeeta.com/"
+                      target="_blank"
+                      style="color: blue"
+                      >Edzeeta</a
+                    >
+                  </p>
                 </div>
               </div>
-  
             </div>
-  
+          </div>
         </div>
+      </div>
     </div>
-  </div>
 
-  <div id="myModal11" class="modal" style="width: 100%; height: 100%;">
-    <div class="modal-dialog modal-xl">
+    <div id="myModal4" class="modal" style="width: 100%; height: 100%">
+      <div class="modal-dialog modal-xl">
         <div class="modal-content">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <div class="modal-body">
-              <div class="container-fluid">
-                <div class="row">
-                  <div class="col-sm-5">
-                    <img id="modal_image" src="./src/images/startup/ari.png"style="height: 250px;" />
-                  </div>
-                  <div class="col-sm-7">                
-                    <p id="modal_text">
-                    <span id="modal_text_bold">Name </span>      : Ari Mobility Services
-                      <br>
-                      <span id="modal_text_bold">Sector      </span>: Micro mobility/ lifestyle/ smart transport
-                      <Br>
-                      <span id="modal_text_bold">Team Size   </span>: 1-5
-                      <br>
-                      <span id="modal_text_bold">Team Pitch</span> : <a href="https://drive.google.com/open?id=10-WOfO9PWtNAJx6cDN21lBU4CGTXP51V
-                      " target="_blank" style="color: blue;">link</a>
-                      <span id="modal_text_bold">Description</span>: Ari is a micro-mobility service operating within enclosed communities like colleges to provide an Eco-friendly, affordable and reliable solution. We build up a fleet comprising a mix of both company-owned and owner shared cycles. Owner shared cycles are added by existing cycle owners who then receive a small royalty when their cycle is used within the service. A smart lock (proprietary to Ari) is installed on every cycle. These cycles are distributed throughout the campus and can be used by anyone simply by unlocking via the app and payment is calculated per-minute of cycling. There are no fixed parking locations hence offering our customers valuable freedom to move anywhere they like within the campus. All cycles in the fleet are regularly maintained by the company.
-                      <br>   
-                      <span id="modal_text_bold">Sites</span>: <a href="https://aricycle.web.app" target="_blank" style="color: blue;">Ari</a>
-                    </p>
-                  </div>
+          <button type="button" class="close" data-dismiss="modal">
+            &times;
+          </button>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-5">
+                  <img
+                    id="modal_image"
+                    src="./src/images/startup/changepay.png"
+                    style="height: 250px"
+                  />
+                </div>
+                <div class="col-sm-7">
+                  <p id="modal_text">
+                    <span id="modal_text_bold">Name </span> : Oxyheal
+                    <br />
+                    <span id="modal_text_bold">Sector </span>: Healthtech
+                    <br />
+                    <span id="modal_text_bold">Team Size </span>: 5-10
+                    <br />
+                    <span id="modal_text_bold">Description</span>: A chronic
+                    wound is a wound that does not heal in an orderly set of
+                    stages and in a predictable amount of time the way most
+                    wounds do. It is claimed that over 25 billion dollars are
+                    spent worldwide annually for the treatment of chronic
+                    wounds. Even though various forms of oxygen therapy have
+                    been there for a while, there is yet to be an effective one
+                    without side effects. Also, the currently available
+                    treatments like HBOT chambers are only available in major
+                    hospitals. OxyHeal is a portable device that provides
+                    Localized Hyperbaric Oxygen Therapy (HBOT) to help
+                    facilitate the healing of chronic wounds.
+                    <br />
+                    <span id="modal_text_bold">Sites</span>:
+                    <a
+                      href="http://oxyheal.co.in/"
+                      target="_blank"
+                      style="color: blue"
+                      >Oxyheal</a
+                    >
+                  </p>
                 </div>
               </div>
-  
             </div>
-  
+          </div>
         </div>
+      </div>
     </div>
-  </div>
-	
-  <div id="myModal12" class="modal" style="width: 100%; height: 100%;">
-    <div class="modal-dialog modal-xl">
-        <div class="modal-content">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <div class="modal-body">
-              <div class="container-fluid">
-                <div class="row">
-                  <div class="col-sm-5">
-                    <img id="modal_image" src="./src/images/startup/changepay.png"style="height: 250px;" />
-                  </div>
-                  <div class="col-sm-7">                
-                    <p id="modal_text">
-                    <span id="modal_text_bold">Name </span>      : Coastal Produce Delivery
-                      <br>
-                      <span id="modal_text_bold">Sector      </span>: Supply Chain Management
-                      <Br>
-                      <span id="modal_text_bold">Team Size   </span>: 1-5
-                      <br>
-                      <span id="modal_text_bold">Description</span>: Collect produce from farmers and process it and sell it under one roof. May it be doorstep or supply to grocery shops. This is a subscription model.
-                      <br>   
 
-                    </p>
-                  </div>
+    <div id="myModal6" class="modal" style="width: 100%; height: 100%">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <button type="button" class="close" data-dismiss="modal">
+            &times;
+          </button>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-5">
+                  <img
+                    id="modal_image"
+                    src="./src/images/startup/changepay.png"
+                    style="height: 250px"
+                  />
+                </div>
+                <div class="col-sm-7">
+                  <p id="modal_text">
+                    <span id="modal_text_bold">Name </span> : Trekko Adventures
+                    <br />
+                    <span id="modal_text_bold">Sector </span>: Travel and
+                    hospitality
+                    <br />
+                    <span id="modal_text_bold">Team Size </span>: 1-5
+                    <br />
+
+                    <span id="modal_text_bold">Description</span>: Trekko
+                    Adventures aims at providing facilities for an adventure
+                    tour by connecting customers with best and reliable
+                    operators.
+                    <br />
+                  </p>
                 </div>
               </div>
-  
             </div>
-  
+          </div>
         </div>
+      </div>
     </div>
-  </div>
-  
-  <div id="myModal13" class="modal" style="width: 100%; height: 100%;">
-    <div class="modal-dialog modal-xl">
-        <div class="modal-content">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <div class="modal-body">
-              <div class="container-fluid">
-                <div class="row">
-                  <div class="col-sm-5">
-                    <img id="modal_image" src="./src/images/startup/changepay.png"style="height: 250px;" />
-                  </div>
-                  <div class="col-sm-7">                
-                    <p id="modal_text">
-                    <span id="modal_text_bold">Name </span>      : Modulus Solutions
-                      <br>
-                      <span id="modal_text_bold">Sector      </span>: Digital Solutions(Services Sector)
-                      <Br>
-                      <span id="modal_text_bold">Team Size   </span>: 5-10
-                      <br>
-                      <span id="modal_text_bold">Description</span>: Modulus Solutions takes care of all the branding requirements that any organization needs. 
-                        <br>
-                      Our Services :
-                      <br>
-                      1. Social Media Marketing
-                      <br>
-                      2. Branding
-                      <br>
-                      3. Advertising
-                      <br>
-                      4. Animation Videos
-                      <br>
-                      5. Website Building
-                      <br>
-                      6. 3D Modelling
-                      <br>
-                      
-                      We promise you the best quality output in the given budget among the competitors
-                      <br>   
 
-                    </p>
-                  </div>
+    <div id="myModal7" class="modal" style="width: 100%; height: 100%">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <button type="button" class="close" data-dismiss="modal">
+            &times;
+          </button>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-5">
+                  <img
+                    id="modal_image"
+                    src="./src/images/startup/changepay.png"
+                    style="height: 250px"
+                  />
+                </div>
+                <div class="col-sm-7">
+                  <p id="modal_text">
+                    <span id="modal_text_bold">Name </span> : DiME India
+                    <br />
+                    <span id="modal_text_bold">Sector </span>: Water
+                    <br />
+                    <span id="modal_text_bold">Team Size </span>: 1-5
+                    <br />
+
+                    <span id="modal_text_bold">Description</span>: We are
+                    solving the water crisis with out unique water filteration
+                    method which can desaliante,decontaminate and disinfect
+                    water in a single process
+                    <br />
+                  </p>
                 </div>
               </div>
-  
             </div>
-  
+          </div>
         </div>
+      </div>
     </div>
-  </div>
 
-  <div id="myModal14" class="modal" style="width: 100%; height: 100%;">
-    <div class="modal-dialog modal-xl">
+    <div id="myModal8" class="modal" style="width: 100%; height: 100%">
+      <div class="modal-dialog modal-xl">
         <div class="modal-content">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <div class="modal-body">
-              <div class="container-fluid">
-                <div class="row">
-                  <div class="col-sm-5">
-                    <img id="modal_image" src="./src/images/startup/changepay.png"style="height: 250px;" />
-                  </div>
-                  <div class="col-sm-7">                
-                    <p id="modal_text">
-                    <span id="modal_text_bold">Name </span>      : Peer Support Communities
-                      <br>
-                      <span id="modal_text_bold">Sector      </span>: Platforms, Aggregators and Ed-Tech
-                      <Br>
-                      <span id="modal_text_bold">Team Size   </span>: 20-50
-                      <br>
-                      <span id="modal_text_bold">Description</span>: Student community services. Self sustainable ecosystems run by student communities leading to holistic growth, development and providing opportunities specific to tier-1 universities. Also acts as a pseudo-consultancy platform on a b2b end with a platform for tech specific to student markets.
-                      <br>   
-
-                    </p>
-                  </div>
+          <button type="button" class="close" data-dismiss="modal">
+            &times;
+          </button>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-5">
+                  <img
+                    id="modal_image"
+                    src="./src/images/startup/changepay.png"
+                    style="height: 250px"
+                  />
+                </div>
+                <div class="col-sm-7">
+                  <p id="modal_text">
+                    <span id="modal_text_bold">Name </span> : Spottedfrog
+                    <br />
+                    <span id="modal_text_bold">Sector </span>: Sustainable
+                    Fashion
+                    <br />
+                    <span id="modal_text_bold">Team Size </span>: 1-5
+                    <br />
+                    <span id="modal_text_bold">Description</span>: We make
+                    organic cotton t-shirts and fleece cotton hoodies (slowly
+                    turning into a sustainable fashion store)
+                    <br />
+                  </p>
                 </div>
               </div>
-  
             </div>
-  
+          </div>
         </div>
+      </div>
     </div>
-  </div>
 
-  <div id="myModal15" class="modal" style="width: 100%; height: 100%;">
-    <div class="modal-dialog modal-xl">
+    <div id="myModal10" class="modal" style="width: 100%; height: 100%">
+      <div class="modal-dialog modal-xl">
         <div class="modal-content">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <div class="modal-body">
-              <div class="container-fluid">
-                <div class="row">
-                  <div class="col-sm-5">
-                    <img id="modal_image" src="./src/images/startup/changepay.png"style="height: 250px;" />
-                  </div>
-                  <div class="col-sm-7">                
-                    <p id="modal_text">
-                    <span id="modal_text_bold">Name </span>      : XChangers
-                      <br>
-                      <span id="modal_text_bold">Sector      </span>: Online Marketplace
-                      <Br>
-                      <span id="modal_text_bold">Team Size   </span>: 5-10
-                      <br>
-                      <span id="modal_text_bold">Description</span>We are planning to create a community platform for students of NITK where they can sell their belongings that they no longer need to other students. Sellers can post description/images of goods along with the price at which they want to sell, buyers will be able to negotiate, and once both agree on a price, we will carry out the transactions and logistics from our end (the startup team).
-
-                        Later on various functionalities like room pick up and room delivery can be added to the platform, which both buyers and sellers will be able to use at an additional cost.
-                      <br>   
-
-                    </p>
-                  </div>
+          <button type="button" class="close" data-dismiss="modal">
+            &times;
+          </button>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-5">
+                  <img
+                    id="modal_image"
+                    src="./src/images/startup/smarkt.png"
+                    style="height: 250px"
+                  />
+                </div>
+                <div class="col-sm-7">
+                  <p id="modal_text">
+                    <span id="modal_text_bold">Name </span> : Smarkt
+                    <br />
+                    <span id="modal_text_bold">Sector </span>: E-commmerce and
+                    Retail
+                    <br />
+                    <span id="modal_text_bold">Team Size </span>: 10-20
+                    <br />
+                    <span id="modal_text_bold">Description</span>: Smarkt aims
+                    at technologizing the entire retail sector by bringing in
+                    enhanced experience for customer instore shopping. It aims
+                    at helping local vendors improve business by making their
+                    shops attractive and increase the technology that they use
+                    which will help them in analytics and improved
+                    recommendations. Also, improving overall appeal and customer
+                    experience, customers will spend more time in shops allowing
+                    more customer interactivity for the vendor
+                    <br />
+                    <span id="modal_text_bold">Sites</span>:
+                    <a
+                      href="https://www.smarkt.in"
+                      target="_blank"
+                      style="color: blue"
+                      >Smarkt</a
+                    >
+                  </p>
                 </div>
               </div>
-  
             </div>
-  
+          </div>
         </div>
+      </div>
     </div>
-  </div>
 
-      <!---Container div Template for Popup Modals--->
+    <div id="myModal11" class="modal" style="width: 100%; height: 100%">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <button type="button" class="close" data-dismiss="modal">
+            &times;
+          </button>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-5">
+                  <img
+                    id="modal_image"
+                    src="./src/images/startup/ari.png"
+                    style="height: 250px"
+                  />
+                </div>
+                <div class="col-sm-7">
+                  <p id="modal_text">
+                    <span id="modal_text_bold">Name </span> : Ari Mobility
+                    Services
+                    <br />
+                    <span id="modal_text_bold">Sector </span>: Micro mobility/
+                    lifestyle/ smart transport
+                    <br />
+                    <span id="modal_text_bold">Team Size </span>: 1-5
+                    <br />
+                    <span id="modal_text_bold">Team Pitch</span> :
+                    <a
+                      href="https://drive.google.com/open?id=10-WOfO9PWtNAJx6cDN21lBU4CGTXP51V
+                      "
+                      target="_blank"
+                      style="color: blue"
+                      >link</a
+                    >
+                    <span id="modal_text_bold">Description</span>: Ari is a
+                    micro-mobility service operating within enclosed communities
+                    like colleges to provide an Eco-friendly, affordable and
+                    reliable solution. We build up a fleet comprising a mix of
+                    both company-owned and owner shared cycles. Owner shared
+                    cycles are added by existing cycle owners who then receive a
+                    small royalty when their cycle is used within the service. A
+                    smart lock (proprietary to Ari) is installed on every cycle.
+                    These cycles are distributed throughout the campus and can
+                    be used by anyone simply by unlocking via the app and
+                    payment is calculated per-minute of cycling. There are no
+                    fixed parking locations hence offering our customers
+                    valuable freedom to move anywhere they like within the
+                    campus. All cycles in the fleet are regularly maintained by
+                    the company.
+                    <br />
+                    <span id="modal_text_bold">Sites</span>:
+                    <a
+                      href="https://aricycle.web.app"
+                      target="_blank"
+                      style="color: blue"
+                      >Ari</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-      <!---
+    <div id="myModal13" class="modal" style="width: 100%; height: 100%">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <button type="button" class="close" data-dismiss="modal">
+            &times;
+          </button>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-5">
+                  <img
+                    id="modal_image"
+                    src="./src/images/startup/changepay.png"
+                    style="height: 250px"
+                  />
+                </div>
+                <div class="col-sm-7">
+                  <p id="modal_text">
+                    <span id="modal_text_bold">Name </span> : Modulus Solutions
+                    <br />
+                    <span id="modal_text_bold">Sector </span>: Digital
+                    Solutions(Services Sector)
+                    <br />
+                    <span id="modal_text_bold">Team Size </span>: 5-10
+                    <br />
+                    <span id="modal_text_bold">Description</span>: Modulus
+                    Solutions takes care of all the branding requirements that
+                    any organization needs.
+                    <br />
+                    Our Services :
+                    <br />
+                    1. Social Media Marketing
+                    <br />
+                    2. Branding
+                    <br />
+                    3. Advertising
+                    <br />
+                    4. Animation Videos
+                    <br />
+                    5. Website Building
+                    <br />
+                    6. 3D Modelling
+                    <br />
+
+                    We promise you the best quality output in the given budget
+                    among the competitors
+                    <br />
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="myModal14" class="modal" style="width: 100%; height: 100%">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <button type="button" class="close" data-dismiss="modal">
+            &times;
+          </button>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-5">
+                  <img
+                    id="modal_image"
+                    src="./src/images/startup/changepay.png"
+                    style="height: 250px"
+                  />
+                </div>
+                <div class="col-sm-7">
+                  <p id="modal_text">
+                    <span id="modal_text_bold">Name </span> : Peer Support
+                    Communities
+                    <br />
+                    <span id="modal_text_bold">Sector </span>: Platforms,
+                    Aggregators and Ed-Tech
+                    <br />
+                    <span id="modal_text_bold">Team Size </span>: 20-50
+                    <br />
+                    <span id="modal_text_bold">Description</span>: Student
+                    community services. Self sustainable ecosystems run by
+                    student communities leading to holistic growth, development
+                    and providing opportunities specific to tier-1 universities.
+                    Also acts as a pseudo-consultancy platform on a b2b end with
+                    a platform for tech specific to student markets.
+                    <br />
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!---Container div Template for Popup Modals--->
+
+    <!---
           <div id="myModal( n )" class="modal" style="width: 100%; height: 100%;">
     <div class="modal-dialog modal-xl">
         <div class="modal-content">
@@ -861,119 +1026,117 @@
         
       --->
 
-
-  <!--footer-->
-  <section class="col-12">
-  
-    <footer id="footer">
-      <div id="footer-item1">
-        <div id="footer-item1-1">
-          <h3>EXPLORE</h3>
-          <a href="./index.html">
-            <p>Home</p>
-          </a>
-          <a href="./index.html#about">
-            <p>About Us</p>
-          </a>
-          <a href="./blog.html">
-            <p>Blog</p>
-          </a>
+    <!--footer-->
+    <section class="col-12">
+      <footer id="footer">
+        <div id="footer-item1">
+          <div id="footer-item1-1">
+            <h3>EXPLORE</h3>
+            <a href="./index.html">
+              <p>Home</p>
+            </a>
+            <a href="./index.html#about">
+              <p>About Us</p>
+            </a>
+            <a href="./blog.html">
+              <p>Blog</p>
+            </a>
+          </div>
+          <div id="footer-item1-2">
+            <h3>DISCOVER</h3>
+            <a href="./podcasts.html">
+              <p>Podcasts</p>
+            </a>
+            <a class="d-none d-sm-block" href="./index.html#events">
+              <p>Events</p>
+            </a>
+            <a class="d-sm-none" href="./index.html#events-mob">
+              <p>Events</p>
+            </a>
+            <a href="./team.html">
+              <p>Team</p>
+            </a>
+          </div>
+          <div id="footer-item1-3">
+            <h3>INITIATIVES</h3>
+            <a href="./startup-internship-drive.html">
+              <p>SIP</p>
+            </a>
+            <a href="./courses.html">
+              <p>Learning Portal</p>
+            </a>
+          </div>
         </div>
-        <div id="footer-item1-2">
-          <h3>DISCOVER</h3>
-          <a href="./podcasts.html">
-            <p>Podcasts</p>
-          </a>
-          <a class="d-none d-sm-block" href="./index.html#events">
-            <p>Events</p>
-          </a>
-          <a class="d-sm-none" href="./index.html#events-mob">
-            <p>Events</p>
-          </a>
-          <a href="./team.html">
-            <p>Team</p>
-          </a>
+        <div id="footer-item2" class="text-center-mobile">
+          <h5>CONTACT US</h5>
+          <a href="https://www.facebook.com/NitkEcell/" target="_blank"
+            ><img
+              class="hvr-grow"
+              src="./src/images/logo_facebook.svg"
+              alt="facebook"
+          /></a>
+          <a
+            href="https://www.instagram.com/ecellnitksurathkal/?hl=en"
+            target="_blank"
+            ><img
+              class="hvr-grow"
+              src="./src/images/logo_instagram.svg"
+              alt="instagram"
+          /></a>
+          <a
+            href="https://www.linkedin.com/company/ecellnitksurathkal/about/"
+            target="_blank"
+            ><img
+              class="hvr-grow"
+              src="./src/images/logo_linkedin.svg"
+              alt="linkedin"
+          /></a>
+          <a href="mailto:ecell@nitk.edu.in"
+            ><img
+              class="hvr-grow"
+              src="./src/images/logo_email.svg"
+              alt="gmail"
+          /></a>
         </div>
-        <div id="footer-item1-3">
-          <h3>INITIATIVES</h3>
-          <a href="./startup-internship-drive.html">
-            <p>SIP</p>
-          </a>
-          <a href="./courses.html">
-            <p>Learning Portal</p>
-          </a>
+        <div id="footer-item3" class="text-center-mobile">
+          <h3>FEEDBACK</h3>
+          <h6>Facing bugs or issues?<br /></h6>
+          <form
+            action="https://airform.io/rohit.handique.rh@gmail.com"
+            method="post"
+          >
+            <label for="email"></label>
+            <input type="text" id="email" name="email" placeholder="Email" />
+            <br />
+            <label for="text"></label>
+            <input type="text" id="text" name="text" placeholder="Message" />
+            <input
+              id="submit"
+              name="submit"
+              type="image"
+              src="./src/images/icon_submit.svg"
+              alt="Submit"
+              height="26.5px"
+              width="auto"
+            />
+          </form>
         </div>
-      </div>
-      <div id="footer-item2" class="text-center-mobile">
-        <h5>CONTACT US</h5>
-        <a href="https://www.facebook.com/NitkEcell/" target="_blank"
-          ><img
-            class="hvr-grow"
-            src="./src/images/logo_facebook.svg"
-            alt="facebook"
-        /></a>
-        <a
-          href="https://www.instagram.com/ecellnitksurathkal/?hl=en"
-          target="_blank"
-          ><img
-            class="hvr-grow"
-            src="./src/images/logo_instagram.svg"
-            alt="instagram"
-        /></a>
-        <a
-          href="https://www.linkedin.com/company/ecellnitksurathkal/about/"
-          target="_blank"
-          ><img
-            class="hvr-grow"
-            src="./src/images/logo_linkedin.svg"
-            alt="linkedin"
-        /></a>
-        <a href="mailto:ecell@nitk.edu.in"
-          ><img
-            class="hvr-grow"
-            src="./src/images/logo_email.svg"
-            alt="gmail"
-        /></a>
-      </div>
-      <div id="footer-item3" class="text-center-mobile">
-        <h3>FEEDBACK</h3>
-        <h6>Facing bugs or issues?<br /></h6>
-        <form
-          action="https://airform.io/rohit.handique.rh@gmail.com"
-          method="post"
-        >
-          <label for="email"></label>
-          <input type="text" id="email" name="email" placeholder="Email" />
-          <br />
-          <label for="text"></label>
-          <input type="text" id="text" name="text" placeholder="Message" />
-          <input
-            id="submit"
-            name="submit"
-            type="image"
-            src="./src/images/icon_submit.svg"
-            alt="Submit"
-            height="26.5px"
-            width="auto"
-          />
-        </form>
-      </div>
-      <div id="footer-item4" class="text-center mt-5">
-        <a href="./index.html"
-          ><img src="./src/images/logo_ecell.svg" alt=""
-        /></a>
-        <h3>E-CELL NITK</h3>
-      </div>
-      <div id="footer-item5" class="text-center">
-        <h6>&copy; 2020 E-Cell NITK, All Rights Reserved</h6>
-      </div>
-    </footer>
-  </section>
+        <div id="footer-item4" class="text-center mt-5">
+          <a href="./index.html"
+            ><img src="./src/images/logo_ecell.svg" alt=""
+          /></a>
+          <h3>E-CELL NITK</h3>
+        </div>
+        <div id="footer-item5" class="text-center">
+          <h6>&copy; 2020 E-Cell NITK, All Rights Reserved</h6>
+        </div>
+      </footer>
+    </section>
 
     <!----Script for filtering---->
 
     <script>
-      filterSelection("all")
+      filterSelection("all");
       function filterSelection(c) {
         var x, i;
         x = document.getElementsByClassName("startup_card");
@@ -983,56 +1146,57 @@
           if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
         }
       }
-      
+
       function w3AddClass(element, name) {
         var i, arr1, arr2;
         arr1 = element.className.split(" ");
         arr2 = name.split(" ");
         for (i = 0; i < arr2.length; i++) {
-          if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+          if (arr1.indexOf(arr2[i]) == -1) {
+            element.className += " " + arr2[i];
+          }
         }
       }
-      
+
       function w3RemoveClass(element, name) {
         var i, arr1, arr2;
         arr1 = element.className.split(" ");
         arr2 = name.split(" ");
         for (i = 0; i < arr2.length; i++) {
           while (arr1.indexOf(arr2[i]) > -1) {
-            arr1.splice(arr1.indexOf(arr2[i]), 1);     
+            arr1.splice(arr1.indexOf(arr2[i]), 1);
           }
         }
         element.className = arr1.join(" ");
       }
-      
+
       // Add active class to the current button (highlight it)
       var btnContainer = document.getElementById("myBtnContainer");
       var btns = btnContainer.getElementsByClassName("btn");
       for (var i = 0; i < btns.length; i++) {
-        btns[i].addEventListener("click", function(){
+        btns[i].addEventListener("click", function () {
           var current = document.getElementsByClassName("active");
           current[0].className = current[0].className.replace(" active", "");
           this.className += " active";
         });
       }
-      </script>
+    </script>
 
-
-
-
-  <script
-    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-    crossorigin="anonymous"
-  ></script>
-  <script src="src/js/index.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Shuffle/5.2.3/shuffle.js" integrity="sha512-BEuDQdZc68L3l3p6Gk40qK81EiWmd1Zfppte+oX7bm1Nv14c3YH4YndnxPJ1LSKmmaqdpc+BNW4otjDnkiLDBg==" crossorigin="anonymous"></script>
-
-    
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="src/js/index.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Shuffle/5.2.3/shuffle.js"
+      integrity="sha512-BEuDQdZc68L3l3p6Gk40qK81EiWmd1Zfppte+oX7bm1Nv14c3YH4YndnxPJ1LSKmmaqdpc+BNW4otjDnkiLDBg=="
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
