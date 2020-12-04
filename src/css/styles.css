@@ -647,6 +647,19 @@ p {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.116), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.startup_card_psup {
+  background-image: url("../images/startup/psup_back.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+  margin-top: 10%;
+  cursor: pointer;
+
+  padding-left: 10%;
+  padding-right: 10%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.116), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 .start_details {
   padding-top: 5%;
   padding-left: 4%;
@@ -879,6 +892,18 @@ p {
 @media only screen and (max-height: 760px) {
   .startup_card {
     background-color: white;
+    border-radius: 30px;
+    margin-top: 10%;
+    cursor: pointer;
+
+    padding-left: 10%;
+    padding-right: 10%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.116),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .startup_card_psup {
+    background-image: url("../images/startup/psup_back.jpg");
     border-radius: 30px;
     margin-top: 10%;
     cursor: pointer;
