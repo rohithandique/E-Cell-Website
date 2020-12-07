@@ -747,11 +747,6 @@ p {
   background-attachment: scroll;
   height: 100vh;
   width: 100vw;
-  /*Grid*/
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 50% 50%;
-  padding: 3vh 6vw 3vh 6vw;
 }
 
 #cap-2 h2 {
@@ -784,7 +779,11 @@ p {
 
 /* SECTION 3 */
 .cap-3 {
-  background-color: #ace5ff;
+  background-image: url("../images/CAP/cap-main.png");
+  background-repeat: no-repeat;
+  background-position: center 45%;
+  background-size: cover;
+  background-attachment: scroll;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -804,7 +803,7 @@ p {
   align-items: center;
 }
 .cap-3 h1 {
-  color: #000000;
+  color: white;
   text-align: center;
   width: 100%;
   font-size: 2rem;
@@ -1396,11 +1395,7 @@ select {
     padding: 7px 10px;
   }
   #cap-2 {
-    height: 200vh;
-    /*Grid*/
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: auto;
+    height: 100%;
   }
   #cap-2 h2 {
     font-size: 200%;
@@ -1409,32 +1404,31 @@ select {
     font-size: 100%;
     font-weight: normal;
   }
-  #incentives-img img {
-    grid-row-start: 1;
-    grid-row-end: 2;
-    width: 387px;
-    height: 267px;
-  }
-  #incentives {
-    grid-row-start: 2;
-    grid-row-end: 3;
-  }
-  #responsibilities-img img {
-    grid-row-start: 3;
-    grid-row-end: 4;
-    width: 387px;
-    height: 267px;
-  }
-  #resposibilities {
-    grid-row-start: 4;
-    grid-row-end: 5;
+
+  .cap-3 label {
+    font-size: 4vw;
   }
 
-  #incentives-img,
-  #responsibilities-img {
-    padding-left: 2vw;
+  .cap-3 {
+    background-image: url("../images/CAP/cap-main.png");
+    background-repeat: no-repeat;
+    background-position: center 45%;
+    background-size: cover;
+    background-attachment: scroll;
   }
 
+  .login-form {
+    margin: 10px;
+    box-shadow: 1px 2px 8px;
+    border-radius: 5px;
+    background-color: #fff;
+    min-height: 75vh;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
   .sign-up {
     width: 150px;
     padding: 5px 2px;
