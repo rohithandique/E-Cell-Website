@@ -492,7 +492,9 @@ p {
     "c16 c15"
     "c17 c18"
     "c20 c19"
-    "c21 c22";
+    "c21 c22"
+    "c24 c23"
+    "c25 c26";
 }
 #c1 {
   grid-area: c1;
@@ -559,6 +561,18 @@ p {
 }
 #c22 {
   grid-area: c22;
+}
+#c23 {
+  grid-area: c23;
+}
+#c24 {
+  grid-area: c24;
+}
+#c25 {
+  grid-area: c25;
+}
+#c26 {
+  grid-area: c26;
 }
 #h-logo {
   padding: 0 0 5% 0%;
