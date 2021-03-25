@@ -29,3 +29,13 @@ function myFunction() {
   }
 }
 */
+
+// E-GALLERY MASONRY 
+$( function() {
+
+  $('#photo-grid').masonry({
+      itemSelector: '.item',
+      columnWidth: 70
+  });
+
+});
